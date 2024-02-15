@@ -27,4 +27,15 @@ for competition in competitions:
         print(f"    Starttijd: {starts_at}")
         print(f"    Thuisploeg: {home_team}")
         print(f"    Uitploeg: {away_team}")
+
+        markets = event.get('markets', [])
+        for market in markets:
+            market_name = market.get('name')
+            print(f"        Markt: {market_name}")
+            outcomes = market.get('outcomes', [])
+            for outcome in outcomes:
+                outcome_name = outcome.get('name')
+                odds = outcome.get('display_odds', {}).get('decimal')
+                print(f"            Uitkomst: {outcome_name}, Kansen: {odds}")
+
         print("    -----")

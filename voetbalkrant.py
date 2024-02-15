@@ -12,17 +12,18 @@ for seasonObj in soup.find_all('div', class_="float-right"):
 
 for season in seasons:
     season = season.replace(" ", "")
-    url = 'https://www.voetbalkrant.com/belgie/jupiler-pro-league/geschiedenis/' + str(season) + '/wedstrijden'
+    url = f'https://www.voetbalkrant.com/belgie/jupiler-pro-league/geschiedenis/%7Bseason%7D/wedstrijden'
     response = requests.get(url)
+    season_soup = BeautifulSoup(response.text, 'html.parser')
 
-    for match in soup.find_all('tr', class_='table-active'):
+    for match in season_soup.find_all('tr', class_='table-active'):
         datetime = match.find('td', class_='text-center').text.strip()
 
         teams_home = match.find_all('td', class_='text-right')
-        home_team = teams_home[0].get_text(strip=True)
+        hometeam = teams_home[0].get_text(strip=True)
         teams_away = match.find_all('td', class_='text-left')
-        away_team = teams_away[0].get_text(strip=True)
+        awayteam = teams_away[0].get_text(strip=True)
 
-        score = match.find('a', style='background: #fff;padding:6px;white-space: nowrap;', ).get_text(strip=True)
+        score = match.find('td', class_='text-center').text.strip()
 
-        print(f"{season} {datetime}: {home_team} {score} {away_team}")
+        print(f"{season} {datetime}: {hometeam} {score} {awayteam}")

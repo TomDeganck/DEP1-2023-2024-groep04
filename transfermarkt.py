@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 
 url = 'https://www.transfermarkt.be/jupiler-pro-league/spieltagtabelle/wettbewerb/BE1?saison_id=2021&spieltag=1'
 
@@ -21,17 +20,13 @@ for row in matches_table.find_all('tr')[1:]:
     if not cols:
         continue
 
-    date_text = cols[0].get_text(strip=True)
-    if date_text:
-        date_parts = date_text.split(' ')
-        last_date = ' '.join(date_parts[:2])
-        time = date_parts[2] if len(date_parts) > 2 else ''
-        if re.match(r'\d{4}', time):
-            year = time[:4]
-            time = time[4:]
-            last_date += ' ' + year
+    if cols[0].get_text(strip=True):
+        last_date = cols[0].get_text(strip=True)
+    else:
+        last_date = last_date[:-5]
 
     if len(cols) >= 10:
+        time = cols[1].get_text(strip=True)
         home_team = cols[4].get_text(strip=True)
         away_team = cols[9].get_text(strip=True)
         result = cols[6].get_text(strip=True)

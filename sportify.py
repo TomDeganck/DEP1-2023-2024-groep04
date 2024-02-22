@@ -73,7 +73,7 @@ for competition in data.get('tree', [])[0].get('competitions', []):
             'Resultaat Thuisploeg': None,  
             'Resultaat Uitploeg': None,  
             'Naam Uitploeg': away_team,
-            'ID van de match': match_result_url.split('/')[-1]
+            # 'ID van de match': match_result_url.split('/')[-1]
         }
 
         markets = event.get('markets', [])
@@ -92,9 +92,77 @@ for competition in data.get('tree', [])[0].get('competitions', []):
 fieldnames = ['Datum van de match', 'Tijdstip van de match', 'Naam Thuisploeg', 'Resultaat Thuisploeg', 'Resultaat Uitploeg', 'Naam Uitploeg', 'ID van de match']
 filename = 'match_results.csv'
 
-with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+with open("match_results.csv", 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(all_match_results)
 
-print(f"Match results written to {filename}")
+print(f"Match results written to {"match_results.csv"}")
+
+all_standings = []
+
+for standing in data.get('standings', []):
+    standings_data = {
+        'Stand': standing.get('position'),
+        'Naam van de club': standing.get('name'),
+        'Aantal gespeelde matchen': standing.get('played'),
+        'Aantal gewonnen matchen': standing.get('won'),
+        'Aantal gelijkgespeelde matchen': standing.get('drawn'),
+        'Aantal verloren matchen': standing.get('lost'),
+        'Totaal aantal doelpunten zelf gemaakt / tegen gekregen': f"{standing.get('goals_for')} / {standing.get('goals_against')}",
+        'Verschil tussen Totaal aantal doelpunten zelf gemaakt en tegen gekregen': standing.get('goals_for') - standing.get('goals_against'),
+        'Punten': standing.get('points')
+    }
+    all_standings.append(standings_data)
+
+fieldnames = ['Stand', 'Naam van de club', 'Aantal gespeelde matchen', 'Aantal gewonnen matchen', 'Aantal gelijkgespeelde matchen', 'Aantal verloren matchen', 'Totaal aantal doelpunten zelf gemaakt / tegen gekregen', 'Verschil tussen Totaal aantal doelpunten zelf gemaakt en tegen gekregen', 'Punten']
+filename = 'standings.csv'
+
+with open("standings.csv", 'w', newline='', encoding='utf-8') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(all_standings)
+
+print(f"Standings written to {"standings.csv"}")
+
+
+all_goal_events = []
+
+for competition in data.get('tree', [])[0].get('competitions', []):
+    events = competition.get('events', [])
+    for event in events:
+        event_id = event.get('id')
+        event_name = event.get('name')
+        starts_at = event.get('starts_at')
+        home_team = event.get('home_team')
+        away_team = event.get('away_team')
+        match_result_url = event.get('url')
+
+        match_result_response = requests.get(match_result_url, headers=headers)
+        match_result_data = match_result_response.json()
+        
+        match_datetime = match_result_data.get('metadata', {}).get('date')
+        goals = match_result_data.get('goals', [])
+        for goal in goals:
+            goal_info = {
+                # 'ID van de match': event_id,
+                'Datum van de match': match_datetime.split('T')[0],
+                'Tijdstip van de match': match_datetime.split('T')[1],
+                'Naam Thuisploeg': home_team,
+                'Naam Uitploeg': away_team,
+                'Naam van de ploeg die doelpunt maakte': goal.get('team'),
+                'Tijdstip van doelpunt': goal.get('time'),
+                'Stand van de Thuisploeg (na het doelpunt)': goal.get('home_team_score_after'),
+                'Stand van de Uitploeg (na het doelpunt)': goal.get('away_team_score_after')
+            }
+            all_goal_events.append(goal_info)
+
+fieldnames = ['ID van de match', 'Datum van de match', 'Tijdstip van de match', 'Naam Thuisploeg', 'Naam Uitploeg', 'Naam van de ploeg die doelpunt maakte', 'Tijdstip van doelpunt', 'Stand van de Thuisploeg (na het doelpunt)', 'Stand van de Uitploeg (na het doelpunt)']
+filename = 'goal_events.csv'
+
+with open("goal_events.csv", 'w', newline='', encoding='utf-8') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(all_goal_events)
+
+print(f"Goal events written to {"goal_events.csv"}")

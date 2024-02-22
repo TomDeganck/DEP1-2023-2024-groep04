@@ -17,6 +17,7 @@ soup = BeautifulSoup(response.content, 'html.parser')
 seasons = []
 matches = []
 ranking_data = []
+goals_data = []
 
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
@@ -105,6 +106,48 @@ for season in seasons:
                 'Season': season,
                 'Day': day
             })
+
+        url = f'https://www.transfermarkt.be/jupiler-pro-league/spieltag/wettbewerb/BE1/plus/?saison_id={season}&spieltag={day}'
+        response = requests.get(url, headers=headers)
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        div = soup.find('div', class_='large-8 columns')
+
+        date = ''
+        time = ''
+        home_team = ''
+        away_team = ''
+        result = ''
+        goal_team = ''
+        goal_time = ''
+        for table in div.find_all('table', style='border-top: 0 !important;'):
+            for row in table.find_all('tr'):
+                if 'class' in row.attrs and 'table-grosse-schrift' in row['class']:
+                    home_team = row.find('td', class_='spieltagsansicht-vereinsname').get_text(strip=True)
+                    away_team = row.find_all('td', class_='spieltagsansicht-vereinsname')[-1].get_text(strip=True)
+                elif 'class' in row.attrs and 'zentriert no-border' in row['class']:
+                    td_text = row.get_text(strip=True, separator=' ').replace('uur', '').strip()
+                    date, time = td_text.split(' - ')
+                elif 'class' in row.attrs and 'no-border spieltagsansicht-aktionen' in row['class']:
+                    goal_team = row.find('td', class_='rechts no-border-rechts spieltagsansicht').get_text(strip=True)
+                    if goal_team is not None:
+                        goal_time = row.find('td', class_='zentriert no-border-links').get_text(strip=True)
+                    else:
+                        goal_team = row.find('td', class_='links no-border-links spieltagsansicht').get_text(strip=True)
+                        goal_time = row.find('td', class_='zentriert no-border-rechts').get_text(strip=True)
+                    result = row.find('td', class_='zentriert hauptlink').get_text(strip=True)
+                goals_data.append({
+                    'date': date,
+                    'time': time,
+                    'home_team': home_team,
+                    'away_team': away_team,
+                    'goal_team': goal_team,
+                    'goal_time': goal_time,
+                    'result_home_team': result[:-2],
+                    'result_away_team': result[2:],
+                    'Season': season,
+                    'Day': day
+                })
 
 csv_file = "csv/match_results.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:

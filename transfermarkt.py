@@ -1,3 +1,5 @@
+import csv
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -15,7 +17,7 @@ matches = []
 
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
-        if int(season['value']) >= 2023:
+        if int(season['value']) >= 1000:
             seasons.append(season['value'] if season else None)
 
 for season in seasons:
@@ -54,15 +56,23 @@ for season in seasons:
                 home_team = cols[4].get_text(strip=True)
                 away_team = cols[9].get_text(strip=True)
                 result = cols[6].get_text(strip=True)
-                week_day = last_date[:2]
-                #for true last_date cut off first 2 char in CSV
+                # for true last_date cut off first 2 char in CSV
                 if result == time:
                     result = ''
                 if last_date != '' and time != '':
+                    idx_home = home_team.find(')')
+                    idx_away = away_team.rfind('(')
                     matches.append(
-                        {'week_day': week_day, 'date': last_date[2:], 'time': time, 'home_team': home_team, 'away_team': away_team,
-                         'result': result})
+                        {'date': last_date[2:], 'time': time, 'home_team': home_team[idx_home + 1:],
+                         'result_home_team': result[:-2], 'result_away_team': result[2:],
+                         'away_team': away_team[:idx_away]})
 
+csv_file = "csv/match_results.csv"
+with open(csv_file, 'w', newline='', encoding='utf-8') as file:
+    writer = csv.DictWriter(file, fieldnames=['date', 'time', 'home_team', 'result_home_team', 'result_away_team',
+                                              'away_team'])
+    writer.writeheader()
+    for match in matches:
+        writer.writerow(match)
 
-for match in matches:
-    print(match)
+print(f"Data written to {csv_file}")

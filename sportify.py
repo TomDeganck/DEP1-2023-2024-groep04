@@ -27,7 +27,14 @@ for competition in competitions:
         print(f"    Starttijd: {starts_at}")
         print(f"    Thuisploeg: {home_team}")
         print(f"    Uitploeg: {away_team}")
+        
 
+        filename = f"matchday_{starts_at[:10]}.csv"
+        with open(filename, 'a', newline='') as csvfile:
+            fieldnames = ['Event ID', 'Naam', 'Starttijd', 'Thuisploeg', 'Uitploeg', 'Markt', 'Uitkomst', 'Kansen']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            if csvfile.tell() == 0:
+                writer.writeheader()
         markets = event.get('markets', [])
         for market in markets:
             market_name = market.get('name')
@@ -38,4 +45,4 @@ for competition in competitions:
                 odds = outcome.get('display_odds', {}).get('decimal')
                 print(f"            Uitkomst: {outcome_name}, Kansen: {odds}")
 
-        print("    -----")
+            print("    -----")

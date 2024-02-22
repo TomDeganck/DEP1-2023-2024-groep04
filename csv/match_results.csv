@@ -1,223 +1,223 @@
-date,time,home_team,result_home_team,result_away_team,away_team
-28 jul. 2023,20:45,Union Saint-Gilloise,2,0,RSC Anderlecht
-29 jul. 2023,16:00,KAS Eupen,2,2,KVC Westerlo
-29 jul. 2023,18:15,R Charleroi SC,1,1,Oud-Heverlee Leuven
-29 jul. 2023,20:45,RWD Molenbeek,0,4,KRC Genk
-30 jul. 2023,13:30,R Antwerp FC,1,0,Cercle Brugge
-30 jul. 2023,16:00,KAA Gent,3,2,KV Kortrijk
-30 jul. 2023,18:30,Club Brugge,1,1,KV Mechelen
-30 jul. 2023,19:15,Sint-Truidense VV,1,0,Standard Luik
-4 aug. 2023,20:45,Standard Luik,0,1,Union Saint-Gilloise
-5 aug. 2023,16:00,KRC Genk,0,1,KAS Eupen
-5 aug. 2023,18:15,Cercle Brugge,2,0,R Charleroi SC
-5 aug. 2023,20:45,Oud-Heverlee Leuven,1,2,RWD Molenbeek
-6 aug. 2023,13:30,RSC Anderlecht,1,0,R Antwerp FC
-6 aug. 2023,16:00,KV Mechelen,0,1,KAA Gent
-6 aug. 2023,18:30,KVC Westerlo,0,1,Club Brugge
-6 aug. 2023,19:15,KV Kortrijk,0,1,Sint-Truidense VV
-11 aug. 2023,20:45,R Antwerp FC,6,0,KV Kortrijk
-12 aug. 2023,16:00,RWD Molenbeek,1,0,KV Mechelen
-12 aug. 2023,18:15,Union Saint-Gilloise,5,1,Oud-Heverlee Leuven
-13 aug. 2023,13:30,Sint-Truidense VV,0,1,RSC Anderlecht
-13 aug. 2023,16:00,Cercle Brugge,0,1,KRC Genk
-13 aug. 2023,18:30,R Charleroi SC,1,1,Standard Luik
-13 aug. 2023,19:15,KVC Westerlo,1,3,KAA Gent
-18 aug. 2023,20:45,Oud-Heverlee Leuven,1,1,R Antwerp FC
-19 aug. 2023,16:00,Standard Luik,0,1,Cercle Brugge
-19 aug. 2023,20:45,KV Mechelen,4,0,Union Saint-Gilloise
-20 aug. 2023,13:30,RSC Anderlecht,2,1,KVC Westerlo
-20 aug. 2023,16:00,KRC Genk,0,0,R Charleroi SC
-20 aug. 2023,18:30,Club Brugge,7,1,RWD Molenbeek
-20 aug. 2023,19:15,KV Kortrijk,1,3,KAS Eupen
-26 aug. 2023,16:00,KVC Westerlo,2,3,KV Mechelen
-26 aug. 2023,18:15,KAS Eupen,3,1,Oud-Heverlee Leuven
-26 aug. 2023,20:45,KV Kortrijk,1,1,Standard Luik
-27 aug. 2023,16:00,Sint-Truidense VV,0,2,Cercle Brugge
-27 aug. 2023,18:30,RSC Anderlecht,2,1,R Charleroi SC
-27 sep. 2023,20:45,R Antwerp FC,0,0,KAA Gent
-28 sep. 2023,18:30,RWD Molenbeek,2,3,Union Saint-Gilloise
-28 sep. 2023,20:45,Club Brugge,1,1,KRC Genk
-1 sep. 2023,20:45,Oud-Heverlee Leuven,3,0,KV Kortrijk
-2 sep. 2023,16:00,Cercle Brugge,2,1,KVC Westerlo
-2 sep. 2023,18:15,KV Mechelen,1,0,KAS Eupen
-2 sep. 2023,20:45,Standard Luik,1,1,RWD Molenbeek
-3 sep. 2023,13:30,KAA Gent,2,1,Club Brugge
-3 sep. 2023,16:00,Union Saint-Gilloise,2,2,R Antwerp FC
-3 sep. 2023,18:30,KRC Genk,1,1,RSC Anderlecht
-3 sep. 2023,19:15,R Charleroi SC,1,1,Sint-Truidense VV
-15 sep. 2023,20:45,KVC Westerlo,0,3,R Antwerp FC
-16 sep. 2023,16:00,RWD Molenbeek,2,1,Cercle Brugge
-16 sep. 2023,18:15,Union Saint-Gilloise,0,2,KRC Genk
-16 sep. 2023,20:45,Club Brugge,4,2,R Charleroi SC
-17 sep. 2023,13:30,KAS Eupen,1,3,Standard Luik
-17 sep. 2023,16:00,KV Kortrijk,2,2,RSC Anderlecht
-17 sep. 2023,18:30,Oud-Heverlee Leuven,1,1,KAA Gent
-17 sep. 2023,19:15,Sint-Truidense VV,2,0,KV Mechelen
-22 sep. 2023,20:45,Standard Luik,0,0,KVC Westerlo
-23 sep. 2023,16:00,R Charleroi SC,1,0,KV Kortrijk
-23 sep. 2023,18:15,KV Mechelen,1,2,Oud-Heverlee Leuven
-23 sep. 2023,20:45,R Antwerp FC,0,0,RWD Molenbeek
-24 sep. 2023,13:30,KRC Genk,3,3,Sint-Truidense VV
-24 sep. 2023,16:00,Cercle Brugge,0,2,Union Saint-Gilloise
-24 sep. 2023,18:30,RSC Anderlecht,1,1,Club Brugge
-24 sep. 2023,19:15,KAA Gent,2,1,KAS Eupen
-29 sep. 2023,20:45,KV Kortrijk,2,1,Cercle Brugge
-30 sep. 2023,16:00,KAS Eupen,1,3,RSC Anderlecht
-30 sep. 2023,18:15,Oud-Heverlee Leuven,1,2,Standard Luik
-30 sep. 2023,20:45,KV Mechelen,0,0,R Antwerp FC
-1 okt. 2023,13:30,Union Saint-Gilloise,3,1,R Charleroi SC
-1 okt. 2023,16:00,KRC Genk,3,3,KVC Westerlo
-1 okt. 2023,18:30,Club Brugge,1,1,Sint-Truidense VV
-1 okt. 2023,19:15,RWD Molenbeek,1,1,KAA Gent
-6 okt. 2023,20:45,R Charleroi SC,2,1,RWD Molenbeek
-7 okt. 2023,16:00,Cercle Brugge,3,2,Oud-Heverlee Leuven
-7 okt. 2023,18:15,KVC Westerlo,1,0,KV Kortrijk
-7 okt. 2023,20:45,RSC Anderlecht,3,1,KV Mechelen
-8 okt. 2023,13:30,Standard Luik,2,1,Club Brugge
-8 okt. 2023,16:00,R Antwerp FC,4,1,KAS Eupen
-8 okt. 2023,18:30,KAA Gent,1,1,KRC Genk
-8 okt. 2023,19:15,Sint-Truidense VV,0,4,Union Saint-Gilloise
-20 okt. 2023,20:45,Union Saint-Gilloise,4,1,KAS Eupen
-21 okt. 2023,16:00,KV Kortrijk,1,0,Club Brugge
-21 okt. 2023,18:15,RWD Molenbeek,1,1,KVC Westerlo
-21 okt. 2023,20:45,R Charleroi SC,3,2,R Antwerp FC
-22 okt. 2023,13:30,KRC Genk,4,0,KV Mechelen
-22 okt. 2023,16:00,Cercle Brugge,2,0,KAA Gent
-22 okt. 2023,18:30,Standard Luik,3,2,RSC Anderlecht
-22 okt. 2023,19:15,Oud-Heverlee Leuven,4,0,Sint-Truidense VV
-27 okt. 2023,20:45,Sint-Truidense VV,2,1,RWD Molenbeek
-28 okt. 2023,16:00,KV Mechelen,0,2,Cercle Brugge
-28 okt. 2023,18:15,KAS Eupen,2,0,R Charleroi SC
-28 okt. 2023,20:45,RSC Anderlecht,5,1,Oud-Heverlee Leuven
-29 okt. 2023,13:30,Club Brugge,2,1,R Antwerp FC
-29 okt. 2023,16:00,KVC Westerlo,1,3,Union Saint-Gilloise
-29 okt. 2023,18:30,KAA Gent,3,1,Standard Luik
-29 okt. 2023,19:15,KV Kortrijk,0,3,KRC Genk
-3 nov. 2023,20:45,Sint-Truidense VV,1,1,KAS Eupen
-4 nov. 2023,16:00,RWD Molenbeek,1,1,KV Kortrijk
-4 nov. 2023,18:15,Oud-Heverlee Leuven,0,2,KVC Westerlo
-4 nov. 2023,20:45,R Antwerp FC,3,2,KRC Genk
-5 nov. 2023,13:30,Cercle Brugge,0,3,RSC Anderlecht
-5 nov. 2023,16:00,Standard Luik,1,1,KV Mechelen
-5 nov. 2023,18:30,Union Saint-Gilloise,2,1,Club Brugge
-5 nov. 2023,19:15,R Charleroi SC,1,3,KAA Gent
-10 nov. 2023,20:45,KVC Westerlo,3,3,Sint-Truidense VV
-11 nov. 2023,16:00,R Antwerp FC,6,0,Standard Luik
-11 nov. 2023,18:15,KAS Eupen,1,3,RWD Molenbeek
-11 nov. 2023,20:45,KV Mechelen,1,0,R Charleroi SC
-12 nov. 2023,13:30,Club Brugge,0,0,Cercle Brugge
-12 nov. 2023,16:00,KRC Genk,3,1,Oud-Heverlee Leuven
-12 nov. 2023,18:30,KAA Gent,1,1,RSC Anderlecht
-12 nov. 2023,19:15,Union Saint-Gilloise,3,0,KV Kortrijk
-24 nov. 2023,20:45,Sint-Truidense VV,1,1,R Antwerp FC
-25 nov. 2023,16:00,Cercle Brugge,2,0,KAS Eupen
-25 nov. 2023,18:15,R Charleroi SC,3,2,KVC Westerlo
-25 nov. 2023,20:45,Standard Luik,1,0,KRC Genk
-26 nov. 2023,13:30,KAA Gent,1,1,Union Saint-Gilloise
-26 nov. 2023,16:00,Oud-Heverlee Leuven,0,1,Club Brugge
-26 nov. 2023,18:30,RSC Anderlecht,2,1,RWD Molenbeek
-26 nov. 2023,19:15,KV Kortrijk,0,3,KV Mechelen
-1 dec. 2023,20:45,KVC Westerlo,1,3,RSC Anderlecht
-2 dec. 2023,16:00,RWD Molenbeek,0,0,R Charleroi SC
-2 dec. 2023,18:15,KAS Eupen,1,1,KV Kortrijk
-2 dec. 2023,20:45,R Antwerp FC,1,0,Oud-Heverlee Leuven
-3 dec. 2023,13:30,KRC Genk,2,2,KAA Gent
-3 dec. 2023,16:00,KV Mechelen,0,2,Sint-Truidense VV
-3 dec. 2023,18:30,Club Brugge,2,0,Standard Luik
-3 dec. 2023,19:15,Union Saint-Gilloise,2,1,Cercle Brugge
-8 dec. 2023,20:45,KV Kortrijk,1,2,KVC Westerlo
-9 dec. 2023,16:00,Cercle Brugge,1,3,R Antwerp FC
-9 dec. 2023,18:15,Sint-Truidense VV,1,1,Oud-Heverlee Leuven
-9 dec. 2023,20:45,KAA Gent,4,0,RWD Molenbeek
-10 dec. 2023,13:30,KV Mechelen,0,0,Club Brugge
-10 dec. 2023,16:00,KAS Eupen,1,3,KRC Genk
-10 dec. 2023,18:30,RSC Anderlecht,2,2,Standard Luik
-10 dec. 2023,19:15,R Charleroi SC,1,3,Union Saint-Gilloise
-15 dec. 2023,20:45,KVC Westerlo,2,0,KAS Eupen
-16 dec. 2023,16:00,Oud-Heverlee Leuven,1,2,Cercle Brugge
-16 dec. 2023,18:15,RWD Molenbeek,3,0,Sint-Truidense VV
-16 dec. 2023,20:45,Standard Luik,0,0,R Charleroi SC
-17 dec. 2023,13:30,Club Brugge,2,0,KAA Gent
-17 dec. 2023,16:00,Union Saint-Gilloise,1,0,KV Mechelen
-17 dec. 2023,18:30,R Antwerp FC,1,1,RSC Anderlecht
-17 dec. 2023,19:15,KRC Genk,4,0,KV Kortrijk
-20 dec. 2023,18:30,Cercle Brugge,3,0,KV Kortrijk
-20 dec. 2023,20:45,KV Mechelen,3,0,Standard Luik
-21 dec. 2023,20:45,KAA Gent,4,0,Oud-Heverlee Leuven
-22 dec. 2023,20:45,RWD Molenbeek,1,6,Club Brugge
-23 dec. 2023,16:00,KAS Eupen,1,2,Union Saint-Gilloise
-23 dec. 2023,18:15,R Antwerp FC,2,2,KVC Westerlo
-23 dec. 2023,20:45,RSC Anderlecht,2,1,KRC Genk
-26 dec. 2023,13:30,KRC Genk,3,0,R Antwerp FC
-26 dec. 2023,16:00,Oud-Heverlee Leuven,3,0,KAS Eupen
-26 dec. 2023,18:30,KVC Westerlo,3,0,RWD Molenbeek
-26 dec. 2023,20:45,Club Brugge,1,1,Union Saint-Gilloise
-27 dec. 2023,18:30,Standard Luik,1,1,Sint-Truidense VV
-27 dec. 2023,20:45,RSC Anderlecht,2,0,Cercle Brugge
-19 jan. 2024,20:45,KAA Gent,1,2,KV Mechelen
-20 jan. 2024,16:00,KRC Genk,1,1,Cercle Brugge
-20 jan. 2024,18:15,Standard Luik,0,1,KV Kortrijk
-20 jan. 2024,20:45,Club Brugge,3,0,KVC Westerlo
-21 jan. 2024,13:30,R Antwerp FC,4,1,R Charleroi SC
-21 jan. 2024,16:00,Union Saint-Gilloise,2,1,Sint-Truidense VV
-21 jan. 2024,18:30,Oud-Heverlee Leuven,1,1,RSC Anderlecht
-21 jan. 2024,19:15,RWD Molenbeek,0,1,KAS Eupen
-26 jan. 2024,20:45,Cercle Brugge,1,1,Standard Luik
-27 jan. 2024,16:00,KV Kortrijk,0,0,Oud-Heverlee Leuven
-27 jan. 2024,20:45,KAA Gent,2,2,KVC Westerlo
-28 jan. 2024,13:30,Sint-Truidense VV,1,1,KRC Genk
-28 jan. 2024,16:00,KAS Eupen,1,0,R Antwerp FC
-28 jan. 2024,18:30,RSC Anderlecht,2,2,Union Saint-Gilloise
-28 jan. 2024,19:15,KV Mechelen,3,1,RWD Molenbeek
-30 jan. 2024,20:30,Club Brugge,3,3,KV Kortrijk
-31 jan. 2024,18:45,Oud-Heverlee Leuven,2,1,KRC Genk
-31 jan. 2024,21:00,Standard Luik,0,1,R Antwerp FC
-1 feb. 2024,20:30,KV Mechelen,2,2,RSC Anderlecht
-3 feb. 2024,16:00,RWD Molenbeek,2,2,Standard Luik
-3 feb. 2024,18:15,KV Kortrijk,1,0,R Charleroi SC
-3 feb. 2024,20:45,KRC Genk,0,1,Union Saint-Gilloise
-4 feb. 2024,13:30,R Antwerp FC,2,1,Club Brugge
-4 feb. 2024,16:00,KAS Eupen,0,1,KV Mechelen
-4 feb. 2024,18:30,RSC Anderlecht,1,0,KAA Gent
-4 feb. 2024,19:15,Cercle Brugge,4,1,Sint-Truidense VV
-9 feb. 2024,20:45,Sint-Truidense VV,1,0,KV Kortrijk
-10 feb. 2024,16:00,Standard Luik,1,0,Oud-Heverlee Leuven
-10 feb. 2024,18:15,Union Saint-Gilloise,2,2,KVC Westerlo
-10 feb. 2024,20:45,Club Brugge,4,0,KAS Eupen
-11 feb. 2024,13:30,RWD Molenbeek,0,4,R Antwerp FC
-11 feb. 2024,16:00,KV Mechelen,1,1,KRC Genk
-11 feb. 2024,18:30,R Charleroi SC,1,3,RSC Anderlecht
-11 feb. 2024,19:15,KAA Gent,1,2,Cercle Brugge
-16 feb. 2024,20:45,KVC Westerlo,2,1,Standard Luik
-17 feb. 2024,16:00,KRC Genk,3,1,RWD Molenbeek
-17 feb. 2024,18:15,Oud-Heverlee Leuven,0,0,R Charleroi SC
-17 feb. 2024,20:45,R Antwerp FC,0,1,KV Mechelen
-18 feb. 2024,13:30,Cercle Brugge,1,1,Club Brugge
-18 feb. 2024,16:00,KV Kortrijk,1,3,Union Saint-Gilloise
-18 feb. 2024,18:30,RSC Anderlecht,4,1,Sint-Truidense VV
-18 feb. 2024,19:15,KAS Eupen,0,2,KAA Gent
-23 feb. 2024,20:45,R Charleroi SC,,,KRC Genk
-24 feb. 2024,16:00,RWD Molenbeek,,,Oud-Heverlee Leuven
-24 feb. 2024,18:15,Sint-Truidense VV,,,KVC Westerlo
-24 feb. 2024,20:45,KV Mechelen,,,KV Kortrijk
-25 feb. 2024,13:30,Club Brugge,,,RSC Anderlecht
-25 feb. 2024,16:00,KAA Gent,,,R Antwerp FC
-25 feb. 2024,18:30,Union Saint-Gilloise,,,Standard Luik
-25 feb. 2024,19:15,KAS Eupen,,,Cercle Brugge
-1 mrt. 2024,20:45,KVC Westerlo,,,R Charleroi SC
-2 mrt. 2024,16:00,Cercle Brugge,,,KV Mechelen
-2 mrt. 2024,18:15,Oud-Heverlee Leuven,,,Union Saint-Gilloise
-2 mrt. 2024,20:45,Standard Luik,,,KAA Gent
-3 mrt. 2024,13:30,KRC Genk,,,Club Brugge
-3 mrt. 2024,16:00,R Antwerp FC,,,Sint-Truidense VV
-3 mrt. 2024,18:30,RSC Anderlecht,,,KAS Eupen
-3 mrt. 2024,19:15,KV Kortrijk,,,RWD Molenbeek
-8 mrt. 2024,20:45,KV Mechelen,,,KVC Westerlo
-9 mrt. 2024,16:00,KV Kortrijk,,,R Antwerp FC
-9 mrt. 2024,18:15,R Charleroi SC,,,Cercle Brugge
-9 mrt. 2024,20:45,RWD Molenbeek,,,RSC Anderlecht
-10 mrt. 2024,13:30,KRC Genk,,,Standard Luik
-10 mrt. 2024,16:00,Club Brugge,,,Oud-Heverlee Leuven
-10 mrt. 2024,18:30,Union Saint-Gilloise,,,KAA Gent
-10 mrt. 2024,19:15,KAS Eupen,,,Sint-Truidense VV
-17 mrt. 2024,18:30,RSC Anderlecht,,,KV Kortrijk
+date,time,home_team,result_home_team,result_away_team,away_team,season,day,match_id
+28 jul. 2023,20:45,Union Saint-Gilloise,2,0,RSC Anderlecht,2023,1,4093105
+29 jul. 2023,16:00,KAS Eupen,2,2,KVC Westerlo,2023,1,4093105
+29 jul. 2023,18:15,R Charleroi SC,1,1,Oud-Heverlee Leuven,2023,1,4093105
+29 jul. 2023,20:45,RWD Molenbeek,0,4,KRC Genk,2023,1,4093105
+30 jul. 2023,13:30,R Antwerp FC,1,0,Cercle Brugge,2023,1,4093105
+30 jul. 2023,16:00,KAA Gent,3,2,KV Kortrijk,2023,1,4093105
+30 jul. 2023,18:30,Club Brugge,1,1,KV Mechelen,2023,1,4093105
+30 jul. 2023,19:15,Sint-Truidense VV,1,0,Standard Luik,2023,1,4093105
+4 aug. 2023,20:45,Standard Luik,0,1,Union Saint-Gilloise,2023,2,4098763
+5 aug. 2023,16:00,KRC Genk,0,1,KAS Eupen,2023,2,4098763
+5 aug. 2023,18:15,Cercle Brugge,2,0,R Charleroi SC,2023,2,4098763
+5 aug. 2023,20:45,Oud-Heverlee Leuven,1,2,RWD Molenbeek,2023,2,4098763
+6 aug. 2023,13:30,RSC Anderlecht,1,0,R Antwerp FC,2023,2,4098763
+6 aug. 2023,16:00,KV Mechelen,0,1,KAA Gent,2023,2,4098763
+6 aug. 2023,18:30,KVC Westerlo,0,1,Club Brugge,2023,2,4098763
+6 aug. 2023,19:15,KV Kortrijk,0,1,Sint-Truidense VV,2023,2,4098763
+11 aug. 2023,20:45,R Antwerp FC,6,0,KV Kortrijk,2023,3,4098795
+12 aug. 2023,16:00,RWD Molenbeek,1,0,KV Mechelen,2023,3,4098795
+12 aug. 2023,18:15,Union Saint-Gilloise,5,1,Oud-Heverlee Leuven,2023,3,4098795
+13 aug. 2023,13:30,Sint-Truidense VV,0,1,RSC Anderlecht,2023,3,4098795
+13 aug. 2023,16:00,Cercle Brugge,0,1,KRC Genk,2023,3,4098795
+13 aug. 2023,18:30,R Charleroi SC,1,1,Standard Luik,2023,3,4098795
+13 aug. 2023,19:15,KVC Westerlo,1,3,KAA Gent,2023,3,4098795
+18 aug. 2023,20:45,Oud-Heverlee Leuven,1,1,R Antwerp FC,2023,4,4098771
+19 aug. 2023,16:00,Standard Luik,0,1,Cercle Brugge,2023,4,4098771
+19 aug. 2023,20:45,KV Mechelen,4,0,Union Saint-Gilloise,2023,4,4098771
+20 aug. 2023,13:30,RSC Anderlecht,2,1,KVC Westerlo,2023,4,4098771
+20 aug. 2023,16:00,KRC Genk,0,0,R Charleroi SC,2023,4,4098771
+20 aug. 2023,18:30,Club Brugge,7,1,RWD Molenbeek,2023,4,4098771
+20 aug. 2023,19:15,KV Kortrijk,1,3,KAS Eupen,2023,4,4098771
+26 aug. 2023,16:00,KVC Westerlo,2,3,KV Mechelen,2023,5,4098792
+26 aug. 2023,18:15,KAS Eupen,3,1,Oud-Heverlee Leuven,2023,5,4098792
+26 aug. 2023,20:45,KV Kortrijk,1,1,Standard Luik,2023,5,4098792
+27 aug. 2023,16:00,Sint-Truidense VV,0,2,Cercle Brugge,2023,5,4098792
+27 aug. 2023,18:30,RSC Anderlecht,2,1,R Charleroi SC,2023,5,4098792
+27 sep. 2023,20:45,R Antwerp FC,0,0,KAA Gent,2023,5,4098792
+28 sep. 2023,18:30,RWD Molenbeek,2,3,Union Saint-Gilloise,2023,5,4098792
+28 sep. 2023,20:45,Club Brugge,1,1,KRC Genk,2023,5,4098792
+1 sep. 2023,20:45,Oud-Heverlee Leuven,3,0,KV Kortrijk,2023,6,4098779
+2 sep. 2023,16:00,Cercle Brugge,2,1,KVC Westerlo,2023,6,4098779
+2 sep. 2023,18:15,KV Mechelen,1,0,KAS Eupen,2023,6,4098779
+2 sep. 2023,20:45,Standard Luik,1,1,RWD Molenbeek,2023,6,4098779
+3 sep. 2023,13:30,KAA Gent,2,1,Club Brugge,2023,6,4098779
+3 sep. 2023,16:00,Union Saint-Gilloise,2,2,R Antwerp FC,2023,6,4098779
+3 sep. 2023,18:30,KRC Genk,1,1,RSC Anderlecht,2023,6,4098779
+3 sep. 2023,19:15,R Charleroi SC,1,1,Sint-Truidense VV,2023,6,4098779
+15 sep. 2023,20:45,KVC Westerlo,0,3,R Antwerp FC,2023,7,4098955
+16 sep. 2023,16:00,RWD Molenbeek,2,1,Cercle Brugge,2023,7,4098955
+16 sep. 2023,18:15,Union Saint-Gilloise,0,2,KRC Genk,2023,7,4098955
+16 sep. 2023,20:45,Club Brugge,4,2,R Charleroi SC,2023,7,4098955
+17 sep. 2023,13:30,KAS Eupen,1,3,Standard Luik,2023,7,4098955
+17 sep. 2023,16:00,KV Kortrijk,2,2,RSC Anderlecht,2023,7,4098955
+17 sep. 2023,18:30,Oud-Heverlee Leuven,1,1,KAA Gent,2023,7,4098955
+17 sep. 2023,19:15,Sint-Truidense VV,2,0,KV Mechelen,2023,7,4098955
+22 sep. 2023,20:45,Standard Luik,0,0,KVC Westerlo,2023,8,4098972
+23 sep. 2023,16:00,R Charleroi SC,1,0,KV Kortrijk,2023,8,4098972
+23 sep. 2023,18:15,KV Mechelen,1,2,Oud-Heverlee Leuven,2023,8,4098972
+23 sep. 2023,20:45,R Antwerp FC,0,0,RWD Molenbeek,2023,8,4098972
+24 sep. 2023,13:30,KRC Genk,3,3,Sint-Truidense VV,2023,8,4098972
+24 sep. 2023,16:00,Cercle Brugge,0,2,Union Saint-Gilloise,2023,8,4098972
+24 sep. 2023,18:30,RSC Anderlecht,1,1,Club Brugge,2023,8,4098972
+24 sep. 2023,19:15,KAA Gent,2,1,KAS Eupen,2023,8,4098972
+29 sep. 2023,20:45,KV Kortrijk,2,1,Cercle Brugge,2023,9,4098886
+30 sep. 2023,16:00,KAS Eupen,1,3,RSC Anderlecht,2023,9,4098886
+30 sep. 2023,18:15,Oud-Heverlee Leuven,1,2,Standard Luik,2023,9,4098886
+30 sep. 2023,20:45,KV Mechelen,0,0,R Antwerp FC,2023,9,4098886
+1 okt. 2023,13:30,Union Saint-Gilloise,3,1,R Charleroi SC,2023,9,4098886
+1 okt. 2023,16:00,KRC Genk,3,3,KVC Westerlo,2023,9,4098886
+1 okt. 2023,18:30,Club Brugge,1,1,Sint-Truidense VV,2023,9,4098886
+1 okt. 2023,19:15,RWD Molenbeek,1,1,KAA Gent,2023,9,4098886
+6 okt. 2023,20:45,R Charleroi SC,2,1,RWD Molenbeek,2023,10,4098922
+7 okt. 2023,16:00,Cercle Brugge,3,2,Oud-Heverlee Leuven,2023,10,4098922
+7 okt. 2023,18:15,KVC Westerlo,1,0,KV Kortrijk,2023,10,4098922
+7 okt. 2023,20:45,RSC Anderlecht,3,1,KV Mechelen,2023,10,4098922
+8 okt. 2023,13:30,Standard Luik,2,1,Club Brugge,2023,10,4098922
+8 okt. 2023,16:00,R Antwerp FC,4,1,KAS Eupen,2023,10,4098922
+8 okt. 2023,18:30,KAA Gent,1,1,KRC Genk,2023,10,4098922
+8 okt. 2023,19:15,Sint-Truidense VV,0,4,Union Saint-Gilloise,2023,10,4098922
+20 okt. 2023,20:45,Union Saint-Gilloise,4,1,KAS Eupen,2023,11,4098897
+21 okt. 2023,16:00,KV Kortrijk,1,0,Club Brugge,2023,11,4098897
+21 okt. 2023,18:15,RWD Molenbeek,1,1,KVC Westerlo,2023,11,4098897
+21 okt. 2023,20:45,R Charleroi SC,3,2,R Antwerp FC,2023,11,4098897
+22 okt. 2023,13:30,KRC Genk,4,0,KV Mechelen,2023,11,4098897
+22 okt. 2023,16:00,Cercle Brugge,2,0,KAA Gent,2023,11,4098897
+22 okt. 2023,18:30,Standard Luik,3,2,RSC Anderlecht,2023,11,4098897
+22 okt. 2023,19:15,Oud-Heverlee Leuven,4,0,Sint-Truidense VV,2023,11,4098897
+27 okt. 2023,20:45,Sint-Truidense VV,2,1,RWD Molenbeek,2023,12,4098944
+28 okt. 2023,16:00,KV Mechelen,0,2,Cercle Brugge,2023,12,4098944
+28 okt. 2023,18:15,KAS Eupen,2,0,R Charleroi SC,2023,12,4098944
+28 okt. 2023,20:45,RSC Anderlecht,5,1,Oud-Heverlee Leuven,2023,12,4098944
+29 okt. 2023,13:30,Club Brugge,2,1,R Antwerp FC,2023,12,4098944
+29 okt. 2023,16:00,KVC Westerlo,1,3,Union Saint-Gilloise,2023,12,4098944
+29 okt. 2023,18:30,KAA Gent,3,1,Standard Luik,2023,12,4098944
+29 okt. 2023,19:15,KV Kortrijk,0,3,KRC Genk,2023,12,4098944
+3 nov. 2023,20:45,Sint-Truidense VV,1,1,KAS Eupen,2023,13,4098873
+4 nov. 2023,16:00,RWD Molenbeek,1,1,KV Kortrijk,2023,13,4098873
+4 nov. 2023,18:15,Oud-Heverlee Leuven,0,2,KVC Westerlo,2023,13,4098873
+4 nov. 2023,20:45,R Antwerp FC,3,2,KRC Genk,2023,13,4098873
+5 nov. 2023,13:30,Cercle Brugge,0,3,RSC Anderlecht,2023,13,4098873
+5 nov. 2023,16:00,Standard Luik,1,1,KV Mechelen,2023,13,4098873
+5 nov. 2023,18:30,Union Saint-Gilloise,2,1,Club Brugge,2023,13,4098873
+5 nov. 2023,19:15,R Charleroi SC,1,3,KAA Gent,2023,13,4098873
+10 nov. 2023,20:45,KVC Westerlo,3,3,Sint-Truidense VV,2023,14,4098825
+11 nov. 2023,16:00,R Antwerp FC,6,0,Standard Luik,2023,14,4098825
+11 nov. 2023,18:15,KAS Eupen,1,3,RWD Molenbeek,2023,14,4098825
+11 nov. 2023,20:45,KV Mechelen,1,0,R Charleroi SC,2023,14,4098825
+12 nov. 2023,13:30,Club Brugge,0,0,Cercle Brugge,2023,14,4098825
+12 nov. 2023,16:00,KRC Genk,3,1,Oud-Heverlee Leuven,2023,14,4098825
+12 nov. 2023,18:30,KAA Gent,1,1,RSC Anderlecht,2023,14,4098825
+12 nov. 2023,19:15,Union Saint-Gilloise,3,0,KV Kortrijk,2023,14,4098825
+24 nov. 2023,20:45,Sint-Truidense VV,1,1,R Antwerp FC,2023,15,4098881
+25 nov. 2023,16:00,Cercle Brugge,2,0,KAS Eupen,2023,15,4098881
+25 nov. 2023,18:15,R Charleroi SC,3,2,KVC Westerlo,2023,15,4098881
+25 nov. 2023,20:45,Standard Luik,1,0,KRC Genk,2023,15,4098881
+26 nov. 2023,13:30,KAA Gent,1,1,Union Saint-Gilloise,2023,15,4098881
+26 nov. 2023,16:00,Oud-Heverlee Leuven,0,1,Club Brugge,2023,15,4098881
+26 nov. 2023,18:30,RSC Anderlecht,2,1,RWD Molenbeek,2023,15,4098881
+26 nov. 2023,19:15,KV Kortrijk,0,3,KV Mechelen,2023,15,4098881
+1 dec. 2023,20:45,KVC Westerlo,1,3,RSC Anderlecht,2023,16,4098937
+2 dec. 2023,16:00,RWD Molenbeek,0,0,R Charleroi SC,2023,16,4098937
+2 dec. 2023,18:15,KAS Eupen,1,1,KV Kortrijk,2023,16,4098937
+2 dec. 2023,20:45,R Antwerp FC,1,0,Oud-Heverlee Leuven,2023,16,4098937
+3 dec. 2023,13:30,KRC Genk,2,2,KAA Gent,2023,16,4098937
+3 dec. 2023,16:00,KV Mechelen,0,2,Sint-Truidense VV,2023,16,4098937
+3 dec. 2023,18:30,Club Brugge,2,0,Standard Luik,2023,16,4098937
+3 dec. 2023,19:15,Union Saint-Gilloise,2,1,Cercle Brugge,2023,16,4098937
+8 dec. 2023,20:45,KV Kortrijk,1,2,KVC Westerlo,2023,17,4098949
+9 dec. 2023,16:00,Cercle Brugge,1,3,R Antwerp FC,2023,17,4098949
+9 dec. 2023,18:15,Sint-Truidense VV,1,1,Oud-Heverlee Leuven,2023,17,4098949
+9 dec. 2023,20:45,KAA Gent,4,0,RWD Molenbeek,2023,17,4098949
+10 dec. 2023,13:30,KV Mechelen,0,0,Club Brugge,2023,17,4098949
+10 dec. 2023,16:00,KAS Eupen,1,3,KRC Genk,2023,17,4098949
+10 dec. 2023,18:30,RSC Anderlecht,2,2,Standard Luik,2023,17,4098949
+10 dec. 2023,19:15,R Charleroi SC,1,3,Union Saint-Gilloise,2023,17,4098949
+15 dec. 2023,20:45,KVC Westerlo,2,0,KAS Eupen,2023,18,4098914
+16 dec. 2023,16:00,Oud-Heverlee Leuven,1,2,Cercle Brugge,2023,18,4098914
+16 dec. 2023,18:15,RWD Molenbeek,3,0,Sint-Truidense VV,2023,18,4098914
+16 dec. 2023,20:45,Standard Luik,0,0,R Charleroi SC,2023,18,4098914
+17 dec. 2023,13:30,Club Brugge,2,0,KAA Gent,2023,18,4098914
+17 dec. 2023,16:00,Union Saint-Gilloise,1,0,KV Mechelen,2023,18,4098914
+17 dec. 2023,18:30,R Antwerp FC,1,1,RSC Anderlecht,2023,18,4098914
+17 dec. 2023,19:15,KRC Genk,4,0,KV Kortrijk,2023,18,4098914
+20 dec. 2023,18:30,Cercle Brugge,3,0,KV Kortrijk,2023,19,4098815
+20 dec. 2023,20:45,KV Mechelen,3,0,Standard Luik,2023,19,4098815
+21 dec. 2023,20:45,KAA Gent,4,0,Oud-Heverlee Leuven,2023,19,4098815
+22 dec. 2023,20:45,RWD Molenbeek,1,6,Club Brugge,2023,19,4098815
+23 dec. 2023,16:00,KAS Eupen,1,2,Union Saint-Gilloise,2023,19,4098815
+23 dec. 2023,18:15,R Antwerp FC,2,2,KVC Westerlo,2023,19,4098815
+23 dec. 2023,20:45,RSC Anderlecht,2,1,KRC Genk,2023,19,4098815
+26 dec. 2023,13:30,KRC Genk,3,0,R Antwerp FC,2023,20,4098902
+26 dec. 2023,16:00,Oud-Heverlee Leuven,3,0,KAS Eupen,2023,20,4098902
+26 dec. 2023,18:30,KVC Westerlo,3,0,RWD Molenbeek,2023,20,4098902
+26 dec. 2023,20:45,Club Brugge,1,1,Union Saint-Gilloise,2023,20,4098902
+27 dec. 2023,18:30,Standard Luik,1,1,Sint-Truidense VV,2023,20,4098902
+27 dec. 2023,20:45,RSC Anderlecht,2,0,Cercle Brugge,2023,20,4098902
+19 jan. 2024,20:45,KAA Gent,1,2,KV Mechelen,2023,21,4098966
+20 jan. 2024,16:00,KRC Genk,1,1,Cercle Brugge,2023,21,4098966
+20 jan. 2024,18:15,Standard Luik,0,1,KV Kortrijk,2023,21,4098966
+20 jan. 2024,20:45,Club Brugge,3,0,KVC Westerlo,2023,21,4098966
+21 jan. 2024,13:30,R Antwerp FC,4,1,R Charleroi SC,2023,21,4098966
+21 jan. 2024,16:00,Union Saint-Gilloise,2,1,Sint-Truidense VV,2023,21,4098966
+21 jan. 2024,18:30,Oud-Heverlee Leuven,1,1,RSC Anderlecht,2023,21,4098966
+21 jan. 2024,19:15,RWD Molenbeek,0,1,KAS Eupen,2023,21,4098966
+26 jan. 2024,20:45,Cercle Brugge,1,1,Standard Luik,2023,22,4098830
+27 jan. 2024,16:00,KV Kortrijk,0,0,Oud-Heverlee Leuven,2023,22,4098830
+27 jan. 2024,20:45,KAA Gent,2,2,KVC Westerlo,2023,22,4098830
+28 jan. 2024,13:30,Sint-Truidense VV,1,1,KRC Genk,2023,22,4098830
+28 jan. 2024,16:00,KAS Eupen,1,0,R Antwerp FC,2023,22,4098830
+28 jan. 2024,18:30,RSC Anderlecht,2,2,Union Saint-Gilloise,2023,22,4098830
+28 jan. 2024,19:15,KV Mechelen,3,1,RWD Molenbeek,2023,22,4098830
+30 jan. 2024,20:30,Club Brugge,3,3,KV Kortrijk,2023,23,4098851
+31 jan. 2024,18:45,Oud-Heverlee Leuven,2,1,KRC Genk,2023,23,4098851
+31 jan. 2024,21:00,Standard Luik,0,1,R Antwerp FC,2023,23,4098851
+1 feb. 2024,20:30,KV Mechelen,2,2,RSC Anderlecht,2023,23,4098851
+3 feb. 2024,16:00,RWD Molenbeek,2,2,Standard Luik,2023,24,4098927
+3 feb. 2024,18:15,KV Kortrijk,1,0,R Charleroi SC,2023,24,4098927
+3 feb. 2024,20:45,KRC Genk,0,1,Union Saint-Gilloise,2023,24,4098927
+4 feb. 2024,13:30,R Antwerp FC,2,1,Club Brugge,2023,24,4098927
+4 feb. 2024,16:00,KAS Eupen,0,1,KV Mechelen,2023,24,4098927
+4 feb. 2024,18:30,RSC Anderlecht,1,0,KAA Gent,2023,24,4098927
+4 feb. 2024,19:15,Cercle Brugge,4,1,Sint-Truidense VV,2023,24,4098927
+9 feb. 2024,20:45,Sint-Truidense VV,1,0,KV Kortrijk,2023,25,4098993
+10 feb. 2024,16:00,Standard Luik,1,0,Oud-Heverlee Leuven,2023,25,4098993
+10 feb. 2024,18:15,Union Saint-Gilloise,2,2,KVC Westerlo,2023,25,4098993
+10 feb. 2024,20:45,Club Brugge,4,0,KAS Eupen,2023,25,4098993
+11 feb. 2024,13:30,RWD Molenbeek,0,4,R Antwerp FC,2023,25,4098993
+11 feb. 2024,16:00,KV Mechelen,1,1,KRC Genk,2023,25,4098993
+11 feb. 2024,18:30,R Charleroi SC,1,3,RSC Anderlecht,2023,25,4098993
+11 feb. 2024,19:15,KAA Gent,1,2,Cercle Brugge,2023,25,4098993
+16 feb. 2024,20:45,KVC Westerlo,2,1,Standard Luik,2023,26,4098865
+17 feb. 2024,16:00,KRC Genk,3,1,RWD Molenbeek,2023,26,4098865
+17 feb. 2024,18:15,Oud-Heverlee Leuven,0,0,R Charleroi SC,2023,26,4098865
+17 feb. 2024,20:45,R Antwerp FC,0,1,KV Mechelen,2023,26,4098865
+18 feb. 2024,13:30,Cercle Brugge,1,1,Club Brugge,2023,26,4098865
+18 feb. 2024,16:00,KV Kortrijk,1,3,Union Saint-Gilloise,2023,26,4098865
+18 feb. 2024,18:30,RSC Anderlecht,4,1,Sint-Truidense VV,2023,26,4098865
+18 feb. 2024,19:15,KAS Eupen,0,2,KAA Gent,2023,26,4098865
+23 feb. 2024,20:45,R Charleroi SC,,,KRC Genk,2023,27,4098985
+24 feb. 2024,16:00,RWD Molenbeek,,,Oud-Heverlee Leuven,2023,27,4098985
+24 feb. 2024,18:15,Sint-Truidense VV,,,KVC Westerlo,2023,27,4098985
+24 feb. 2024,20:45,KV Mechelen,,,KV Kortrijk,2023,27,4098985
+25 feb. 2024,13:30,Club Brugge,,,RSC Anderlecht,2023,27,4098985
+25 feb. 2024,16:00,KAA Gent,,,R Antwerp FC,2023,27,4098985
+25 feb. 2024,18:30,Union Saint-Gilloise,,,Standard Luik,2023,27,4098985
+25 feb. 2024,19:15,KAS Eupen,,,Cercle Brugge,2023,27,4098985
+1 mrt. 2024,20:45,KVC Westerlo,,,R Charleroi SC,2023,28,4098810
+2 mrt. 2024,16:00,Cercle Brugge,,,KV Mechelen,2023,28,4098810
+2 mrt. 2024,18:15,Oud-Heverlee Leuven,,,Union Saint-Gilloise,2023,28,4098810
+2 mrt. 2024,20:45,Standard Luik,,,KAA Gent,2023,28,4098810
+3 mrt. 2024,13:30,KRC Genk,,,Club Brugge,2023,28,4098810
+3 mrt. 2024,16:00,R Antwerp FC,,,Sint-Truidense VV,2023,28,4098810
+3 mrt. 2024,18:30,RSC Anderlecht,,,KAS Eupen,2023,28,4098810
+3 mrt. 2024,19:15,KV Kortrijk,,,RWD Molenbeek,2023,28,4098810
+8 mrt. 2024,20:45,KV Mechelen,,,KVC Westerlo,2023,29,4098840
+9 mrt. 2024,16:00,KV Kortrijk,,,R Antwerp FC,2023,29,4098840
+9 mrt. 2024,18:15,R Charleroi SC,,,Cercle Brugge,2023,29,4098840
+9 mrt. 2024,20:45,RWD Molenbeek,,,RSC Anderlecht,2023,29,4098840
+10 mrt. 2024,13:30,KRC Genk,,,Standard Luik,2023,29,4098840
+10 mrt. 2024,16:00,Club Brugge,,,Oud-Heverlee Leuven,2023,29,4098840
+10 mrt. 2024,18:30,Union Saint-Gilloise,,,KAA Gent,2023,29,4098840
+10 mrt. 2024,19:15,KAS Eupen,,,Sint-Truidense VV,2023,29,4098840
+17 mrt. 2024,18:30,RSC Anderlecht,,,KV Kortrijk,2023,30,4098843

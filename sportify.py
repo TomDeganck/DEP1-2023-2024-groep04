@@ -1,6 +1,10 @@
+import json
 import requests
 import csv
 import datetime
+
+fieldnames = ['Event ID', 'Event Name', 'Starts At', 'Home Team', 'Away Team', 'Market Name', 'Outcome Name', 'Odds']
+
 
 # URL en headers
 url = 'https://api.sportify.bet/echo/v1/events?sport=voetbal&competition=belgium-first-division-a&_cached=true&key=market_type&lang=nl&bookmaker=bet777'
@@ -15,74 +19,51 @@ def scrape_data(url, headers):
     else:
         print("Er is een fout opgetreden bij het ophalen van de gegevens.")
         return None
-
+            
 def process_data(data):
     if data is None:
         return []
 
     matches = []
+    odds = []
+    competitions = data.get('tree', [])[0].get('competitions', [])
 
-    events = data.get('events', [])
+    for competition in competitions:
+        print(f"Competitie: {competition.get('name')}")
 
+    events = competition.get('events', [])
     for event in events:
+        odds = []
+        fieldnames = ['Event ID', 'Event Name', 'Starts At', 'Home Team', 'Away Team']
+        event_id = event.get('id')
         event_name = event.get('name')
         starts_at = event.get('starts_at')
         home_team = event.get('home_team')
         away_team = event.get('away_team')
-        total_goals = None
-        both_teams_score = None
-        match_winner = None
-
         markets = event.get('markets', [])
         for market in markets:
             market_name = market.get('name')
-            if market_name == 'Match Winner':
-                outcomes = market.get('outcomes', [])
-                for outcome in outcomes:
-                    outcome_name = outcome.get('name')
-                    if outcome_name == home_team or outcome_name == away_team:
-                        match_winner = outcome_name
-            elif market_name == 'Totaal aantal goals':
-                outcomes = market.get('outcomes', [])
-                for outcome in outcomes:
-                    outcome_name = outcome.get('name')
-                    if outcome_name == 'Meer dan 2.5':
-                        total_goals = outcome.get('display_odds', {}).get('decimal')
-            elif market_name == 'Beide teams zullen scoren':
-                outcomes = market.get('outcomes', [])
-                for outcome in outcomes:
-                    outcome_name = outcome.get('name')
-                    if outcome_name == 'Ja':
-                        both_teams_score = True
-
-        matches.append({
-            'Event Name': event_name,
-            'Starts At': starts_at,
-            'Home Team': home_team,
-            'Away Team': away_team,
-            'Total Goals': total_goals,
-            'Both Teams Score': both_teams_score,
-            'Match Winner': match_winner
-        })
-
-    return matches
-
-
-def save_to_csv(matches):
-    csv_file = "csv/match_results_live.csv"
-    with open(csv_file, 'w', newline='', encoding='utf-8') as file:
-        writer = csv.DictWriter(file, fieldnames=['Event Name', 'Starts At', 'Home Team', 'Away Team', 'Total Goals', 'Both Teams Score', 'Match Winner'])
-        writer.writeheader()
+            outcomes = market.get('outcomes', [])
+            for outcome in outcomes:
+                outcome_name = outcome.get('name')
+                fieldnames.append(market_name + " " + outcome_name)
+                odds.append(outcome.get('display_odds', {}).get('decimal'))
+        match = [event_id,event_name,starts_at,home_team,away_team] + odds 
+        matches.append(match)
+    print(fieldnames)
+    return matches,fieldnames
+    
+def write_to_csv(matches, filename):
+    with open(filename, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(fieldnames)
         for match in matches:
             writer.writerow(match)
 
-    print(f"Data written to {csv_file}")
-
-
 # Eenmalig scrape van historische gegevens
 data = scrape_data(url, headers)
-matches = process_data(data)
-save_to_csv(matches)
+matches,fieldnames = process_data(data)
+write_to_csv(matches,"csv\match_results_live.csv")
 
 """ 
 import requests

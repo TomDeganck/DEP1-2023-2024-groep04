@@ -1,1 +1,8 @@
-Event Name,Starts At,Home Team,Away Team,Total Goals,Both Teams Score,Match Winner
+Event ID,Event Name,Starts At,Home Team,Away Team,Beide teams zullen scoren Ja,Beide teams zullen scoren Nee,Wedstrijduitslag 1,Wedstrijduitslag Gelijkspel,Wedstrijduitslag 2,Totaal Aantal Goals Meer dan (2.5),Totaal Aantal Goals Onder (2.5)
+1-24123383,RWD Molenbeek 47 vs Oud-Heverlee Leuven,2024-02-24T15:00:00.000000Z,RWD Molenbeek 47,Oud-Heverlee Leuven,1.73,2.10,2.82,3.23,2.56,1.90,1.80
+1-24123983,Sint Truidense VV vs KVC Westerlo,2024-02-24T17:15:00.000000Z,Sint Truidense VV,KVC Westerlo,1.70,2.15,2.08,3.39,3.60,1.86,1.94
+1-24124366,KV Mechelen vs KV Kortrijk,2024-02-24T19:45:00.000000Z,KV Mechelen,KV Kortrijk,1.88,1.92,1.62,3.93,5.50,1.85,1.95
+1-24129202,Club Brugge vs RSC Anderlecht,2024-02-25T12:30:00.000000Z,Club Brugge,RSC Anderlecht,1.67,2.20,1.76,3.89,4.40,1.68,2.18
+1-24129957,KAA Gent vs Royal Antwerp FC,2024-02-25T15:00:00.000000Z,KAA Gent,Royal Antwerp FC,1.65,2.24,2.51,3.29,2.83,1.84,1.96
+1-24130496,Royale Union Saint-Gilloise vs Standard Liege,2024-02-25T17:30:00.000000Z,Royale Union Saint-Gilloise,Standard Liege,2.00,1.81,1.38,4.90,7.70,1.69,2.17
+1-24130609,KAS Eupen vs Cercle Brugge KSV,2024-02-25T18:15:00.000000Z,KAS Eupen,Cercle Brugge KSV,1.74,2.09,4.70,3.95,1.70,1.73,2.10

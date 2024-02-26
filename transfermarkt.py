@@ -21,7 +21,7 @@ goals_data = []
 
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
-        if int(season['value']) >= 2023:
+        if int(season['value']) >= 1900:
             seasons.append(season['value'] if season else None)
 
 for season in seasons:
@@ -31,7 +31,7 @@ for season in seasons:
     soup = BeautifulSoup(response.text, 'html.parser')
     for dayObj in soup.find_all('div', class_='inline-select'):
         for day in dayObj.find_all('option'):
-            if int(day['value']) <= 1000:
+            if int(day['value']) <= 100:
                 days.append(day['value'] if day else None)
 
     for day in days:
@@ -120,34 +120,57 @@ for season in seasons:
         result = ''
         goal_team = ''
         goal_time = ''
+        match_id_tag = ''
         for table in div.find_all('table', style='border-top: 0 !important;'):
             for row in table.find_all('tr'):
                 if 'class' in row.attrs and 'table-grosse-schrift' in row['class']:
                     home_team = row.find('td', class_='spieltagsansicht-vereinsname').get_text(strip=True)
                     away_team = row.find_all('td', class_='spieltagsansicht-vereinsname')[-1].get_text(strip=True)
-                elif 'class' in row.attrs and 'zentriert no-border' in row['class']:
-                    td_text = row.get_text(strip=True, separator=' ').replace('uur', '').strip()
-                    date, time = td_text.split(' - ')
-                elif 'class' in row.attrs and 'no-border spieltagsansicht-aktionen' in row['class']:
-                    goal_team = row.find('td', class_='rechts no-border-rechts spieltagsansicht').get_text(strip=True)
-                    if goal_team is not None:
-                        goal_time = row.find('td', class_='zentriert no-border-links').get_text(strip=True)
-                    else:
-                        goal_team = row.find('td', class_='links no-border-links spieltagsansicht').get_text(strip=True)
+                    idx_home = home_team.find(')')
+                    idx_away = away_team.rfind('(')
+                    home_team = home_team[idx_home + 1:]
+                    away_team = away_team[:idx_away]
+                    match_id_tag = soup.find('a', href=re.compile(r'/spielbericht/index/spielbericht/'))
+                    if match_id_tag and match_id_tag['href']:
+                        match_id = re.search(r'/spielbericht/index/spielbericht/(\d+)', match_id_tag['href'])
+                        if match_id:
+                            extracted_id = match_id.group(1)
+                elif 'class' in row.attrs and ('no-border' and 'spieltagsansicht-aktionen') in row['class']:
+                    try:
+                        tempTeamTest = row.find('td', class_='links no-border-links spieltagsansicht').get_text(
+                            strip=True)
                         goal_time = row.find('td', class_='zentriert no-border-rechts').get_text(strip=True)
-                    result = row.find('td', class_='zentriert hauptlink').get_text(strip=True)
-                goals_data.append({
-                    'date': date,
-                    'time': time,
-                    'home_team': home_team,
-                    'away_team': away_team,
-                    'goal_team': goal_team,
-                    'goal_time': goal_time,
-                    'result_home_team': result[:-2],
-                    'result_away_team': result[2:],
-                    'Season': season,
-                    'Day': day
-                })
+                        goal_team = away_team
+                    except:
+                        goal_time = row.find('td', class_='zentriert no-border-links').get_text(strip=True)
+                        goal_team = home_team
+                    try:
+                        result = row.find('td', class_='zentriert hauptlink').get_text(strip=True)
+                    except:
+                        # Rode/Gele kaart
+                        result = result
+                    idx_home = home_team.find(')')
+                    idx_away = away_team.rfind('(')
+                    goals_data.append({
+                        'date': date,
+                        'time': time,
+                        'home_team': home_team,
+                        'away_team': away_team,
+                        'goal_team': goal_team,
+                        'goal_time': goal_time,
+                        'result_home_team': result[:-2],
+                        'result_away_team': result[2:],
+                        'season': season,
+                        'day': day,
+                        'match_id': extracted_id
+                    })
+                elif 'class' not in row.attrs:
+                    td_text = row.get_text(strip=True, separator=' ').replace('uur', '').strip()
+                    if str(td_text).rfind(':') >= 1:
+                        stringObj = td_text.split('-')
+                        date = stringObj[0]
+                        time = stringObj[1]
+                        time = time[1:]
 
 csv_file = "csv/match_results.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
@@ -157,8 +180,6 @@ with open(csv_file, 'w', newline='', encoding='utf-8') as file:
     for match in matches:
         writer.writerow(match)
 
-print(f"Data written to {csv_file}")
-
 csv_file = "csv/standings.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fieldnames=['Rank', 'Club', 'Played', 'Wins', 'Draws',
@@ -167,4 +188,11 @@ with open(csv_file, 'w', newline='', encoding='utf-8') as file:
     for ranking in ranking_data:
         writer.writerow(ranking)
 
-print(f"Data written to {csv_file}")
+csv_file = "csv/goal_events.csv"
+with open(csv_file, 'w', newline='', encoding='utf-8') as file:
+    writer = csv.DictWriter(file, fieldnames=['date', 'time', 'home_team', 'away_team', 'goal_team',
+                                              'goal_time', 'result_home_team', 'result_away_team', 'season', 'day',
+                                              'match_id'])
+    writer.writeheader()
+    for goals in goals_data:
+        writer.writerow(goals)

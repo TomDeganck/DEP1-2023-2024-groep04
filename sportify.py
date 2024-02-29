@@ -50,17 +50,14 @@ def process_data(data):
                 odds.append(outcome.get('display_odds', {}).get('decimal'))
         match = [event_id,event_name,starts_at,home_team,away_team] + odds 
         matches.append(match)
-    print(fieldnames)
     return matches,fieldnames
     
 def write_to_csv(matches, filename):
     with open(filename, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(fieldnames)
         for match in matches:
             writer.writerow(match)
 
-# Eenmalig scrape van historische gegevens
 data = scrape_data(url, headers)
 matches,fieldnames = process_data(data)
 write_to_csv(matches,"csv\match_results_live.csv")

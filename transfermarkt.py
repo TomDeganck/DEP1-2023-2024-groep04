@@ -1,9 +1,53 @@
 import re
+from datetime import datetime
+
+from dateutil import parser
 
 import csv
 
 import requests
 from bs4 import BeautifulSoup
+
+url = 'https://nl.wikipedia.org/wiki/Lijst_van_voetbalclubs_in_Belgi%C3%AB_naar_stamnummer'
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0',
+}
+
+response = requests.get(url, headers=headers)
+soup = BeautifulSoup(response.content, 'html.parser')
+
+counter = 0
+li_dict = {}
+
+ol = soup.find('ol')
+if ol:
+    for li in ol.find_all('li'):
+        counter += 1
+        li_dict[counter] = li.text
+
+else:
+    print("No ordered list found")
+
+seasons = []
+matches = []
+ranking_data = []
+goals_data = []
+
+month_mapping = {
+    'jan.': 'Jan',
+    'feb.': 'Feb',
+    'mrt.': 'Mar',
+    'apr.': 'Apr',
+    'mei': 'May',
+    'jun.': 'Jun',
+    'jul.': 'Jul',
+    'aug.': 'Aug',
+    'sep.': 'Sep',
+    'okt.': 'Oct',
+    'nov.': 'Nov',
+    'dec.': 'Dec'
+}
 
 url = 'https://www.transfermarkt.be/jupiler-pro-league/spieltagtabelle/wettbewerb/BE1?saison_id=2021&spieltag=1'
 
@@ -14,14 +58,9 @@ headers = {
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.content, 'html.parser')
 
-seasons = []
-matches = []
-ranking_data = []
-goals_data = []
-
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
-        if int(season['value']) >= 1900:
+        if int(season['value']) >= 2023:
             seasons.append(season['value'] if season else None)
 
 for season in seasons:
@@ -31,7 +70,7 @@ for season in seasons:
     soup = BeautifulSoup(response.text, 'html.parser')
     for dayObj in soup.find_all('div', class_='inline-select'):
         for day in dayObj.find_all('option'):
-            if int(day['value']) <= 100:
+            if int(day['value']) <= 5:
                 days.append(day['value'] if day else None)
 
     for day in days:
@@ -72,8 +111,16 @@ for season in seasons:
                 if last_date != '' and time != '':
                     idx_home = home_team.find(')')
                     idx_away = away_team.rfind('(')
+                    date_temp = last_date[2:]
+
+                    for dutch, english in month_mapping.items():
+                        date_temp = date_temp.replace(dutch, english)
+                    date = parser.parse(date_temp, dayfirst=True)
+                    formatted_date = date.strftime("%Y/%m/%d")
+
+                    time_obj = datetime.strptime(time, "%H:%M").time()
                     matches.append(
-                        {'date': last_date[2:], 'time': time, 'home_team': home_team[idx_home + 1:],
+                        {'date': formatted_date, 'time': time_obj, 'home_team': home_team[idx_home + 1:],
                          'result_home_team': result[:-2], 'result_away_team': result[2:],
                          'away_team': away_team[:idx_away],
                          'season': season,
@@ -152,9 +199,12 @@ for season in seasons:
                         result = result
                     idx_home = home_team.find(')')
                     idx_away = away_team.rfind('(')
+
+                    time_obj = datetime.strptime(time, "%H:%M").time()
+
                     goals_data.append({
                         'date': date,
-                        'time': time,
+                        'time': time_obj,
                         'home_team': home_team,
                         'away_team': away_team,
                         'goal_team': goal_team,
@@ -169,7 +219,13 @@ for season in seasons:
                     td_text = row.get_text(strip=True, separator=' ').replace('uur', '').strip()
                     if str(td_text).rfind(':') >= 1:
                         stringObj = td_text.split('-')
-                        date = stringObj[0]
+                        date_temp = stringObj[0]
+                        dateObj = td_text.split(',')
+                        unformated_date = dateObj[1][4:]
+                        for dutch, english in month_mapping.items():
+                            unformated_date = unformated_date.replace(dutch, english)
+                        parsed_date = parser.parse(unformated_date, dayfirst=True)
+                        date = parsed_date.strftime("%Y/%m/%d")
                         time = stringObj[1]
                         time = time[1:]
 

@@ -15,15 +15,16 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0',
 }
 
-def scrape_data(url, headers):
+def scrape_data(url, headers): # Get the data of the website
     response = requests.get(url, headers=headers)
+    # Look if the request was succesfull
     if response.status_code == 200:
         return response.json()
     else:
         print("Er is een fout opgetreden bij het ophalen van de gegevens.")
         return None
             
-def process_data(data):
+def process_data(data): 
     if data is None:
         return []
 
@@ -31,11 +32,12 @@ def process_data(data):
     odds = []
     competitions = data.get('tree', [])[0].get('competitions', [])
 
-    for competition in competitions:
+    for competition in competitions: # Print the current competition
         print(f"Competitie: {competition.get('name')}")
 
     events = competition.get('events', [])
     for event in events:
+        # Get the variables 
         odds = []
         fieldnames = ['date','time','Event ID', 'Event Name', 'Starts At', 'Home Team', 'Away Team']
         event_id = event.get('id')
@@ -44,28 +46,28 @@ def process_data(data):
         home_team = event.get('home_team')
         away_team = event.get('away_team')
         markets = event.get('markets', [])
-        for market in markets:
+        for market in markets: # Go over every market
             market_name = market.get('name')
             outcomes = market.get('outcomes', [])
-            for outcome in outcomes:
+            for outcome in outcomes: # Go over every outcome of a market
                 outcome_name = outcome.get('name')
-                fieldnames.append(market_name + " " + outcome_name)
-                odds.append(outcome.get('display_odds', {}).get('decimal'))
+                fieldnames.append(market_name + " " + outcome_name) # Make fieldname for the possible outcome
+                odds.append(outcome.get('display_odds', {}).get('decimal')) # Get the odd in decimal form
         dt = datetime.fromtimestamp(time.time()).strftime("%d %b. %Y")
         ds = datetime.fromtimestamp(time.time()).strftime("%H:%M")
-        match = [dt,ds,event_id,event_name,starts_at,home_team,away_team] + odds 
+        match = [dt,ds,event_id,event_name,starts_at,home_team,away_team] + odds # Make all the data per event into 1 list
         matches.append(match)
     return matches,fieldnames
     
 def write_to_csv(matches, filename):
     with open(filename, 'a+', newline='') as csvfile:
         csvfile.seek(0)  # Move the file cursor to the beginning
-        line_count = sum(1 for line in csvfile)
+        line_count = sum(1 for line in csvfile)  # Count if there are any lines in the csv
         writer = csv.writer(csvfile)
         if line_count == 0:
             writer.writerow(fieldnames)
-        for match in matches:
-            writer.writerow(match)
+        for match in matches: # For each event write all the variables to the csv
+            writer.writerow(match) 
 
 data = scrape_data(url, headers)
 matches,fieldnames = process_data(data)

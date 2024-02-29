@@ -1,8 +1,17 @@
-Event ID,Event Name,Starts At,Home Team,Away Team,Beide teams zullen scoren Ja,Beide teams zullen scoren Nee,Wedstrijduitslag 1,Wedstrijduitslag Gelijkspel,Wedstrijduitslag 2,Totaal Aantal Goals Meer dan (2.5),Totaal Aantal Goals Onder (2.5)
-1-24123383,RWD Molenbeek 47 vs Oud-Heverlee Leuven,2024-02-24T15:00:00.000000Z,RWD Molenbeek 47,Oud-Heverlee Leuven,1.73,2.10,2.82,3.23,2.56,1.90,1.80
-1-24123983,Sint Truidense VV vs KVC Westerlo,2024-02-24T17:15:00.000000Z,Sint Truidense VV,KVC Westerlo,1.70,2.15,2.08,3.39,3.60,1.86,1.94
-1-24124366,KV Mechelen vs KV Kortrijk,2024-02-24T19:45:00.000000Z,KV Mechelen,KV Kortrijk,1.88,1.92,1.62,3.93,5.50,1.85,1.95
-1-24129202,Club Brugge vs RSC Anderlecht,2024-02-25T12:30:00.000000Z,Club Brugge,RSC Anderlecht,1.67,2.20,1.76,3.89,4.40,1.68,2.18
-1-24129957,KAA Gent vs Royal Antwerp FC,2024-02-25T15:00:00.000000Z,KAA Gent,Royal Antwerp FC,1.65,2.24,2.51,3.29,2.83,1.84,1.96
-1-24130496,Royale Union Saint-Gilloise vs Standard Liege,2024-02-25T17:30:00.000000Z,Royale Union Saint-Gilloise,Standard Liege,2.00,1.81,1.38,4.90,7.70,1.69,2.17
-1-24130609,KAS Eupen vs Cercle Brugge KSV,2024-02-25T18:15:00.000000Z,KAS Eupen,Cercle Brugge KSV,1.74,2.09,4.70,3.95,1.70,1.73,2.10
+date,time,Event ID,Event Name,Starts At,Home Team,Away Team,Beide teams zullen scoren Ja,Beide teams zullen scoren Nee,Wedstrijduitslag 1,Wedstrijduitslag Gelijkspel,Wedstrijduitslag 2,Totaal Aantal Goals Meer dan (2.5),Totaal Aantal Goals Onder (2.5)
+29 Feb. 2024,09:44,1-24168696,KVC Westerlo vs Royal Charleroi SC,2024-03-01T19:45:00.000000Z,KVC Westerlo,Royal Charleroi SC,1.73,2.10,2.03,3.47,3.66,1.87,1.93
+29 Feb. 2024,09:44,1-24174308,Cercle Brugge KSV vs KV Mechelen,2024-03-02T15:00:00.000000Z,Cercle Brugge KSV,KV Mechelen,1.74,2.09,1.87,3.58,3.91,1.83,1.97
+29 Feb. 2024,09:44,1-24174753,Oud-Heverlee Leuven vs Royale Union Saint-Gilloise,2024-03-02T17:15:00.000000Z,Oud-Heverlee Leuven,Royale Union Saint-Gilloise,1.81,2.00,5.30,4.40,1.52,1.68,2.18
+29 Feb. 2024,09:44,1-24175130,Standard Liege vs KAA Gent,2024-03-02T19:45:00.000000Z,Standard Liege,KAA Gent,1.74,2.09,3.10,3.38,2.22,1.92,1.88
+29 Feb. 2024,09:44,1-24179747,KRC Genk vs Club Brugge,2024-03-03T12:30:00.000000Z,KRC Genk,Club Brugge,1.61,2.32,2.99,3.52,2.21,1.72,2.12
+29 Feb. 2024,09:44,1-24180474,Royal Antwerp FC vs Sint Truidense VV,2024-03-03T15:00:00.000000Z,Royal Antwerp FC,Sint Truidense VV,1.82,1.98,1.64,3.93,4.90,1.80,2.01
+29 Feb. 2024,09:44,1-24180932,RSC Anderlecht vs KAS Eupen,2024-03-03T17:30:00.000000Z,RSC Anderlecht,KAS Eupen,1.94,1.86,1.32,5.30,8.30,1.57,2.40
+29 Feb. 2024,09:44,1-24181067,KV Kortrijk vs RWD Molenbeek 47,2024-03-03T18:15:00.000000Z,KV Kortrijk,RWD Molenbeek 47,1.68,2.05,2.42,3.33,2.81,1.91,1.89
+29 Feb. 2024,09:44,1-24168696,KVC Westerlo vs Royal Charleroi SC,2024-03-01T19:45:00.000000Z,KVC Westerlo,Royal Charleroi SC,1.73,2.10,2.03,3.47,3.66,1.87,1.93
+29 Feb. 2024,09:44,1-24174308,Cercle Brugge KSV vs KV Mechelen,2024-03-02T15:00:00.000000Z,Cercle Brugge KSV,KV Mechelen,1.74,2.09,1.87,3.58,3.91,1.83,1.97
+29 Feb. 2024,09:44,1-24174753,Oud-Heverlee Leuven vs Royale Union Saint-Gilloise,2024-03-02T17:15:00.000000Z,Oud-Heverlee Leuven,Royale Union Saint-Gilloise,1.81,2.00,5.30,4.40,1.52,1.68,2.18
+29 Feb. 2024,09:44,1-24175130,Standard Liege vs KAA Gent,2024-03-02T19:45:00.000000Z,Standard Liege,KAA Gent,1.74,2.09,3.10,3.38,2.22,1.92,1.88
+29 Feb. 2024,09:44,1-24179747,KRC Genk vs Club Brugge,2024-03-03T12:30:00.000000Z,KRC Genk,Club Brugge,1.61,2.32,2.99,3.52,2.21,1.72,2.12
+29 Feb. 2024,09:44,1-24180474,Royal Antwerp FC vs Sint Truidense VV,2024-03-03T15:00:00.000000Z,Royal Antwerp FC,Sint Truidense VV,1.82,1.98,1.64,3.93,4.90,1.80,2.01
+29 Feb. 2024,09:44,1-24180932,RSC Anderlecht vs KAS Eupen,2024-03-03T17:30:00.000000Z,RSC Anderlecht,KAS Eupen,1.94,1.86,1.32,5.30,8.30,1.57,2.40
+29 Feb. 2024,09:44,1-24181067,KV Kortrijk vs RWD Molenbeek 47,2024-03-03T18:15:00.000000Z,KV Kortrijk,RWD Molenbeek 47,1.68,2.05,2.42,3.33,2.81,1.91,1.89

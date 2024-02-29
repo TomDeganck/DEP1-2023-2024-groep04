@@ -1,9 +1,12 @@
 import json
 import requests
+import calendar
 import csv
-import datetime
+from datetime import datetime
+import time
+import pandas as pd
 
-fieldnames = ['Event ID', 'Event Name', 'Starts At', 'Home Team', 'Away Team', 'Market Name', 'Outcome Name', 'Odds']
+fieldnames = ['date','time','Event ID', 'Event Name', 'Starts At', 'Home Team', 'Away Team']
 
 
 # URL en headers
@@ -34,7 +37,7 @@ def process_data(data):
     events = competition.get('events', [])
     for event in events:
         odds = []
-        fieldnames = ['Event ID', 'Event Name', 'Starts At', 'Home Team', 'Away Team']
+        fieldnames = ['date','time','Event ID', 'Event Name', 'Starts At', 'Home Team', 'Away Team']
         event_id = event.get('id')
         event_name = event.get('name')
         starts_at = event.get('starts_at')
@@ -48,13 +51,19 @@ def process_data(data):
                 outcome_name = outcome.get('name')
                 fieldnames.append(market_name + " " + outcome_name)
                 odds.append(outcome.get('display_odds', {}).get('decimal'))
-        match = [event_id,event_name,starts_at,home_team,away_team] + odds 
+        dt = datetime.fromtimestamp(time.time()).strftime("%d %b. %Y")
+        ds = datetime.fromtimestamp(time.time()).strftime("%H:%M")
+        match = [dt,ds,event_id,event_name,starts_at,home_team,away_team] + odds 
         matches.append(match)
     return matches,fieldnames
     
 def write_to_csv(matches, filename):
-    with open(filename, 'w', newline='') as csvfile:
+    with open(filename, 'a+', newline='') as csvfile:
+        csvfile.seek(0)  # Move the file cursor to the beginning
+        line_count = sum(1 for line in csvfile)
         writer = csv.writer(csvfile)
+        if line_count == 0:
+            writer.writerow(fieldnames)
         for match in matches:
             writer.writerow(match)
 

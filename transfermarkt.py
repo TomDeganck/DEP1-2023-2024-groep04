@@ -142,8 +142,9 @@ for season in seasons:
                         goal_time = row.find('td', class_='zentriert no-border-rechts').get_text(strip=True)
                         goal_team = away_team
                     except:
-                        goal_time = row.find('td', class_='zentriert no-border-links').get_text(strip=True)
-                        goal_team = home_team
+                        if row.find('td', class_='zentriert no-border-links'):
+                            goal_time = row.find('td', class_='zentriert no-border-links').get_text(strip=True)
+                            goal_team = home_team
                     try:
                         result = row.find('td', class_='zentriert hauptlink').get_text(strip=True)
                     except:

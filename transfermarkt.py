@@ -64,7 +64,7 @@ wrong_names = set()
 
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
-        if int(season['value']) >= 2023:
+        if int(season['value']) >= 1960:
             seasons.append(season['value'] if season else None)
 
 for season in seasons:

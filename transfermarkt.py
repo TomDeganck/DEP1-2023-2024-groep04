@@ -18,16 +18,18 @@ response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.content, 'html.parser')
 
 counter = 0
-li_dict = {}
+team_dict = {}
 
 ol = soup.find('ol')
-if ol:
-    for li in ol.find_all('li'):
-        counter += 1
-        li_dict[counter] = li.text
+for li in ol.find_all('li'):
+    counter += 1
+    idx_name = li.text.find('(')
+    team_name = li.text[:idx_name]
+    team_dict[counter] = team_name
 
-else:
-    print("No ordered list found")
+team_dict.popitem()
+reverse_team_dict = {name.strip(): num for num, name in team_dict.items()}
+print(team_dict)
 
 seasons = []
 matches = []
@@ -57,6 +59,8 @@ headers = {
 
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.content, 'html.parser')
+
+wrong_names = set()
 
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
@@ -119,10 +123,25 @@ for season in seasons:
                     formatted_date = date.strftime("%Y/%m/%d")
 
                     time_obj = datetime.strptime(time, "%H:%M").time()
+
+                    home_team_string = home_team[idx_home + 1:].strip()
+                    if home_team_string in reverse_team_dict:
+                        home_team_number = str(reverse_team_dict[home_team_string])
+                    else:
+                        home_team_number = home_team_string
+                        wrong_names.add(home_team_number)
+
+                    away_team_string = away_team[:idx_away].strip()
+                    if away_team_string in reverse_team_dict:
+                        away_team_number = str(reverse_team_dict[away_team_string])
+                    else:
+                        away_team_number = away_team_string
+                        wrong_names.add(away_team_number)
+
                     matches.append(
-                        {'date': formatted_date, 'time': time_obj, 'home_team': home_team[idx_home + 1:],
+                        {'date': formatted_date, 'time': time_obj, 'home_team': home_team[idx_home + 1:], 'home_team_number': home_team_number,
                          'result_home_team': result[:-2], 'result_away_team': result[2:],
-                         'away_team': away_team[:idx_away],
+                         'away_team': away_team[:idx_away], 'away_team_number': away_team_number,
                          'season': season,
                          'day': day,
                          'match_id': extracted_id})
@@ -140,9 +159,17 @@ for season in seasons:
             goal_difference = cols[8].get_text(strip=True)
             points = cols[9].get_text(strip=True)
 
+            club_name_string = club_name.strip()
+            if club_name_string in reverse_team_dict:
+                club_number = str(reverse_team_dict[club_name_string])
+            else:
+                club_number = club_name_string
+                wrong_names.add(club_name_string)
+
             ranking_data.append({
                 'Rank': rank,
                 'Club': club_name,
+                'Club Number': club_number,
                 'Played': played,
                 'Wins': wins,
                 'Draws': draws,
@@ -202,11 +229,27 @@ for season in seasons:
 
                     time_obj = datetime.strptime(time, "%H:%M").time()
 
+                    home_team_string = home_team.strip()
+                    if home_team_string in reverse_team_dict:
+                        home_team_number = str(reverse_team_dict[home_team_string])
+                    else:
+                        home_team_number = home_team_string
+                        wrong_names.add(home_team_number)
+
+                    away_team_string = away_team.strip()
+                    if away_team_string in reverse_team_dict:
+                        away_team_number = str(reverse_team_dict[away_team_string])
+                    else:
+                        away_team_number = away_team_string
+                        wrong_names.add(away_team_number)
+
                     goals_data.append({
                         'date': date,
                         'time': time_obj,
                         'home_team': home_team,
+                        'home_team_number': home_team_number,
                         'away_team': away_team,
+                        'away_team_number': away_team_number,
                         'goal_team': goal_team,
                         'goal_time': goal_time,
                         'result_home_team': result[:-2],
@@ -228,18 +271,19 @@ for season in seasons:
                         date = parsed_date.strftime("%Y/%m/%d")
                         time = stringObj[1]
                         time = time[1:]
-
+print("These names don't match any on record:")
+print(wrong_names)
 csv_file = "csv/match_results.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
-    writer = csv.DictWriter(file, fieldnames=['date', 'time', 'home_team', 'result_home_team', 'result_away_team',
-                                              'away_team', 'season', 'day', 'match_id'])
+    writer = csv.DictWriter(file, fieldnames=['date', 'time', 'home_team', 'home_team_number', 'result_home_team', 'result_away_team',
+                                              'away_team', 'away_team_number', 'season', 'day', 'match_id'])
     writer.writeheader()
     for match in matches:
         writer.writerow(match)
 
 csv_file = "csv/standings.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
-    writer = csv.DictWriter(file, fieldnames=['Rank', 'Club', 'Played', 'Wins', 'Draws',
+    writer = csv.DictWriter(file, fieldnames=['Rank', 'Club', 'Club Number', 'Played', 'Wins', 'Draws',
                                               'Losses', 'Goals', 'Goal Difference', 'Points', 'Season', 'Day'])
     writer.writeheader()
     for ranking in ranking_data:
@@ -247,7 +291,7 @@ with open(csv_file, 'w', newline='', encoding='utf-8') as file:
 
 csv_file = "csv/goal_events.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
-    writer = csv.DictWriter(file, fieldnames=['date', 'time', 'home_team', 'away_team', 'goal_team',
+    writer = csv.DictWriter(file, fieldnames=['date', 'time', 'home_team', 'home_team_number', 'away_team', 'away_team_number', 'goal_team',
                                               'goal_time', 'result_home_team', 'result_away_team', 'season', 'day',
                                               'match_id'])
     writer.writeheader()

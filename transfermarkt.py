@@ -29,7 +29,6 @@ for li in ol.find_all('li'):
 
 team_dict.popitem()
 reverse_team_dict = {name.strip(): num for num, name in team_dict.items()}
-print(team_dict)
 
 seasons = []
 matches = []

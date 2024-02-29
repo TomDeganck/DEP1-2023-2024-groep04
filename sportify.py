@@ -44,8 +44,8 @@ def process_data(data):
         event_name = event.get('name')
         starts_at = event.get('starts_at')
         time_match = datetime.strptime(starts_at,"%Y-%m-%dT%H:%M:%S.%fZ")
-        start_dag = time_match.strftime("%d %b. %Y")
-        start_uur = time_match.strftime("%H:%M")
+        start_dag = time_match.strftime("%Y/%m/%d")
+        start_uur = time_match.strftime("%H:%M:%S")
         home_team = event.get('home_team')
         away_team = event.get('away_team')
         markets = event.get('markets', [])
@@ -56,8 +56,8 @@ def process_data(data):
                 outcome_name = outcome.get('name')
                 fieldnames.append(market_name + " " + outcome_name) # Make fieldname for the possible outcome
                 odds.append(outcome.get('display_odds', {}).get('decimal')) # Get the odd in decimal form
-        dt = datetime.fromtimestamp(time.time()).strftime("%d %b. %Y")
-        ds = datetime.fromtimestamp(time.time()).strftime("%H:%M")
+        dt = datetime.fromtimestamp(time.time()).strftime("%Y/%m/%d")
+        ds = datetime.fromtimestamp(time.time()).strftime("%H:%M:%S")
         match = [dt,ds,event_id,event_name,start_dag,start_uur,home_team,away_team] + odds # Make all the data per event into 1 list
         matches.append(match)
     return matches,fieldnames

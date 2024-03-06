@@ -8,6 +8,7 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 
+#Setup voor teamnamen
 url = 'https://nl.wikipedia.org/wiki/Lijst_van_voetbalclubs_in_Belgi%C3%AB_naar_stamnummer'
 
 headers = {
@@ -17,9 +18,11 @@ headers = {
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.content, 'html.parser')
 
+#Build een dict van alle teamnamen
 counter = 0
 team_dict = {}
 
+#loop en add alle namen
 ol = soup.find('ol')
 for li in ol.find_all('li'):
     counter += 1
@@ -27,14 +30,18 @@ for li in ol.find_all('li'):
     team_name = li.text[:idx_name]
     team_dict[counter] = team_name
 
+#Laatste element is irrelevant en geen teamnaam
 team_dict.popitem()
+#Een reverse dict voor gebruik later
 reverse_team_dict = {name.strip(): num for num, name in team_dict.items()}
 
+#Vars om bij te houden zodat ze altijd bestaan
 seasons = []
 matches = []
 ranking_data = []
 goals_data = []
 
+#Dict die conversie van tijd mogelijk maakt
 month_mapping = {
     'jan.': 'Jan',
     'feb.': 'Feb',
@@ -50,6 +57,7 @@ month_mapping = {
     'dec.': 'Dec'
 }
 
+#Url van 1 pagina om de anderen op te kunnen bouwen
 url = 'https://www.transfermarkt.be/jupiler-pro-league/spieltagtabelle/wettbewerb/BE1?saison_id=2021&spieltag=1'
 
 headers = {
@@ -61,33 +69,40 @@ soup = BeautifulSoup(response.content, 'html.parser')
 
 wrong_names = set()
 
+#Slaag alle seizoenen op adhv een pagine
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
         if int(season['value']) >= 1960:
             seasons.append(season['value'] if season else None)
 
+#Loop over elk seizoen, eerste speeldag
 for season in seasons:
     days = []
     url = f'https://www.transfermarkt.be/jupiler-pro-league/spieltagtabelle/wettbewerb/BE1/plus/?saison_id={season}&spieltag=1'
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'html.parser')
+    #Bouw nu per seizoen elke speeldag op zodat we elke seizoen en dag hebben
     for dayObj in soup.find_all('div', class_='inline-select'):
         for day in dayObj.find_all('option'):
             if int(day['value']) <= 5:
                 days.append(day['value'] if day else None)
 
+    #Loop nu over elke dag
     for day in days:
         url = f'https://www.transfermarkt.be/jupiler-pro-league/spieltagtabelle/wettbewerb/BE1/plus/?saison_id={season}&spieltag={day}'
         response = requests.get(url, headers=headers)
         soup = BeautifulSoup(response.text, 'html.parser')
 
+        #Zoek de 2 nodige elementen om te bestuderen uit de pagina
         matches_table = soup.find('h1').find_next('table')
         rankings_table = soup.find('table', class_='items')
 
         last_date = None
 
+        #Als de table niet bestaat, skip over de dag want er is niet gespeeld
         if matches_table.find_all('tr')[1:] is None:
             continue
+        #Ga nu over elke match
         for row in matches_table.find_all('tr')[1:]:
             cols = row.find_all('td')
             if not cols:
@@ -98,6 +113,7 @@ for season in seasons:
             else:
                 last_date = last_date[:-5]
 
+            #Slaag data op van de match
             if len(cols) >= 10:
                 time = cols[1].get_text(strip=True)
                 home_team = cols[4].get_text(strip=True)
@@ -116,6 +132,7 @@ for season in seasons:
                     idx_away = away_team.rfind('(')
                     date_temp = last_date[2:]
 
+                    #Zet date om in correct formaat
                     for dutch, english in month_mapping.items():
                         date_temp = date_temp.replace(dutch, english)
                     date = parser.parse(date_temp, dayfirst=True)
@@ -123,6 +140,7 @@ for season in seasons:
 
                     time_obj = datetime.strptime(time, "%H:%M").time()
 
+                    #Splits home team van de algemene string
                     home_team_string = home_team[idx_home + 1:].strip()
                     if home_team_string in reverse_team_dict:
                         home_team_number = str(reverse_team_dict[home_team_string])
@@ -130,6 +148,7 @@ for season in seasons:
                         home_team_number = home_team_string
                         wrong_names.add(home_team_number)
 
+                    # Splits away team van de algemene string
                     away_team_string = away_team[:idx_away].strip()
                     if away_team_string in reverse_team_dict:
                         away_team_number = str(reverse_team_dict[away_team_string])
@@ -137,6 +156,7 @@ for season in seasons:
                         away_team_number = away_team_string
                         wrong_names.add(away_team_number)
 
+                    #Add de match aan de array
                     matches.append(
                         {'date': formatted_date, 'time': time_obj, 'home_team': home_team[idx_home + 1:], 'home_team_number': home_team_number,
                          'result_home_team': result[:-2], 'result_away_team': result[2:],
@@ -145,6 +165,7 @@ for season in seasons:
                          'day': day,
                          'match_id': extracted_id})
 
+        #Bouw de rankings op
         for row in rankings_table.find_all('tr')[1:]:
             cols = row.find_all('td')
 
@@ -158,6 +179,7 @@ for season in seasons:
             goal_difference = cols[8].get_text(strip=True)
             points = cols[9].get_text(strip=True)
 
+            #Zet de naam om
             club_name_string = club_name.strip()
             if club_name_string in reverse_team_dict:
                 club_number = str(reverse_team_dict[club_name_string])
@@ -180,6 +202,7 @@ for season in seasons:
                 'Day': day
             })
 
+        #Andere link voor de goals
         url = f'https://www.transfermarkt.be/jupiler-pro-league/spieltag/wettbewerb/BE1/plus/?saison_id={season}&spieltag={day}'
         response = requests.get(url, headers=headers)
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -195,6 +218,7 @@ for season in seasons:
         goal_time = ''
         match_id_tag = ''
         for table in div.find_all('table', style='border-top: 0 !important;'):
+            #Loop over de goals rijen en bepaal welke info ze bevatten, slaag deze dan op
             for row in table.find_all('tr'):
                 if 'class' in row.attrs and 'table-grosse-schrift' in row['class']:
                     home_team = row.find('td', class_='spieltagsansicht-vereinsname').get_text(strip=True)
@@ -242,6 +266,7 @@ for season in seasons:
                         away_team_number = away_team_string
                         wrong_names.add(away_team_number)
 
+                    #Slaag data op
                     goals_data.append({
                         'date': date,
                         'time': time_obj,
@@ -272,6 +297,7 @@ for season in seasons:
                         time = time[1:]
 print("These names don't match any on record:")
 print(wrong_names)
+#Slaag de info uit de arrays op in CSV bestanded
 csv_file = "csv/match_results.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fieldnames=['date', 'time', 'home_team', 'home_team_number', 'result_home_team', 'result_away_team',

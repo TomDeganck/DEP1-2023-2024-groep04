@@ -134,8 +134,8 @@ date,time,home_team,home_team_number,away_team,away_team_number,goal_team,goal_t
 2022/07/24,13:30:00,Club Brugge,3,Genk,290,Genk,30',1,1,True,2022,1,3848873
 2022/07/24,13:30:00,Club Brugge,3,Genk,290,Genk,47',1,2,True,2022,1,3848873
 2022/07/24,13:30:00,Club Brugge,3,Genk,290,Club Brugge,60',2,2,True,2022,1,3848873
+2022/07/24,13:30:00,Club Brugge,3,Genk,290,Club Brugge,90+2',2,2,False,2022,1,3848873
 2022/07/24,13:30:00,Club Brugge,3,Genk,290,Club Brugge,90+2',3,2,True,2022,1,3848873
-2022/07/24,13:30:00,Club Brugge,3,Genk,290,Club Brugge,90+2',3,2,False,2022,1,3848873
 2022/07/24,16:00:00,KV Mechelen,25,RAFC,2449,RAFC,31',0,1,True,2022,1,3848874
 2022/07/24,16:00:00,KV Mechelen,25,RAFC,2449,RAFC,35',0,2,True,2022,1,3848874
 2022/07/24,18:30:00,RSC Anderlecht,35,KVO,362,RSC Anderlecht,39',1,0,True,2022,1,3848875

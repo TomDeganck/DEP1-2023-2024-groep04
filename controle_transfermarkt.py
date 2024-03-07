@@ -38,25 +38,28 @@ team_name_mapping = {
 
 goal_events_df = goal_events_df[goal_events_df['valid_goal'] == 1]
 
-goal_events_df['home_team'] = goal_events_df['home_team'].map(team_name_mapping).fillna(goal_events_df['home_team'])
-goal_events_df['away_team'] = goal_events_df['away_team'].map(team_name_mapping).fillna(goal_events_df['away_team'])
-
+# Calculate goals for home and away teams
 goals_home_team = goal_events_df[goal_events_df['goal_team'] == goal_events_df['home_team']].groupby('match_id').size()
-goals_home_team_df = goals_home_team.reset_index(name='goals_home_team')
-print(goals_home_team)
-
 goals_away_team = goal_events_df[goal_events_df['goal_team'] == goal_events_df['away_team']].groupby('match_id').size()
-goals_away_team_df = goals_away_team.reset_index(name='goals_away_team')
 
-merged_df_home = pd.merge(match_results_df, goals_home_team_df, on='match_id', how='left')
-merged_df_away = pd.merge(match_results_df, goals_away_team_df, on='match_id', how='left')
+# Convert Series to DataFrame and reset index
+goals_home_team_df = goals_home_team.reset_index(name='calculated_goals_home_team')
+goals_away_team_df = goals_away_team.reset_index(name='calculated_goals_away_team')
 
-merged_df = pd.merge(merged_df_home, merged_df_away[['match_id', 'goals_away_team']], on='match_id', how='left')
+# Merge the goal counts into the match results with outer join
+merged_df = pd.merge(match_results_df, goals_home_team_df, on='match_id', how='outer')
+merged_df = pd.merge(merged_df, goals_away_team_df, on='match_id', how='outer')
 
+# Replace NaN values in goal columns with 0
+merged_df['calculated_goals_home_team'] = merged_df['calculated_goals_home_team'].fillna(0)
+merged_df['calculated_goals_away_team'] = merged_df['calculated_goals_away_team'].fillna(0)
+
+# Calculate discrepancies
 discrepancies = merged_df[
-    (merged_df['goals_home_team'] != merged_df['result_home_team']) |
-    (merged_df['goals_away_team'] != merged_df['result_away_team'])
+    (merged_df['calculated_goals_home_team'] != merged_df['result_home_team']) |
+    (merged_df['calculated_goals_away_team'] != merged_df['result_away_team'])
 ]
 
-print("Discrepancies found:")
-print(discrepancies)
+# Select only relevant columns for display
+discrepancies = discrepancies[['date', 'match_id', 'home_team', 'away_team', 'calculated_goals_home_team', 'result_home_team', 'calculated_goals_away_team', 'result_away_team']]
+discrepancies.head()

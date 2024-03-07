@@ -79,7 +79,7 @@ wrong_names = set()
 # Slaag alle seizoenen op adhv een pagine
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
-        if int(season['value']) >= 2000:
+        if int(season['value']) == 2007:
             seasons.append(season['value'] if season else None)
 
 # Loop over elk seizoen, eerste speeldag
@@ -91,7 +91,7 @@ for season in seasons:
     # Bouw nu per seizoen elke speeldag op zodat we elke seizoen en dag hebben
     for dayObj in soup.find_all('div', class_='inline-select'):
         for day in dayObj.find_all('option'):
-            if int(day['value']) <= 5:
+            if int(day['value']) <= 50:
                 days.append(day['value'] if day else None)
 
     # Loop nu over elke dag
@@ -119,11 +119,13 @@ for season in seasons:
 
             if cols[0].get_text(strip=True):
                 last_date = cols[0].get_text(strip=True)
-            else:
+                last_date_recent = True
+            elif cols[1].get_text(strip=True):
                 last_date = last_date[:-5]
 
+
             # Slaag data op van de match
-            if len(cols) >= 10:
+            if len(cols) >= 5:
                 if cols[1].get_text(strip=True) != '':
                     time = cols[1].get_text(strip=True)
                 home_team = cols[4].get_text(strip=True)

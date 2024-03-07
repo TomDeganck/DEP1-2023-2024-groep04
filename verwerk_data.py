@@ -16,7 +16,7 @@ goal_events_df['real_time_goal'] = goal_events_df['real_time_goal'].astype(str).
 goal_events_df['time'] = goal_events_df['time'].map(lambda x: x.strftime("%H:%M:%S"))
 
 df = pd.DataFrame()
-df = goal_events_df[goal_events_df.goal_time > 315]
+df = goal_events_df[goal_events_df.goal_time > 120]
 
 goal_events_df.to_csv('csv/goal_events_verwerkt.csv', index=False)
 df.to_csv('csv/goal_events_verwerkt_fout.csv',index=False)

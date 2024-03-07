@@ -52,6 +52,7 @@ for original_name, standardized_name in team_name_mapping.items():
             pivot_goals[standardized_name] = pivot_goals[original_name]
         pivot_goals.drop(columns=original_name, inplace=True)
 
+
 # Function to calculate the total goals scored by a team in a match
 def calculate_total_goals(row, team_type):
     team_name = row[team_type]
@@ -59,6 +60,7 @@ def calculate_total_goals(row, team_type):
         return row[team_name]
     else:
         return 0
+
 
 # Merge the match_results with the pivot_goals and calculate total goals
 merged_data = pd.merge(match_results, pivot_goals, left_on='match_id', right_index=True)
@@ -81,4 +83,3 @@ for index, row in merged_data.iterrows():
 for discrepancy in discrepancies:
     print(f"Match ID {discrepancy['match_id']}: {discrepancy['home_team']} vs {discrepancy['away_team']}, "
           f"reported result is {discrepancy['reported_result']}, but analysis shows {discrepancy['actual_result']}.")
-

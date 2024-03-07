@@ -100,6 +100,8 @@ for season in seasons:
         response = requests.get(url, headers=headers)
         soup = BeautifulSoup(response.text, 'html.parser')
 
+        print(season, day)
+
         # Zoek de 2 nodige elementen om te bestuderen uit de pagina
         matches_table = soup.find('h1').find_next('table')
         rankings_table = soup.find('table', class_='items')

@@ -13,6 +13,8 @@ goal_events_df['goal_time'] = goal_events_df['goal_time'].astype(int)
 goal_events_df['real_time_goal'] = goal_events_df['time'] + pd.to_timedelta(goal_events_df['goal_time'], unit='m')
 goal_events_df['real_time_goal'] = goal_events_df['real_time_goal'].astype(str).map(lambda x: x.split()[1])
 
+goal_events_df['time'] = goal_events_df['time'].map(lambda x: x.strftime("%H:%M:%S"))
+
 df = pd.DataFrame()
 df = goal_events_df[goal_events_df.goal_time > 315]
 

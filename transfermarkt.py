@@ -149,13 +149,17 @@ for season in seasons:
 
                     # Splits home team van de algemene string
                     home_team_string = home_team[idx_home + 1:].strip()
-                    home_team_number = str(reverse_team_dict.get(home_team_string, fuzzy_match_team_name(home_team_string, reverse_team_dict)))
+                    home_team_number = str(reverse_team_dict.get(home_team_string,
+                                                                 fuzzy_match_team_name(home_team_string,
+                                                                                       reverse_team_dict)))
                     if home_team_number is None:
                         wrong_names.add(home_team_string)
 
                     # Splits away team van de algemene string
                     away_team_string = away_team[:idx_away].strip()
-                    away_team_number = str(reverse_team_dict.get(away_team_string, fuzzy_match_team_name(away_team_string, reverse_team_dict)))
+                    away_team_number = str(reverse_team_dict.get(away_team_string,
+                                                                 fuzzy_match_team_name(away_team_string,
+                                                                                       reverse_team_dict)))
                     if away_team_number is None:
                         wrong_names.add(away_team_string)
 
@@ -220,6 +224,7 @@ for season in seasons:
         result = ''
         goal_team = ''
         goal_time = ''
+        valid_goal = True
         match_id_tag = ''
         for table in div.find_all('table', style='border-top: 0 !important;'):
             # Loop over de goals rijen en bepaal welke info ze bevatten, slaag deze dan op
@@ -251,18 +256,23 @@ for season in seasons:
                     except:
                         # Rode/Gele kaart
                         result = result
+                        valid_goal = False
                     idx_home = home_team.find(')')
                     idx_away = away_team.rfind('(')
 
                     time_obj = datetime.strptime(time, "%H:%M").time()
 
                     home_team_string = home_team.strip()
-                    home_team_number = str(reverse_team_dict.get(home_team_string,fuzzy_match_team_name(home_team_string,reverse_team_dict)))
+                    home_team_number = str(reverse_team_dict.get(home_team_string,
+                                                                 fuzzy_match_team_name(home_team_string,
+                                                                                       reverse_team_dict)))
                     if home_team_number is None:
                         wrong_names.add(home_team_string)
 
                     away_team_string = away_team.strip()
-                    away_team_number = str(reverse_team_dict.get(away_team_string, fuzzy_match_team_name(away_team_string, reverse_team_dict)))
+                    away_team_number = str(reverse_team_dict.get(away_team_string,
+                                                                 fuzzy_match_team_name(away_team_string,
+                                                                                       reverse_team_dict)))
                     if away_team_number is None:
                         wrong_names.add(away_team_string)
 
@@ -278,10 +288,12 @@ for season in seasons:
                         'goal_time': goal_time,
                         'result_home_team': result[:-2],
                         'result_away_team': result[2:],
+                        'valid_goal': valid_goal,
                         'season': season,
                         'day': day,
                         'match_id': extracted_id
                     })
+                    valid_goal = True
                 elif 'class' not in row.attrs:
                     td_text = row.get_text(strip=True, separator=' ').replace('uur', '').strip()
                     if str(td_text).rfind(':') >= 1:
@@ -319,7 +331,8 @@ csv_file = "csv/goal_events.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fieldnames=['date', 'time', 'home_team', 'home_team_number', 'away_team',
                                               'away_team_number', 'goal_team',
-                                              'goal_time', 'result_home_team', 'result_away_team', 'season', 'day',
+                                              'goal_time', 'result_home_team', 'result_away_team', 'valid_goal',
+                                              'season', 'day',
                                               'match_id'])
     writer.writeheader()
     for goals in goals_data:

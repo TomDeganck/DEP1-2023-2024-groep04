@@ -209,7 +209,7 @@ for season in seasons:
                 'Draws': draws,
                 'Losses': losses,
                 'Goals': goals,
-                'Goal Difference': goal_difference,
+                'Goal_Difference': goal_difference,
                 'Points': points,
                 'Season': season,
                 'Day': day
@@ -327,7 +327,7 @@ with open(csv_file, 'w', newline='', encoding='utf-8') as file:
 csv_file = "csv/standings.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fieldnames=['Rank', 'Club', 'Club Number', 'Played', 'Wins', 'Draws',
-                                              'Losses', 'Goals', 'Goal Difference', 'Points', 'Season', 'Day'])
+                                              'Losses', 'Goals', 'Goal_Difference', 'Points', 'Season', 'Day'])
     writer.writeheader()
     for ranking in ranking_data:
         writer.writerow(ranking)

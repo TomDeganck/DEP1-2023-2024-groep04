@@ -1,6 +1,6 @@
 import re
 from datetime import datetime
-
+import logging
 import pandas as pd
 from dateutil import parser
 
@@ -94,6 +94,9 @@ for seasonObj in soup.find_all('div', class_='inline-select'):
         if int(season['value']) == 2020: #Bepaal welke seizoenen opgehaald moeten worden
             seasons.append(season['value'] if season else None)
 
+with open('transfermarkt_log.txt', 'w') as f:
+    f.write(str(season))
+    f.write(' 1 \n')
 # Loop over elk seizoen, eerste speeldag
 for season in seasons:
     days = []
@@ -112,8 +115,11 @@ for season in seasons:
         response = requests.get(url, headers=headers)
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        print(season, day)
-
+        with open('transfermarkt_log.txt', 'a') as f:
+            f.write(str(season))
+            f.write(' ')
+            f.write(str(day))
+            f.write('\n')
         # Zoek de 2 nodige elementen om te bestuderen uit de pagina
         matches_table = soup.find('h1').find_next('table')
         rankings_table = soup.find('table', class_='items')

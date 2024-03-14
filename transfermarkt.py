@@ -91,7 +91,7 @@ wrong_names = set()
 # Slaag alle seizoenen op adhv een pagine
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
-        if int(season['value']) >= 1960: #Bepaal welke seizoenen opgehaald moeten worden
+        if int(season['value']) == 2020: #Bepaal welke seizoenen opgehaald moeten worden
             seasons.append(season['value'] if season else None)
 
 # Loop over elk seizoen, eerste speeldag

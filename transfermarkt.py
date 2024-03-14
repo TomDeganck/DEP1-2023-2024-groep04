@@ -243,6 +243,7 @@ for season in seasons:
         goal_time = ''
         valid_goal = True
         match_id_tag = ''
+        goal_team_home = True
         for table in div.find_all('table', style='border-top: 0 !important;'):
             # Loop over de goals rijen en bepaal welke info ze bevatten, slaag deze dan op
             for row in table.find_all('tr'):
@@ -264,12 +265,12 @@ for season in seasons:
                             strip=True)
                         goal_time = row.find('td', class_='zentriert no-border-rechts').get_text(strip=True)
                         goal_team = away_team
-                        goal_team_number = away_team_number
+                        goal_team_home = False
                     except:
                         if row.find('td', class_='zentriert no-border-links'):
                             goal_time = row.find('td', class_='zentriert no-border-links').get_text(strip=True)
                             goal_team = home_team
-                            goal_team_number = home_team_number
+                            goal_team_home = True
                     try:
                         result = row.find('td', class_='zentriert hauptlink').get_text(strip=True)
                     except:
@@ -295,6 +296,10 @@ for season in seasons:
                                                                                        reverse_team_dict)))
                     if away_team_number == "None":
                         away_team_number = find_team_number_in_csv_fuzzy(away_team_string, stamnummers_df)
+                    if goal_team_home:
+                        goal_team_number = home_team_number
+                    else:
+                        goal_team_number = away_team_number
 
                     # Slaag data op
                     goals_data.append({

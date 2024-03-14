@@ -136,8 +136,8 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2020,15,2020/12/07,20:45:00,3415366,29,R Charleroi SC,19,KV Kortrijk,0,0
 2020,16,2020/12/11,20:45:00,3415378,35,RSC Anderlecht,290,KRC Genk,1,0
 2020,16,2020/12/12,16:15:00,3415377,216,Royal Excel Moeskroen (-2022),13,Beerschot V.A.,3,1
-2020,16,2020/12/12,18:30:00,3415375,19,KV Kortrijk,2495,Oud-Heverlee Leuven,0,3
 2020,16,2020/12/12,18:30:00,3415371,12,Cercle Brugge,31,KV Oostende,0,1
+2020,16,2020/12/12,18:30:00,3415375,19,KV Kortrijk,2495,Oud-Heverlee Leuven,0,3
 2020,16,2020/12/12,20:45:00,3415379,322,Sint-Truidense VV,29,R Charleroi SC,1,2
 2020,16,2020/12/13,13:30:00,3415372,1,R Antwerp FC,3,Club Brugge,0,2
 2020,16,2020/12/13,18:15:00,3415373,7,KAA Gent,16,Standard Luik,2,1
@@ -298,10 +298,10 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2020,33,2021/04/12,20:45:00,3415530,216,Royal Excel Moeskroen (-2022),1,R Antwerp FC,2,3
 2020,34,2021/04/17,18:30:00,3415538,29,R Charleroi SC,1792,KAS Eupen,2,3
 2020,34,2021/04/17,20:45:00,3415533,1,R Antwerp FC,290,KRC Genk,3,2
-2020,34,2021/04/18,18:00:00,3415541,322,Sint-Truidense VV,35,RSC Anderlecht,0,1
 2020,34,2021/04/18,18:00:00,3415534,3,Club Brugge,216,Royal Excel Moeskroen (-2022),4,2
 2020,34,2021/04/18,18:00:00,3415535,19,KV Kortrijk,25,KV Mechelen,1,4
 2020,34,2021/04/18,18:00:00,3415536,31,KV Oostende,12,Cercle Brugge,1,1
 2020,34,2021/04/18,18:00:00,3415537,2495,Oud-Heverlee Leuven,1669,KVRS Waasland - SK Beveren,1,2
 2020,34,2021/04/18,18:00:00,3415539,16,Standard Luik,13,Beerschot V.A.,3,0
 2020,34,2021/04/18,18:00:00,3415540,2159,SV Zulte Waregem,7,KAA Gent,2,7
+2020,34,2021/04/18,18:00:00,3415541,322,Sint-Truidense VV,35,RSC Anderlecht,0,1

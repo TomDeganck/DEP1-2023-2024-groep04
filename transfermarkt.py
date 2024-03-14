@@ -91,7 +91,7 @@ wrong_names = set()
 # Slaag alle seizoenen op adhv een pagine
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
-        if int(season['value']) >= 2015: #Bepaal welke seizoenen opgehaald moeten worden
+        if int(season['value']) >= 1960: #Bepaal welke seizoenen opgehaald moeten worden
             seasons.append(season['value'] if season else None)
 
 # Loop over elk seizoen, eerste speeldag
@@ -103,7 +103,7 @@ for season in seasons:
     # Bouw nu per seizoen elke speeldag op zodat we elke seizoen en dag hebben
     for dayObj in soup.find_all('div', class_='inline-select'):
         for day in dayObj.find_all('option'):
-            if int(day['value']) <= 1: #Bepaal hoeveel max dagen op te halen
+            if int(day['value']) <= 50: #Bepaal hoeveel max dagen op te halen
                 days.append(day['value'] if day else None)
 
     # Loop nu over elke dag
@@ -352,7 +352,7 @@ with open(csv_file, 'w', newline='', encoding='utf-8') as file:
 csv_file = "csv/doelpunten_onverwerkd.csv"
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fieldnames=['seizoen', 'dag', 'datum', 'tijd', 'id_match', 'thuisploeg_stamnummer',
-                                              'thuisploeg', 'uitploeg', 'uitploeg_stamnummer', 'goal_',
+                                              'thuisploeg', 'uitploeg', 'uitploeg_stamnummer', 'goal_time',
                                               'goal_team_naam', 'goal_team_stamnummer', 'stand_thuis', 'stand_uit',
                                               'valid_goal'])
     writer.writeheader()

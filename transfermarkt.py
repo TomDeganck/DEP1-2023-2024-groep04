@@ -10,16 +10,22 @@ import requests
 from bs4 import BeautifulSoup
 from fuzzywuzzy import process
 
-stamnummers_df = pd.read_csv('csv/stamnummers.csv')
-stamnummers_df.columns = ['TeamName', 'TeamNumber']
+stamnummers_df = pd.read_csv('csv/stamnummers.csv', encoding='ISO-8859-1')
+stamnummers_df.columns = ['club_id', 'club_naam', 'stamnummer', 'roepnaam']
 
 
-def find_team_number_in_csv_fuzzy(team_name, csv_data):
-    matched_rows = csv_data[csv_data['TeamName'].str.contains(team_name, case=False, na=False)]
+def find_team_number_in_csv_fuzzy(team_name_to_find, csv_data):
+    matched_rows = csv_data[csv_data['club_naam'].str.contains(team_name_to_find, case=False, na=False, regex=False)]
     if not matched_rows.empty:
-        return matched_rows.iloc[0]['TeamNumber']  # Retourneert het nummer van de eerste overeenkomstige rij
+        return matched_rows.iloc[0]['stamnummer']
     return None
 
+
+def find_team_name_in_csv_fuzzy(team_name_to_find, csv_data):
+    matched_rows = csv_data[csv_data['club_naam'].str.contains(team_name_to_find, case=False, na=False, regex=False)]
+    if not matched_rows.empty:
+        return matched_rows.iloc[0]['roepnaam']
+    return None
 
 # Setup voor teamnamen
 url = 'https://nl.wikipedia.org/wiki/Lijst_van_voetbalclubs_in_Belgi%C3%AB_naar_stamnummer'
@@ -35,13 +41,12 @@ soup = BeautifulSoup(response.content, 'html.parser')
 counter = 0
 team_dict = {}
 
+# def fuzzy_match_team_name(name, team_dict, threshold=95):
+#    match_fuzzy, score = process.extractOne(name, team_dict.keys())
+#    return team_dict[match_fuzzy] if score >= threshold else None
 
-def fuzzy_match_team_name(name, team_dict, threshold=85):
-    match_fuzzy, score = process.extractOne(name, team_dict.keys())
-    return team_dict[match_fuzzy] if score >= threshold else None
 
-
-# loop en add alle namen
+# loop en add alle namen van teams. Deze code is onnodig aangezien we de teams krijgen
 ol = soup.find('ol')
 for li in ol.find_all('li'):
     counter += 1
@@ -91,7 +96,7 @@ wrong_names = set()
 # Slaag alle seizoenen op adhv een pagine
 for seasonObj in soup.find_all('div', class_='inline-select'):
     for season in seasonObj.find_all('option'):
-        if int(season['value']) == 2020: #Bepaal welke seizoenen opgehaald moeten worden
+        if int(season['value']) >= 1960:  # Bepaal welke seizoenen opgehaald moeten worden
             seasons.append(season['value'] if season else None)
 
 with open('transfermarkt_log.txt', 'w') as f:
@@ -106,7 +111,7 @@ for season in seasons:
     # Bouw nu per seizoen elke speeldag op zodat we elke seizoen en dag hebben
     for dayObj in soup.find_all('div', class_='inline-select'):
         for day in dayObj.find_all('option'):
-            if int(day['value']) <= 50: #Bepaal hoeveel max dagen op te halen
+            if int(day['value']) <= 100:  # Bepaal hoeveel max dagen op te halen
                 days.append(day['value'] if day else None)
 
     # Loop nu over elke dag
@@ -171,26 +176,26 @@ for season in seasons:
 
                     # Splits home team van de algemene string
                     home_team_string = home_team[idx_home + 1:].strip()
-                    home_team_number = str(reverse_team_dict.get(home_team_string,
-                                                                 fuzzy_match_team_name(home_team_string,
-                                                                                       reverse_team_dict)))
-                    if home_team_number == "None":
-                        home_team_number = find_team_number_in_csv_fuzzy(home_team_string, stamnummers_df)
+                    # home_team_number = str(reverse_team_dict.get(home_team_string,
+                    #                                             fuzzy_match_team_name(home_team_string,
+                    #                                                                   reverse_team_dict)))
+                    home_team_number = find_team_number_in_csv_fuzzy(home_team_string, stamnummers_df)
+                    home_team_string = find_team_name_in_csv_fuzzy(home_team_string, stamnummers_df)
 
                     # Splits away team van de algemene string
                     away_team_string = away_team[:idx_away].strip()
-                    away_team_number = str(reverse_team_dict.get(away_team_string,
-                                                                 fuzzy_match_team_name(away_team_string,
-                                                                                       reverse_team_dict)))
-                    if away_team_number == "None":
-                        away_team_number = find_team_number_in_csv_fuzzy(away_team_string, stamnummers_df)
+                    # away_team_number = str(reverse_team_dict.get(away_team_string,
+                    #                                             fuzzy_match_team_name(away_team_string,
+                    #                                                                   reverse_team_dict)))
+                    away_team_number = find_team_number_in_csv_fuzzy(away_team_string, stamnummers_df)
+                    away_team_string = find_team_name_in_csv_fuzzy(away_team_string, stamnummers_df)
 
                     # Add de match aan de array
                     matches.append(
                         {'seizoen': season, 'speeldag': day, 'datum': formatted_date, 'tijd': time_obj,
                          'id_match': extracted_id,
-                         'thuisploeg_stamnummer': home_team_number, 'thuisploeg': home_team[idx_home + 1:],
-                         'uitploeg_stamnummer': away_team_number, 'uitploeg': away_team[:idx_away],
+                         'thuisploeg_stamnummer': home_team_number, 'thuisploeg': home_team_string,
+                         'uitploeg_stamnummer': away_team_number, 'uitploeg': away_team_string,
                          'doelpunten_thuisploeg': result[:-2], 'doelpunten_uitploeg': result[2:],
                          })
 
@@ -210,11 +215,13 @@ for season in seasons:
 
             # Zet de naam om
             club_name_string = club_name.strip()
-            if club_name_string in reverse_team_dict:
-                club_number = str(reverse_team_dict[club_name_string])
+            club_number = find_team_number_in_csv_fuzzy(club_name_string, stamnummers_df)
+            club_name_string = find_team_name_in_csv_fuzzy(club_name_string, stamnummers_df)
+            # if club_name_string in reverse_team_dict:
+            #    club_number = str(reverse_team_dict[club_name_string])
             # Indien onze methode niet werkt, haal uit de stamnummers csv van lectoren
-            else:
-                club_number = find_team_number_in_csv_fuzzy(club_name_string, stamnummers_df)
+            # else:
+            #    club_number = find_team_number_in_csv_fuzzy(club_name_string, stamnummers_df)
 
             goals = goals.split(':')
             ranking_data.append({
@@ -243,7 +250,11 @@ for season in seasons:
         date = ''
         time = ''
         home_team = ''
+        home_team_string = ''
+        home_team_number = 0
         away_team = ''
+        away_team_string = ''
+        away_team_number = 0
         result = ''
         goal_team = ''
         goal_time = ''
@@ -254,12 +265,33 @@ for season in seasons:
             # Loop over de goals rijen en bepaal welke info ze bevatten, slaag deze dan op
             for row in table.find_all('tr'):
                 if 'class' in row.attrs and 'table-grosse-schrift' in row['class']:
-                    home_team = row.find('td', class_='spieltagsansicht-vereinsname').get_text(strip=True)
-                    away_team = row.find_all('td', class_='spieltagsansicht-vereinsname')[-1].get_text(strip=True)
-                    idx_home = home_team.find(')')
-                    idx_away = away_team.rfind('(')
-                    home_team = home_team[idx_home + 1:]
-                    away_team = away_team[:idx_away]
+                    home_team = row.find('td', class_='spieltagsansicht-vereinsname')
+                    away_team = row.find_all('td', class_='spieltagsansicht-vereinsname')[-1]
+
+                    # Vind het <a>-element binnen home_team_element en haal de tekst ervan
+                    home_team_link = home_team.find('a')
+                    if home_team_link:
+                        home_team_string = home_team_link.get('title')
+                    else:
+                        home_team_string = 'xx'
+                    # home_team_number = str(reverse_team_dict.get(home_team_string,
+                    #                                             fuzzy_match_team_name(home_team_string,
+                    #                                                                   reverse_team_dict)))
+                    # Haal uit CSV van lectoren voor de rest
+                    home_team_number = find_team_number_in_csv_fuzzy(home_team_string, stamnummers_df)
+                    home_team_string = find_team_name_in_csv_fuzzy(home_team_string, stamnummers_df)
+
+                    away_team_link = away_team.find('a')
+                    if away_team_link:
+                        away_team_string = away_team_link.get('title')
+                    else:
+                        away_team_string = 'xx'
+                    # away_team_number = str(reverse_team_dict.get(away_team_string,
+                    #                                             fuzzy_match_team_name(away_team_string,
+                    #                                                                   reverse_team_dict)))
+                    away_team_number = find_team_number_in_csv_fuzzy(away_team_string, stamnummers_df)
+                    away_team_string = find_team_name_in_csv_fuzzy(away_team_string, stamnummers_df)
+
                     match_id_tag = row.find('a', href=re.compile(r'/spielbericht/index/spielbericht/'))
                     if match_id_tag and match_id_tag['href']:
                         match_id = re.search(r'/spielbericht/index/spielbericht/(\d+)', match_id_tag['href'])
@@ -270,12 +302,12 @@ for season in seasons:
                         tempTeamTest = row.find('td', class_='links no-border-links spieltagsansicht').get_text(
                             strip=True)
                         goal_time = row.find('td', class_='zentriert no-border-rechts').get_text(strip=True)
-                        goal_team = away_team
+                        goal_team_number = away_team_number
                         goal_team_home = False
                     except:
                         if row.find('td', class_='zentriert no-border-links'):
                             goal_time = row.find('td', class_='zentriert no-border-links').get_text(strip=True)
-                            goal_team = home_team
+                            goal_team_number = home_team_number
                             goal_team_home = True
                     try:
                         result = row.find('td', class_='zentriert hauptlink').get_text(strip=True)
@@ -283,29 +315,14 @@ for season in seasons:
                         # Rode/Gele kaart
                         result = result
                         valid_goal = False
-                    idx_home = home_team.find(')')
-                    idx_away = away_team.rfind('(')
 
                     time_obj = datetime.strptime(time, "%H:%M").time()
 
-                    home_team_string = home_team.strip()
-                    home_team_number = str(reverse_team_dict.get(home_team_string,
-                                                                 fuzzy_match_team_name(home_team_string,
-                                                                                       reverse_team_dict)))
-                    # Haal uit CSV van lectoren voor de rest
-                    if home_team_number == "None":
-                        home_team_number = find_team_number_in_csv_fuzzy(home_team_string, stamnummers_df)
 
-                    away_team_string = away_team.strip()
-                    away_team_number = str(reverse_team_dict.get(away_team_string,
-                                                                 fuzzy_match_team_name(away_team_string,
-                                                                                       reverse_team_dict)))
-                    if away_team_number == "None":
-                        away_team_number = find_team_number_in_csv_fuzzy(away_team_string, stamnummers_df)
                     if goal_team_home:
-                        goal_team_number = home_team_number
+                        goal_team = home_team_string
                     else:
-                        goal_team_number = away_team_number
+                        goal_team = away_team_string
 
                     # Slaag data op
                     goals_data.append({
@@ -315,8 +332,8 @@ for season in seasons:
                         'tijd': time_obj,
                         'id_match': extracted_id,
                         'thuisploeg_stamnummer': home_team_number,
-                        'thuisploeg': home_team,
-                        'uitploeg': away_team,
+                        'thuisploeg': home_team_string,
+                        'uitploeg': away_team_string,
                         'uitploeg_stamnummer': away_team_number,
                         'goal_time': goal_time,
                         'goal_team_naam': goal_team,

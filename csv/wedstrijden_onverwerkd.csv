@@ -231,14 +231,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2023,29,2024/03/10,16:00:00,4098835,3,Club Brugge,18,Oud-Heverlee Leuven,3,1
 2023,29,2024/03/10,18:30:00,4098839,10,Union Saint-Gilloise,7,KAA Gent,1,1
 2023,29,2024/03/10,19:15:00,4098842,4276,KAS Eupen,373,Sint-Truidense VV,1,0
-2023,30,2024/03/16,18:15:00,4098844,16,Standard Luik,4276,KAS Eupen,4,0
-2023,30,2024/03/16,20:45:00,4098843,35,RSC Anderlecht,19,KV Kortrijk,0,1
-2023,30,2024/03/17,13:30:00,4098849,373,Sint-Truidense VV,3,Club Brugge,2,1
-2023,30,2024/03/17,16:00:00,4098849,1,Royal Antwerp FC,10,Union Saint-Gilloise,0,0
-2023,30,2024/03/17,18:30:00,4098845,7,KAA Gent,22,R Charleroi SC,,
-2023,30,2024/03/17,18:30:00,4098847,18,Oud-Heverlee Leuven,25,KV Mechelen,,
-2023,30,2024/03/17,18:30:00,4098848,12,Cercle Brugge,47,RWD Molenbeek,,
-2023,30,2024/03/17,18:30:00,4098850,2024,KVC Westerlo,322,KRC Genk,,
 2022,1,2022/07/22,20:45:00,3848868,16,Standard Luik,7,KAA Gent,2,2
 2022,1,2022/07/23,16:00:00,3848869,22,R Charleroi SC,4276,KAS Eupen,3,1
 2022,1,2022/07/23,18:15:00,3848870,19,KV Kortrijk,18,Oud-Heverlee Leuven,0,2

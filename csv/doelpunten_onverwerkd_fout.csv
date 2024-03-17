@@ -1,0 +1,5 @@
+seizoen,dag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg,uitploeg_stamnummer,goal_time,real_time_goal,goal_team_naam,goal_team_stamnummer,stand_thuis,stand_uit,valid_goal
+1979,4,1979/09/08,20:00:00,4013233,553,Waterschei SV Thor,Standard Luik,16,345,01:45:00,Standard Luik,16,1.0,3,True
+1974,3,1974/08/28,19:30:00,4011585,22,R Charleroi SC,Royal Antwerp FC,1,345,01:15:00,Royal Antwerp FC,1,1.0,2,True
+1970,4,1970/09/27,15:00:00,4010631,4,RFC Luik,KSK Beveren,2300,345,20:45:00,RFC Luik,4,3.0,0,True
+1966,3,1966/09/18,15:00:00,4009665,25,KV Mechelen,KAA Gent,7,345,20:45:00,KV Mechelen,25,1.0,1,True

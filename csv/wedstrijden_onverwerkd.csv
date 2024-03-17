@@ -735,7 +735,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2021,21,2021/12/27,21:00:00,3598251,13,Beerschot V.A.,35,RSC Anderlecht,0,7
 2021,21,2022/02/02,18:45:00,3598246,19,KV Kortrijk,1,R Antwerp FC,0,2
 2021,22,2022/01/14,20:45:00,3598293,7,KAA Gent,19,KV Kortrijk,2,2
-2021,22,2022/01/15,16:15:00,3598293,2495,Oud-Heverlee Leuven,25,KV Mechelen,verplaat,rplaatst
+2021,22,2022/01/15,16:15:00,3598295,2495,Oud-Heverlee Leuven,25,KV Mechelen,5,0
 2021,22,2022/01/15,20:45:00,3598290,3,Club Brugge,322,Sint-Truidense VV,2,0
 2021,22,2022/01/16,13:30:00,3598294,1,R Antwerp FC,29,R Charleroi SC,3,0
 2021,22,2022/01/16,16:00:00,3598298,1792,KAS Eupen,12,Cercle Brugge,0,2
@@ -958,7 +958,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2020,12,2020/11/08,16:00:00,3415340,31,KV Oostende,3,Club Brugge,1,3
 2020,12,2020/11/08,18:15:00,3415343,7,KAA Gent,35,RSC Anderlecht,1,1
 2020,12,2020/11/08,20:45:00,3415335,12,Cercle Brugge,2159,SV Zulte Waregem,1,3
-2020,12,2020/12/08,17:00:00,3415335,2495,Oud-Heverlee Leuven,216,Royal Excel Moeskroen (-2022),verplaat,rplaatst
+2020,12,2020/12/08,17:00:00,3415341,2495,Oud-Heverlee Leuven,216,Royal Excel Moeskroen (-2022),2,0
 2020,13,2020/11/21,16:15:00,3415349,16,Standard Luik,1792,KAS Eupen,2,2
 2020,13,2020/11/21,18:30:00,3415347,31,KV Oostende,1,R Antwerp FC,1,1
 2020,13,2020/11/21,18:30:00,3415351,1669,KVRS Waasland - SK Beveren,12,Cercle Brugge,0,2
@@ -5619,7 +5619,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2003,34,2004/05/15,20:00:00,7043,201,KSC Lokeren (- 2020),200,Excelsior Mouscron (- 2009),1,1
 2002,1,2002/08/09,20:00:00,977635,290,KRC Genk,201,KSC Lokeren (- 2020),2,3
 2002,1,2002/08/09,20:30:00,977636,16,Standard Luik,200,Excelsior Mouscron (- 2009),0,3
-2002,1,2002/08/10,20:00:00,977639,855,KFC Lommel SK (- 2003),30,Lierse SK (- 2018),,
 2002,1,2002/08/10,20:00:00,977640,968,KSK Beveren (- 2010),44,RAEC Mons (- 2015),3,0
 2002,1,2002/08/10,20:00:00,977641,867,KVC Westerlo,35,RSC Anderlecht,0,2
 2002,1,2002/08/10,20:00:00,977642,25,KV Mechelen,29,R Charleroi SC,1,0
@@ -5632,7 +5631,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,2,2002/08/17,20:00:00,980398,44,RAEC Mons (- 2015),867,KVC Westerlo,2,1
 2002,2,2002/08/17,20:00:00,980399,3,Club Brugge,968,KSK Beveren (- 2010),3,0
 2002,2,2002/08/17,20:00:00,980400,30,Lierse SK (- 2018),93,RAA La Louviere (- 2009),1,1
-2002,2,2002/08/17,20:00:00,980401,322,Sint-Truidense VV,855,KFC Lommel SK (- 2003),,
 2002,2,2002/08/18,15:00:00,980402,200,Excelsior Mouscron (- 2009),7,KAA Gent,2,1
 2002,2,2002/08/18,20:00:00,980403,29,R Charleroi SC,16,Standard Luik,3,3
 2002,3,2002/08/24,18:00:00,980404,16,Standard Luik,35,RSC Anderlecht,0,2
@@ -5641,7 +5639,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,3,2002/08/24,20:00:00,980407,1,R Antwerp FC,200,Excelsior Mouscron (- 2009),3,1
 2002,3,2002/08/24,20:00:00,980408,7,KAA Gent,29,R Charleroi SC,2,1
 2002,3,2002/08/24,20:00:00,980409,25,KV Mechelen,44,RAEC Mons (- 2015),0,0
-2002,3,2002/08/24,20:00:00,980410,855,KFC Lommel SK (- 2003),201,KSC Lokeren (- 2020),,
 2002,3,2002/08/25,15:00:00,980411,93,RAA La Louviere (- 2009),322,Sint-Truidense VV,1,2
 2002,3,2002/09/11,20:30:00,980412,290,KRC Genk,13,Germinal Beerschot Antwerpen,5,2
 2002,4,2002/08/31,18:00:00,981589,35,RSC Anderlecht,7,KAA Gent,2,2
@@ -5649,7 +5646,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,4,2002/08/31,20:00:00,981591,322,Sint-Truidense VV,968,KSK Beveren (- 2010),6,1
 2002,4,2002/08/31,20:00:00,981592,30,Lierse SK (- 2018),867,KVC Westerlo,0,1
 2002,4,2002/08/31,20:00:00,981593,3,Club Brugge,25,KV Mechelen,4,0
-2002,4,2002/08/31,20:00:00,981594,13,Germinal Beerschot Antwerpen,855,KFC Lommel SK (- 2003),,
 2002,4,2002/08/31,20:00:00,981595,201,KSC Lokeren (- 2020),93,RAA La Louviere (- 2009),1,1
 2002,4,2002/08/31,20:00:00,981596,29,R Charleroi SC,1,R Antwerp FC,1,1
 2002,4,2002/09/01,20:00:00,981597,200,Excelsior Mouscron (- 2009),290,KRC Genk,3,3
@@ -5659,7 +5655,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,5,2002/09/14,20:00:00,982105,968,KSK Beveren (- 2010),201,KSC Lokeren (- 2020),0,1
 2002,5,2002/09/14,20:00:00,982106,25,KV Mechelen,30,Lierse SK (- 2018),0,2
 2002,5,2002/09/14,20:00:00,982107,200,Excelsior Mouscron (- 2009),29,R Charleroi SC,6,0
-2002,5,2002/09/14,20:00:00,982108,290,KRC Genk,855,KFC Lommel SK (- 2003),,
 2002,5,2002/09/15,15:00:00,982109,93,RAA La Louviere (- 2009),13,Germinal Beerschot Antwerpen,1,1
 2002,5,2002/09/15,15:00:00,982110,1,R Antwerp FC,35,RSC Anderlecht,2,1
 2002,6,2002/09/21,18:00:00,982284,3,Club Brugge,7,KAA Gent,1,0
@@ -5669,13 +5664,11 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,6,2002/09/21,20:00:00,982288,29,R Charleroi SC,290,KRC Genk,0,0
 2002,6,2002/09/21,20:00:00,982289,13,Germinal Beerschot Antwerpen,968,KSK Beveren (- 2010),2,1
 2002,6,2002/09/22,15:00:00,982290,201,KSC Lokeren (- 2020),867,KVC Westerlo,4,0
-2002,6,2002/09/22,15:00:00,982291,855,KFC Lommel SK (- 2003),93,RAA La Louviere (- 2009),,
 2002,6,2002/09/23,20:00:00,982292,35,RSC Anderlecht,200,Excelsior Mouscron (- 2009),6,3
 2002,7,2002/09/27,20:00:00,982848,29,R Charleroi SC,35,RSC Anderlecht,1,3
 2002,7,2002/09/28,20:00:00,982849,200,Excelsior Mouscron (- 2009),44,RAEC Mons (- 2015),0,5
 2002,7,2002/09/28,20:00:00,982850,7,KAA Gent,30,Lierse SK (- 2018),1,3
 2002,7,2002/09/28,20:00:00,982851,1,R Antwerp FC,3,Club Brugge,2,2
-2002,7,2002/09/28,20:00:00,982852,968,KSK Beveren (- 2010),855,KFC Lommel SK (- 2003),,
 2002,7,2002/09/28,20:00:00,982853,290,KRC Genk,93,RAA La Louviere (- 2009),1,0
 2002,7,2002/09/28,20:00:00,982854,16,Standard Luik,322,Sint-Truidense VV,2,2
 2002,7,2002/09/28,20:00:00,982855,867,KVC Westerlo,13,Germinal Beerschot Antwerpen,2,1
@@ -5686,12 +5679,10 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,8,2002/10/05,20:00:00,982859,44,RAEC Mons (- 2015),29,R Charleroi SC,4,1
 2002,8,2002/10/05,20:00:00,982860,322,Sint-Truidense VV,7,KAA Gent,6,4
 2002,8,2002/10/05,20:00:00,982861,30,Lierse SK (- 2018),1,R Antwerp FC,3,1
-2002,8,2002/10/05,20:00:00,982862,855,KFC Lommel SK (- 2003),867,KVC Westerlo,,
 2002,8,2002/10/06,15:00:00,982864,3,Club Brugge,200,Excelsior Mouscron (- 2009),5,0
 2002,8,2002/10/06,20:00:00,982865,35,RSC Anderlecht,290,KRC Genk,1,1
 2002,9,2002/10/19,20:00:00,982946,290,KRC Genk,968,KSK Beveren (- 2010),4,0
 2002,9,2002/10/19,20:00:00,982947,16,Standard Luik,13,Germinal Beerschot Antwerpen,2,1
-2002,9,2002/10/19,20:00:00,982948,25,KV Mechelen,855,KFC Lommel SK (- 2003),,
 2002,9,2002/10/19,20:00:00,982949,35,RSC Anderlecht,44,RAEC Mons (- 2015),2,1
 2002,9,2002/10/19,20:00:00,982950,29,R Charleroi SC,3,Club Brugge,2,3
 2002,9,2002/10/19,20:00:00,982951,1,R Antwerp FC,322,Sint-Truidense VV,1,3
@@ -5701,14 +5692,12 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,10,2002/10/26,18:00:00,984926,44,RAEC Mons (- 2015),290,KRC Genk,1,2
 2002,10,2002/10/26,20:00:00,984927,968,KSK Beveren (- 2010),867,KVC Westerlo,2,1
 2002,10,2002/10/26,20:00:00,984928,30,Lierse SK (- 2018),29,R Charleroi SC,2,1
-2002,10,2002/10/26,20:00:00,984929,855,KFC Lommel SK (- 2003),16,Standard Luik,,
 2002,10,2002/10/26,20:00:00,984930,13,Germinal Beerschot Antwerpen,7,KAA Gent,2,1
 2002,10,2002/10/28,20:00:00,984932,201,KSC Lokeren (- 2020),1,R Antwerp FC,2,1
 2002,10,2002/10/28,20:00:00,984931,93,RAA La Louviere (- 2009),25,KV Mechelen,1,1
 2002,10,2002/11/20,20:00:00,984933,322,Sint-Truidense VV,200,Excelsior Mouscron (- 2009),2,2
 2002,10,2002/12/07,15:00:00,984934,3,Club Brugge,35,RSC Anderlecht,2,1
 2002,11,2002/11/02,18:00:00,984959,44,RAEC Mons (- 2015),3,Club Brugge,1,2
-2002,11,2002/11/02,20:00:00,984963,7,KAA Gent,855,KFC Lommel SK (- 2003),,
 2002,11,2002/11/02,20:00:00,984960,16,Standard Luik,93,RAA La Louviere (- 2009),1,0
 2002,11,2002/11/02,20:00:00,984961,29,R Charleroi SC,322,Sint-Truidense VV,2,2
 2002,11,2002/11/02,20:00:00,984962,200,Excelsior Mouscron (- 2009),201,KSC Lokeren (- 2020),1,1
@@ -5720,7 +5709,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,12,2002/11/09,15:00:00,987492,3,Club Brugge,290,KRC Genk,4,0
 2002,12,2002/11/09,20:00:00,987493,93,RAA La Louviere (- 2009),7,KAA Gent,0,1
 2002,12,2002/11/09,20:00:00,987494,867,KVC Westerlo,25,KV Mechelen,2,0
-2002,12,2002/11/09,20:00:00,987495,855,KFC Lommel SK (- 2003),1,R Antwerp FC,,
 2002,12,2002/11/09,20:00:00,987496,13,Germinal Beerschot Antwerpen,200,Excelsior Mouscron (- 2009),0,2
 2002,12,2002/11/09,20:00:00,987497,201,KSC Lokeren (- 2020),29,R Charleroi SC,4,1
 2002,12,2002/11/10,15:00:00,987498,968,KSK Beveren (- 2010),16,Standard Luik,1,3
@@ -5733,18 +5721,15 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,13,2002/11/23,20:00:00,988097,29,R Charleroi SC,13,Germinal Beerschot Antwerpen,1,6
 2002,13,2002/11/23,20:00:00,988098,1,R Antwerp FC,93,RAA La Louviere (- 2009),2,1
 2002,13,2002/11/24,15:00:00,988100,7,KAA Gent,968,KSK Beveren (- 2010),2,1
-2002,13,2002/11/24,15:00:00,988099,200,Excelsior Mouscron (- 2009),855,KFC Lommel SK (- 2003),,
 2002,14,2002/11/30,20:00:00,988102,968,KSK Beveren (- 2010),1,R Antwerp FC,3,1
 2002,14,2002/11/30,20:00:00,988103,25,KV Mechelen,16,Standard Luik,1,1
 2002,14,2002/11/30,20:00:00,988104,867,KVC Westerlo,7,KAA Gent,1,0
 2002,14,2002/11/30,20:00:00,988105,201,KSC Lokeren (- 2020),44,RAEC Mons (- 2015),4,0
 2002,14,2002/11/30,20:00:00,2862427,93,RAA La Louviere (- 2009),200,Excelsior Mouscron (- 2009),2,0
 2002,14,2002/12/01,14:00:00,988106,13,Germinal Beerschot Antwerpen,35,RSC Anderlecht,1,2
-2002,14,2002/12/01,15:00:00,988107,855,KFC Lommel SK (- 2003),29,R Charleroi SC,,
 2002,14,2002/12/01,20:00:00,988108,322,Sint-Truidense VV,3,Club Brugge,5,2
 2002,14,2002/12/01,20:00:00,988109,30,Lierse SK (- 2018),290,KRC Genk,1,1
 2002,15,2002/12/04,20:30:00,988266,3,Club Brugge,201,KSC Lokeren (- 2020),5,0
-2002,15,2002/12/04,20:30:00,988267,35,RSC Anderlecht,855,KFC Lommel SK (- 2003),,
 2002,15,2002/12/07,20:00:00,988268,29,R Charleroi SC,93,RAA La Louviere (- 2009),1,1
 2002,15,2002/12/07,20:00:00,988269,200,Excelsior Mouscron (- 2009),968,KSK Beveren (- 2010),0,0
 2002,15,2002/12/07,20:00:00,988270,1,R Antwerp FC,867,KVC Westerlo,1,2
@@ -5753,7 +5738,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,15,2002/12/08,15:00:00,988273,7,KAA Gent,25,KV Mechelen,2,0
 2002,15,2002/12/08,20:00:00,988274,290,KRC Genk,16,Standard Luik,1,5
 2002,16,2002/12/13,20:00:00,991304,322,Sint-Truidense VV,290,KRC Genk,0,1
-2002,16,2002/12/13,20:00:00,991305,855,KFC Lommel SK (- 2003),44,RAEC Mons (- 2015),,
 2002,16,2002/12/14,20:00:00,991306,25,KV Mechelen,1,R Antwerp FC,0,2
 2002,16,2002/12/14,20:00:00,991307,201,KSC Lokeren (- 2020),30,Lierse SK (- 2018),1,1
 2002,16,2002/12/15,14:00:00,991308,13,Germinal Beerschot Antwerpen,3,Club Brugge,1,3
@@ -5764,7 +5748,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,17,2002/12/21,20:00:00,991418,44,RAEC Mons (- 2015),93,RAA La Louviere (- 2009),1,3
 2002,17,2002/12/21,20:00:00,991419,322,Sint-Truidense VV,201,KSC Lokeren (- 2020),2,0
 2002,17,2002/12/21,20:00:00,991420,30,Lierse SK (- 2018),13,Germinal Beerschot Antwerpen,2,1
-2002,17,2002/12/21,20:00:00,991421,3,Club Brugge,855,KFC Lommel SK (- 2003),,
 2002,17,2002/12/21,20:00:00,991422,35,RSC Anderlecht,968,KSK Beveren (- 2010),7,1
 2002,17,2002/12/21,20:00:00,991423,29,R Charleroi SC,867,KVC Westerlo,1,0
 2002,17,2002/12/21,20:00:00,991424,200,Excelsior Mouscron (- 2009),25,KV Mechelen,3,1
@@ -5775,13 +5758,11 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,18,2003/01/18,20:00:00,995614,1,R Antwerp FC,7,KAA Gent,1,4
 2002,18,2003/01/18,20:00:00,995615,3,Club Brugge,93,RAA La Louviere (- 2009),3,0
 2002,18,2003/01/19,15:00:00,995616,29,R Charleroi SC,25,KV Mechelen,3,0
-2002,18,2003/01/19,15:00:00,995617,30,Lierse SK (- 2018),855,KFC Lommel SK (- 2003),,
 2002,18,2003/01/19,15:00:00,995618,44,RAEC Mons (- 2015),968,KSK Beveren (- 2010),4,1
 2002,18,2003/01/19,15:00:00,995619,35,RSC Anderlecht,867,KVC Westerlo,0,2
 2002,18,2003/01/19,20:00:00,995620,201,KSC Lokeren (- 2020),290,KRC Genk,4,1
 2002,19,2003/01/25,20:00:00,995621,93,RAA La Louviere (- 2009),30,Lierse SK (- 2018),0,3
 2002,19,2003/01/25,20:00:00,995622,867,KVC Westerlo,44,RAEC Mons (- 2015),2,0
-2002,19,2003/01/25,20:00:00,995623,855,KFC Lommel SK (- 2003),322,Sint-Truidense VV,,
 2002,19,2003/01/25,20:00:00,995624,968,KSK Beveren (- 2010),3,Club Brugge,2,7
 2002,19,2003/01/25,20:00:00,995625,25,KV Mechelen,35,RSC Anderlecht,0,2
 2002,19,2003/01/25,20:00:00,995626,7,KAA Gent,200,Excelsior Mouscron (- 2009),2,0
@@ -5792,7 +5773,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,20,2003/04/11,20:30:00,995635,13,Germinal Beerschot Antwerpen,290,KRC Genk,2,1
 2002,20,2003/04/11,20:30:00,995638,322,Sint-Truidense VV,93,RAA La Louviere (- 2009),2,1
 2002,20,2003/04/12,20:00:00,995632,968,KSK Beveren (- 2010),30,Lierse SK (- 2018),7,1
-2002,20,2003/04/12,20:00:00,995636,201,KSC Lokeren (- 2020),855,KFC Lommel SK (- 2003),,
 2002,20,2003/04/13,15:00:00,995631,44,RAEC Mons (- 2015),25,KV Mechelen,2,0
 2002,20,2003/04/13,15:00:00,995634,29,R Charleroi SC,7,KAA Gent,1,2
 2002,20,2003/04/13,15:00:00,995637,200,Excelsior Mouscron (- 2009),1,R Antwerp FC,1,0
@@ -5804,7 +5784,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,21,2003/02/08,20:00:00,995645,1,R Antwerp FC,29,R Charleroi SC,3,1
 2002,21,2003/02/09,13:00:00,995646,7,KAA Gent,35,RSC Anderlecht,0,2
 2002,21,2003/02/09,15:00:00,995647,16,Standard Luik,44,RAEC Mons (- 2015),0,0
-2002,21,2003/02/09,15:00:00,995648,855,KFC Lommel SK (- 2003),13,Germinal Beerschot Antwerpen,,
 2002,21,2003/02/09,15:00:00,995649,968,KSK Beveren (- 2010),322,Sint-Truidense VV,2,1
 2002,22,2003/02/15,15:00:00,998895,3,Club Brugge,16,Standard Luik,4,2
 2002,22,2003/02/15,20:00:00,998896,30,Lierse SK (- 2018),25,KV Mechelen,3,0
@@ -5812,7 +5791,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,22,2003/02/15,20:00:00,998898,44,RAEC Mons (- 2015),7,KAA Gent,0,1
 2002,22,2003/02/15,20:00:00,998899,13,Germinal Beerschot Antwerpen,93,RAA La Louviere (- 2009),2,0
 2002,22,2003/02/15,20:00:00,998900,201,KSC Lokeren (- 2020),968,KSK Beveren (- 2010),1,2
-2002,22,2003/02/15,20:00:00,998901,855,KFC Lommel SK (- 2003),290,KRC Genk,,
 2002,22,2003/02/16,15:00:00,998902,29,R Charleroi SC,200,Excelsior Mouscron (- 2009),5,0
 2002,22,2003/02/16,15:00:00,998903,35,RSC Anderlecht,1,R Antwerp FC,4,1
 2002,23,2003/02/22,20:00:00,996219,25,KV Mechelen,322,Sint-Truidense VV,0,0
@@ -5822,11 +5800,9 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,23,2003/02/22,20:00:00,996217,16,Standard Luik,30,Lierse SK (- 2018),1,1
 2002,23,2003/02/22,20:00:00,996218,1,R Antwerp FC,44,RAEC Mons (- 2015),0,1
 2002,23,2003/02/23,13:00:00,996223,7,KAA Gent,3,Club Brugge,1,4
-2002,23,2003/02/23,15:00:00,996224,93,RAA La Louviere (- 2009),855,KFC Lommel SK (- 2003),,
 2002,23,2003/02/23,20:00:00,996225,200,Excelsior Mouscron (- 2009),35,RSC Anderlecht,1,0
 2002,24,2003/02/28,20:30:00,996226,322,Sint-Truidense VV,16,Standard Luik,0,1
 2002,24,2003/02/28,20:30:00,996227,93,RAA La Louviere (- 2009),290,KRC Genk,2,2
-2002,24,2003/03/01,20:00:00,996228,855,KFC Lommel SK (- 2003),968,KSK Beveren (- 2010),,
 2002,24,2003/03/01,20:00:00,996229,13,Germinal Beerschot Antwerpen,867,KVC Westerlo,1,1
 2002,24,2003/03/01,20:00:00,996230,44,RAEC Mons (- 2015),200,Excelsior Mouscron (- 2009),2,0
 2002,24,2003/03/01,20:00:00,996231,30,Lierse SK (- 2018),7,KAA Gent,2,1
@@ -5834,7 +5810,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,24,2003/03/02,15:00:00,996233,201,KSC Lokeren (- 2020),25,KV Mechelen,5,0
 2002,24,2003/03/02,20:00:00,996234,35,RSC Anderlecht,29,R Charleroi SC,2,0
 2002,25,2003/03/07,20:30:00,996235,16,Standard Luik,201,KSC Lokeren (- 2020),1,2
-2002,25,2003/03/08,20:00:00,996236,867,KVC Westerlo,855,KFC Lommel SK (- 2003),,
 2002,25,2003/03/08,20:00:00,996237,25,KV Mechelen,13,Germinal Beerschot Antwerpen,2,0
 2002,25,2003/03/08,20:00:00,996238,29,R Charleroi SC,44,RAEC Mons (- 2015),2,1
 2002,25,2003/03/08,20:00:00,996239,7,KAA Gent,322,Sint-Truidense VV,3,0
@@ -5843,7 +5818,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,25,2003/03/09,15:00:00,996242,968,KSK Beveren (- 2010),93,RAA La Louviere (- 2009),0,3
 2002,25,2003/03/09,20:00:00,996243,290,KRC Genk,35,RSC Anderlecht,0,1
 2002,26,2003/03/15,20:00:00,999054,968,KSK Beveren (- 2010),290,KRC Genk,1,4
-2002,26,2003/03/15,20:00:00,999055,855,KFC Lommel SK (- 2003),25,KV Mechelen,,
 2002,26,2003/03/15,20:00:00,999056,3,Club Brugge,29,R Charleroi SC,1,2
 2002,26,2003/03/15,20:00:00,999057,322,Sint-Truidense VV,1,R Antwerp FC,1,0
 2002,26,2003/03/15,20:00:00,999058,201,KSC Lokeren (- 2020),7,KAA Gent,5,1
@@ -5852,7 +5826,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,26,2003/03/16,15:00:00,999061,13,Germinal Beerschot Antwerpen,16,Standard Luik,0,1
 2002,26,2003/03/16,20:00:00,999062,44,RAEC Mons (- 2015),35,RSC Anderlecht,1,2
 2002,27,2003/03/22,20:00:00,1000216,29,R Charleroi SC,30,Lierse SK (- 2018),0,1
-2002,27,2003/03/22,20:00:00,1000217,16,Standard Luik,855,KFC Lommel SK (- 2003),,
 2002,27,2003/03/22,20:00:00,1000218,7,KAA Gent,13,Germinal Beerschot Antwerpen,1,0
 2002,27,2003/03/22,20:00:00,1000219,1,R Antwerp FC,201,KSC Lokeren (- 2020),1,2
 2002,27,2003/03/22,20:00:00,1000214,290,KRC Genk,44,RAEC Mons (- 2015),2,0
@@ -5865,7 +5838,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,28,2003/04/05,20:00:00,1000225,867,KVC Westerlo,290,KRC Genk,3,1
 2002,28,2003/04/05,20:00:00,1000226,968,KSK Beveren (- 2010),25,KV Mechelen,6,0
 2002,28,2003/04/05,20:00:00,1000227,201,KSC Lokeren (- 2020),200,Excelsior Mouscron (- 2009),3,2
-2002,28,2003/04/05,20:00:00,1000228,855,KFC Lommel SK (- 2003),7,KAA Gent,,
 2002,28,2003/04/06,15:00:00,1000229,13,Germinal Beerschot Antwerpen,1,R Antwerp FC,1,1
 2002,28,2003/04/06,15:00:00,1000230,322,Sint-Truidense VV,29,R Charleroi SC,2,1
 2002,28,2003/04/06,20:00:00,1000231,30,Lierse SK (- 2018),35,RSC Anderlecht,0,1
@@ -5873,7 +5845,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,29,2003/04/19,20:00:00,1000233,35,RSC Anderlecht,322,Sint-Truidense VV,2,0
 2002,29,2003/04/19,20:00:00,1000234,44,RAEC Mons (- 2015),30,Lierse SK (- 2018),2,1
 2002,29,2003/04/19,20:00:00,1000235,25,KV Mechelen,867,KVC Westerlo,0,4
-2002,29,2003/04/19,20:00:00,1000236,1,R Antwerp FC,855,KFC Lommel SK (- 2003),,
 2002,29,2003/04/19,20:00:00,1000237,7,KAA Gent,93,RAA La Louviere (- 2009),3,2
 2002,29,2003/04/20,15:00:00,1000238,16,Standard Luik,968,KSK Beveren (- 2010),2,0
 2002,29,2003/04/20,15:00:00,1000239,200,Excelsior Mouscron (- 2009),13,Germinal Beerschot Antwerpen,1,6
@@ -5882,7 +5853,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,30,2003/04/26,20:00:00,1000737,25,KV Mechelen,290,KRC Genk,2,6
 2002,30,2003/04/26,20:00:00,1001770,867,KVC Westerlo,16,Standard Luik,2,3
 2002,30,2003/04/26,20:00:00,1001771,13,Germinal Beerschot Antwerpen,29,R Charleroi SC,1,1
-2002,30,2003/04/26,20:00:00,1003324,855,KFC Lommel SK (- 2003),200,Excelsior Mouscron (- 2009),,
 2002,30,2003/04/26,20:00:00,1003326,93,RAA La Louviere (- 2009),1,R Antwerp FC,1,1
 2002,30,2003/04/27,15:00:00,1000765,322,Sint-Truidense VV,44,RAEC Mons (- 2015),3,4
 2002,30,2003/04/27,15:00:00,1000766,968,KSK Beveren (- 2010),7,KAA Gent,0,3
@@ -5893,13 +5863,11 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,31,2003/05/03,20:00:00,1003317,7,KAA Gent,867,KVC Westerlo,3,2
 2002,31,2003/05/03,20:00:00,1003318,16,Standard Luik,25,KV Mechelen,0,0
 2002,31,2003/05/03,20:00:00,1003319,290,KRC Genk,30,Lierse SK (- 2018),5,2
-2002,31,2003/05/04,15:00:00,1003320,29,R Charleroi SC,855,KFC Lommel SK (- 2003),,
 2002,31,2003/05/04,15:00:00,1003321,35,RSC Anderlecht,13,Germinal Beerschot Antwerpen,4,0
 2002,31,2003/05/04,20:00:00,1003322,44,RAEC Mons (- 2015),201,KSC Lokeren (- 2020),0,0
 2002,32,2003/05/10,20:00:00,1003327,93,RAA La Louviere (- 2009),29,R Charleroi SC,2,2
 2002,32,2003/05/10,20:00:00,1003328,25,KV Mechelen,7,KAA Gent,1,0
 2002,32,2003/05/10,20:00:00,1003329,867,KVC Westerlo,1,R Antwerp FC,2,1
-2002,32,2003/05/10,20:00:00,1003330,855,KFC Lommel SK (- 2003),35,RSC Anderlecht,,
 2002,32,2003/05/10,20:00:00,1003331,322,Sint-Truidense VV,30,Lierse SK (- 2018),2,1
 2002,32,2003/05/10,20:00:00,1003332,16,Standard Luik,290,KRC Genk,0,1
 2002,32,2003/05/11,15:00:00,1003333,968,KSK Beveren (- 2010),200,Excelsior Mouscron (- 2009),3,0
@@ -5913,14 +5881,12 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,33,2003/05/17,20:00:00,1003341,200,Excelsior Mouscron (- 2009),867,KVC Westerlo,0,4
 2002,33,2003/05/18,15:00:00,1003344,7,KAA Gent,16,Standard Luik,0,5
 2002,33,2003/05/18,15:00:00,1003342,3,Club Brugge,13,Germinal Beerschot Antwerpen,1,1
-2002,33,2003/05/18,15:00:00,1003343,44,RAEC Mons (- 2015),855,KFC Lommel SK (- 2003),,
 2002,34,2003/05/24,20:00:00,1003345,25,KV Mechelen,200,Excelsior Mouscron (- 2009),3,2
 2002,34,2003/05/24,20:00:00,1003346,867,KVC Westerlo,29,R Charleroi SC,1,1
 2002,34,2003/05/24,20:00:00,1003347,93,RAA La Louviere (- 2009),44,RAEC Mons (- 2015),1,0
 2002,34,2003/05/24,20:00:00,1003348,290,KRC Genk,7,KAA Gent,3,1
 2002,34,2003/05/25,15:00:00,1003349,16,Standard Luik,1,R Antwerp FC,1,3
 2002,34,2003/05/25,15:00:00,1003350,968,KSK Beveren (- 2010),35,RSC Anderlecht,5,0
-2002,34,2003/05/25,15:00:00,1003351,855,KFC Lommel SK (- 2003),3,Club Brugge,,
 2002,34,2003/05/25,15:00:00,1003352,13,Germinal Beerschot Antwerpen,30,Lierse SK (- 2018),1,2
 2002,34,2003/05/25,20:00:00,1003353,201,KSC Lokeren (- 2020),322,Sint-Truidense VV,0,0
 2001,1,2001/08/11,20:00:00,991407,35,RSC Anderlecht,1,R Antwerp FC,3,0

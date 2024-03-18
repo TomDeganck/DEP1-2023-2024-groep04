@@ -11245,7 +11245,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,1,8,KAA Gent,7,1,0,1,0,0,0,0,1
 2002,1,8,Antwerp FC,1,1,0,1,0,0,0,0,1
 2002,1,10,Lierse SK,30,0,0,0,0,0,0,0,0
-2002,1,10,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,1,12,St-Truidense VV,373,1,0,0,1,2,3,-1,0
 2002,1,12,KRC Genk,322,1,0,0,1,2,3,-1,0
 2002,1,14,La Louviere,94,1,0,0,1,1,2,-1,0
@@ -11268,7 +11267,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,2,13,KAA Gent,7,2,0,1,1,1,2,-1,1
 2002,2,14,Antwerp FC,1,2,0,1,1,2,4,-2,1
 2002,2,15,Standard Luik,16,2,0,1,1,3,6,-3,1
-2002,2,16,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,2,17,St-Truidense VV,373,1,0,0,1,2,3,-1,0
 2002,2,18,KVC Westerlo,2024,2,0,0,2,1,4,-3,0
 2002,3,1,RSC Anderlecht,35,3,3,0,0,8,1,7,9
@@ -11287,7 +11285,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,3,14,R Charleroi SC,22,3,0,1,2,4,6,-2,1
 2002,3,15,La Louviere,94,3,0,1,2,3,5,-2,1
 2002,3,16,Standard Luik,16,3,0,1,2,3,8,-5,1
-2002,3,17,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,3,18,KVC Westerlo,2024,3,0,0,3,1,6,-5,0
 2002,4,1,Club Brugge,3,4,4,0,0,11,1,10,12
 2002,4,2,RSC Anderlecht,35,4,3,1,0,10,3,7,10
@@ -11306,7 +11303,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,4,15,R Charleroi SC,22,4,0,2,2,5,7,-2,2
 2002,4,16,La Louviere,94,4,0,2,2,4,6,-2,2
 2002,4,17,Standard Luik,16,4,0,1,3,3,9,-6,1
-2002,4,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,5,1,Club Brugge,3,5,5,0,0,13,2,11,15
 2002,5,2,Exc. Mouscron,224,5,3,1,1,15,7,8,10
 2002,5,3,RSC Anderlecht,35,5,3,1,1,11,5,6,10
@@ -11324,7 +11320,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,5,15,KSK Beveren,2300,5,1,0,4,4,15,-11,3
 2002,5,16,R Charleroi SC,22,5,0,2,3,5,13,-8,2
 2002,5,17,Standard Luik,16,5,0,1,4,4,11,-7,1
-2002,5,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,6,1,Club Brugge,3,6,6,0,0,14,2,12,18
 2002,6,2,RSC Anderlecht,35,6,4,1,1,17,8,9,13
 2002,6,3,KSC Lokeren,282,5,4,1,0,12,4,8,13
@@ -11342,7 +11337,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,6,15,KVC Westerlo,2024,6,1,0,5,2,13,-11,3
 2002,6,16,KSK Beveren,2300,6,1,0,5,5,17,-12,3
 2002,6,17,Standard Luik,16,6,0,1,5,4,13,-9,1
-2002,6,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,7,1,Club Brugge,3,7,6,1,0,16,4,12,19
 2002,7,2,RSC Anderlecht,35,7,5,1,1,20,9,11,16
 2002,7,3,KSC Lokeren,282,6,5,1,0,15,6,9,16
@@ -11360,7 +11354,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,7,15,R Charleroi SC,22,7,0,3,4,6,16,-10,3
 2002,7,16,KSK Beveren,2300,6,1,0,5,5,17,-12,3
 2002,7,17,Standard Luik,16,7,0,2,5,6,15,-9,2
-2002,7,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,8,1,Club Brugge,3,8,7,1,0,21,4,17,22
 2002,8,2,RSC Anderlecht,35,8,5,2,1,21,10,11,17
 2002,8,3,KSC Lokeren,282,7,5,2,0,18,9,9,17
@@ -11378,7 +11371,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,8,15,Standard Luik,16,8,0,3,5,9,18,-9,3
 2002,8,16,R Charleroi SC,22,8,0,3,5,7,20,-13,3
 2002,8,17,KSK Beveren,2300,7,1,0,6,6,19,-13,3
-2002,8,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,9,1,Club Brugge,3,9,8,1,0,24,6,18,25
 2002,9,2,RSC Anderlecht,35,9,6,2,1,23,11,12,20
 2002,9,3,KSC Lokeren,282,8,6,2,0,21,11,10,20
@@ -11396,7 +11388,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,9,15,KV Mechelen,25,8,1,2,5,7,20,-13,5
 2002,9,16,R Charleroi SC,22,9,0,3,6,9,23,-14,3
 2002,9,17,KSK Beveren,2300,8,1,0,7,6,23,-17,3
-2002,9,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,10,1,Club Brugge,3,10,9,1,0,26,7,19,28
 2002,10,2,KSC Lokeren,282,9,7,2,0,23,12,11,23
 2002,10,3,St-Truidense VV,373,9,6,2,1,31,15,16,20
@@ -11414,7 +11405,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,10,15,KVC Westerlo,2024,9,2,0,7,5,19,-14,6
 2002,10,16,KSK Beveren,2300,9,2,0,7,8,24,-16,6
 2002,10,17,R Charleroi SC,22,10,0,3,7,10,25,-15,3
-2002,10,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,11,1,Club Brugge,3,11,10,1,0,28,8,20,31
 2002,11,2,KSC Lokeren,282,10,7,3,0,24,13,11,24
 2002,11,3,Lierse SK,30,10,7,2,1,21,7,14,23
@@ -11432,7 +11422,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,11,15,KVC Westerlo,2024,10,2,1,7,6,20,-14,7
 2002,11,16,KV Mechelen,25,10,1,3,6,8,23,-15,6
 2002,11,17,R Charleroi SC,22,11,0,4,7,12,27,-15,4
-2002,11,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,12,1,Club Brugge,3,12,11,1,0,32,8,24,34
 2002,12,2,KSC Lokeren,282,11,8,3,0,28,14,14,27
 2002,12,3,St-Truidense VV,373,11,7,3,1,36,18,18,24
@@ -11450,7 +11439,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,12,15,KSK Beveren,2300,11,3,0,8,11,27,-16,9
 2002,12,16,KV Mechelen,25,11,1,3,7,8,25,-17,6
 2002,12,17,R Charleroi SC,22,12,0,4,8,13,31,-18,4
-2002,12,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,13,1,Club Brugge,3,13,12,1,0,35,8,27,37
 2002,13,2,KSC Lokeren,282,12,8,3,1,28,16,12,27
 2002,13,3,St-Truidense VV,373,12,7,3,2,36,21,15,24
@@ -11468,7 +11456,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,13,15,KSK Beveren,2300,12,3,0,9,12,29,-17,9
 2002,13,16,KV Mechelen,25,12,1,3,8,8,34,-26,6
 2002,13,17,R Charleroi SC,22,13,0,4,9,14,37,-23,4
-2002,13,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,14,1,Club Brugge,3,14,12,1,1,37,13,24,37
 2002,14,2,KSC Lokeren,282,13,9,3,1,32,16,16,30
 2002,14,3,St-Truidense VV,373,13,8,3,2,41,23,18,27
@@ -11486,7 +11473,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,14,15,KSK Beveren,2300,13,4,0,9,15,30,-15,12
 2002,14,16,KV Mechelen,25,13,1,4,8,9,35,-26,7
 2002,14,17,R Charleroi SC,22,13,0,4,9,14,37,-23,4
-2002,14,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,15,1,Club Brugge,3,15,13,1,1,42,13,29,40
 2002,15,2,St-Truidense VV,373,14,9,3,2,43,23,20,30
 2002,15,3,KSC Lokeren,282,14,9,3,2,32,21,11,30
@@ -11504,7 +11490,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,15,15,KSK Beveren,2300,14,4,1,9,15,30,-15,13
 2002,15,16,KV Mechelen,25,14,1,4,9,9,37,-28,7
 2002,15,17,R Charleroi SC,22,14,0,5,9,15,38,-23,5
-2002,15,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,16,1,Club Brugge,3,16,14,1,1,45,14,31,43
 2002,16,2,KSC Lokeren,282,15,9,4,2,33,22,11,31
 2002,16,3,St-Truidense VV,373,15,9,3,3,43,24,19,30
@@ -11522,7 +11507,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,16,15,Germ. Beerschot,3530,15,4,2,9,27,34,-7,14
 2002,16,16,KV Mechelen,25,15,1,4,10,9,39,-30,7
 2002,16,17,R Charleroi SC,22,15,0,5,10,15,41,-26,5
-2002,16,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,17,1,Club Brugge,3,16,14,1,1,45,14,31,43
 2002,17,2,St-Truidense VV,373,16,10,3,3,45,24,21,33
 2002,17,3,RSC Anderlecht,35,16,10,2,4,39,21,18,32
@@ -11540,7 +11524,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,17,15,Germ. Beerschot,3530,16,4,2,10,28,36,-8,14
 2002,17,16,R Charleroi SC,22,16,1,5,10,16,41,-25,8
 2002,17,17,KV Mechelen,25,16,1,4,11,10,42,-32,7
-2002,17,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,18,1,Club Brugge,3,17,15,1,1,48,14,34,46
 2002,18,2,St-Truidense VV,373,17,10,4,3,46,25,21,34
 2002,18,3,KSC Lokeren,282,17,10,4,3,37,25,12,34
@@ -11558,7 +11541,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,18,15,Germ. Beerschot,3530,17,4,3,10,29,37,-8,15
 2002,18,16,R Charleroi SC,22,17,2,5,10,19,41,-22,11
 2002,18,17,KV Mechelen,25,17,1,4,12,10,45,-35,7
-2002,18,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,19,1,Club Brugge,3,18,16,1,1,55,16,39,49
 2002,19,2,KSC Lokeren,282,18,11,4,3,38,25,13,37
 2002,19,3,RSC Anderlecht,35,18,11,2,5,41,23,18,35
@@ -11576,7 +11558,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,19,15,Germ. Beerschot,3530,18,4,3,11,29,38,-9,15
 2002,19,16,R Charleroi SC,22,18,2,5,11,19,44,-25,11
 2002,19,17,KV Mechelen,25,18,1,4,13,10,47,-37,7
-2002,19,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,20,1,Club Brugge,3,19,17,1,1,58,16,42,52
 2002,20,2,RSC Anderlecht,35,19,12,2,5,43,24,19,38
 2002,20,3,St-Truidense VV,373,18,11,4,3,48,26,22,37
@@ -11594,7 +11575,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,20,15,La Louviere,94,19,4,5,10,20,26,-6,17
 2002,20,16,R Charleroi SC,22,19,2,5,12,20,46,-26,11
 2002,20,17,KV Mechelen,25,19,1,4,14,10,49,-39,7
-2002,20,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,21,1,Club Brugge,3,20,18,1,1,66,16,50,55
 2002,21,2,RSC Anderlecht,35,20,13,2,5,45,24,21,41
 2002,21,3,KSC Lokeren,282,19,12,4,3,42,27,15,40
@@ -11612,7 +11592,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,21,15,La Louviere,94,20,4,5,11,22,30,-8,17
 2002,21,16,R Charleroi SC,22,20,2,5,13,21,49,-28,11
 2002,21,17,KV Mechelen,25,20,1,4,15,10,57,-47,7
-2002,21,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,22,1,Club Brugge,3,21,19,1,1,70,18,52,58
 2002,22,2,RSC Anderlecht,35,21,14,2,5,49,25,24,44
 2002,22,3,St-Truidense VV,373,20,12,4,4,50,28,22,40
@@ -11630,7 +11609,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,22,15,La Louviere,94,21,4,5,12,22,32,-10,17
 2002,22,16,R Charleroi SC,22,21,3,5,13,26,49,-23,14
 2002,22,17,KV Mechelen,25,21,1,4,16,10,60,-50,7
-2002,22,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,23,1,Club Brugge,3,22,20,1,1,74,19,55,61
 2002,23,2,RSC Anderlecht,35,22,14,2,6,49,26,23,44
 2002,23,3,KSC Lokeren,282,21,13,4,4,46,30,16,43
@@ -11648,7 +11626,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,23,15,La Louviere,94,21,4,5,12,22,32,-10,17
 2002,23,16,R Charleroi SC,22,22,3,5,14,26,52,-26,14
 2002,23,17,KV Mechelen,25,22,1,5,16,10,60,-50,8
-2002,23,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,24,1,Club Brugge,3,23,21,1,1,75,19,56,64
 2002,24,2,RSC Anderlecht,35,23,15,2,6,51,26,25,47
 2002,24,3,KSC Lokeren,282,22,14,4,4,51,30,21,46
@@ -11666,7 +11643,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,24,15,La Louviere,94,22,4,6,12,24,34,-10,18
 2002,24,16,R Charleroi SC,22,23,3,5,15,26,54,-28,14
 2002,24,17,KV Mechelen,25,23,1,5,17,10,65,-55,8
-2002,24,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,25,1,Club Brugge,3,24,22,1,1,79,19,60,67
 2002,25,2,RSC Anderlecht,35,24,16,2,6,52,26,26,50
 2002,25,3,KSC Lokeren,282,23,15,4,4,53,31,22,49
@@ -11684,7 +11660,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,25,15,La Louviere,94,23,5,6,12,27,34,-7,21
 2002,25,16,R Charleroi SC,22,24,4,5,15,28,55,-27,17
 2002,25,17,KV Mechelen,25,24,2,5,17,12,65,-53,11
-2002,25,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,26,1,Club Brugge,3,25,22,1,2,80,21,59,67
 2002,26,2,RSC Anderlecht,35,25,17,2,6,54,27,27,53
 2002,26,3,KSC Lokeren,282,24,16,4,4,58,32,26,52
@@ -11702,7 +11677,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,26,15,Germ. Beerschot,3530,24,6,4,14,35,46,-11,22
 2002,26,16,R Charleroi SC,22,25,5,5,15,30,56,-26,20
 2002,26,17,KV Mechelen,25,24,2,5,17,12,65,-53,11
-2002,26,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,27,1,Club Brugge,3,26,22,1,3,81,26,55,67
 2002,27,2,RSC Anderlecht,35,26,18,2,6,59,28,31,56
 2002,27,3,KSC Lokeren,282,25,17,4,4,60,33,27,55
@@ -11720,7 +11694,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,27,15,Germ. Beerschot,3530,25,6,4,15,35,47,-12,22
 2002,27,16,R Charleroi SC,22,26,5,5,16,30,57,-27,20
 2002,27,17,KV Mechelen,25,25,2,5,18,12,66,-54,11
-2002,27,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,28,1,Club Brugge,3,27,23,1,3,85,28,57,70
 2002,28,2,RSC Anderlecht,35,27,19,2,6,60,28,32,59
 2002,28,3,KSC Lokeren,282,26,18,4,4,63,35,28,58
@@ -11738,7 +11711,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,28,15,Germ. Beerschot,3530,26,6,5,15,36,48,-12,23
 2002,28,16,R Charleroi SC,22,27,5,5,17,31,59,-28,20
 2002,28,17,KV Mechelen,25,26,2,5,19,12,72,-60,11
-2002,28,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,29,1,Club Brugge,3,28,24,1,3,88,28,60,73
 2002,29,2,RSC Anderlecht,35,28,20,2,6,62,28,34,62
 2002,29,3,KSC Lokeren,282,27,18,4,5,66,39,27,58
@@ -11756,7 +11728,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,29,15,Antwerp FC,1,27,6,6,15,34,50,-16,24
 2002,29,16,R Charleroi SC,22,28,6,5,17,35,62,-27,23
 2002,29,17,KV Mechelen,25,27,2,5,20,12,76,-64,11
-2002,29,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,30,1,Club Brugge,3,29,24,2,3,89,29,60,74
 2002,30,2,RSC Anderlecht,35,29,21,2,6,67,28,39,65
 2002,30,3,KSC Lokeren,282,28,18,4,6,66,44,22,58
@@ -11774,7 +11745,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,30,15,Antwerp FC,1,28,6,7,15,35,51,-16,25
 2002,30,16,R Charleroi SC,22,29,6,6,17,36,63,-27,24
 2002,30,17,KV Mechelen,25,28,2,5,21,14,82,-68,11
-2002,30,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,31,1,Club Brugge,3,30,24,3,3,90,30,60,75
 2002,31,2,RSC Anderlecht,35,30,22,2,6,71,28,43,68
 2002,31,3,KSC Lokeren,282,29,18,5,6,66,44,22,59
@@ -11792,7 +11762,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,31,15,La Louviere,94,29,6,8,15,31,41,-10,26
 2002,31,16,R Charleroi SC,22,29,6,6,17,36,63,-27,24
 2002,31,17,KV Mechelen,25,29,2,6,21,14,82,-68,12
-2002,31,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,32,1,Club Brugge,3,31,25,3,3,95,32,63,78
 2002,32,2,RSC Anderlecht,35,30,22,2,6,71,28,43,68
 2002,32,3,KSC Lokeren,282,30,18,5,7,68,49,19,59
@@ -11810,7 +11779,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,32,15,La Louviere,94,30,6,9,15,33,43,-10,27
 2002,32,16,R Charleroi SC,22,30,6,7,17,38,65,-27,25
 2002,32,17,KV Mechelen,25,30,3,6,21,15,82,-67,15
-2002,32,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,33,1,Club Brugge,3,32,25,4,3,96,33,63,79
 2002,33,2,RSC Anderlecht,35,31,23,2,6,72,28,44,71
 2002,33,3,KSC Lokeren,282,31,18,5,8,69,51,18,59
@@ -11828,7 +11796,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,33,15,La Louviere,94,31,6,9,16,33,44,-11,27
 2002,33,16,R Charleroi SC,22,31,6,8,17,38,65,-27,26
 2002,33,17,KV Mechelen,25,31,3,6,22,15,84,-69,15
-2002,33,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2002,34,1,Club Brugge,3,32,25,4,3,96,33,63,79
 2002,34,2,RSC Anderlecht,35,32,23,2,7,72,33,39,71
 2002,34,3,KSC Lokeren,282,32,18,6,8,69,51,18,60
@@ -11846,7 +11813,6 @@ seizoen,speeldag,stand,naam_ploeg,id_ploeg,aantal_wedstrijden,aantal_gewonnen,aa
 2002,34,15,La Louviere,94,32,7,9,16,34,44,-10,30
 2002,34,16,R Charleroi SC,22,32,6,9,17,39,66,-27,27
 2002,34,17,KV Mechelen,25,32,4,6,22,18,86,-68,18
-2002,34,18,Lommel SK,1986,0,0,0,0,0,0,0,0
 2001,1,1,Germ. Beerschot,3530,1,1,0,0,8,2,6,3
 2001,1,2,Exc. Mouscron,224,1,1,0,0,5,0,5,3
 2001,1,3,KRC Genk,322,1,1,0,0,5,1,4,3

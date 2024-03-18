@@ -3542,7 +3542,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2010,30,2011/03/20,18:00:00,1083859,373,Sint-Truidense VV,282,KSC Lokeren,0,2
 2010,30,2011/03/20,18:00:00,1083860,2024,KVC Westerlo,22,R Charleroi SC,2,2
 2009,1,2009/07/31,20:30:00,955116,16,Standard Luik,373,Sint-Truidense VV,2,2
-2009,1,2009/08/01,20:00:00,955117,322,KRC Genk,224,Excelsior Mouscron,,
 2009,1,2009/08/01,20:00:00,955120,134,KSV Roeselare,3530,Germinal,1,1
 2009,1,2009/08/01,20:00:00,955121,19,KV Kortrijk,35,RSC Anderlecht,0,2
 2009,1,2009/08/01,20:00:00,955122,25,KV Mechelen,2024,KVC Westerlo,4,1
@@ -3553,7 +3552,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,2,2009/08/08,20:00:00,958259,35,RSC Anderlecht,12,Cercle Brugge,3,2
 2009,2,2009/08/08,20:00:00,958260,373,Sint-Truidense VV,22,R Charleroi SC,0,0
 2009,2,2009/08/08,20:00:00,958261,5381,SV Zulte Waregem,322,KRC Genk,2,2
-2009,2,2009/08/08,20:00:00,958262,224,Excelsior Mouscron,134,KSV Roeselare,,
 2009,2,2009/08/08,20:00:00,958263,2024,KVC Westerlo,19,KV Kortrijk,1,1
 2009,2,2009/08/09,18:00:00,958264,7,KAA Gent,25,KV Mechelen,2,1
 2009,2,2009/08/09,20:30:00,958265,3,Club Brugge,282,KSC Lokeren,2,0
@@ -3563,18 +3561,15 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,3,2009/08/15,20:00:00,958280,282,KSC Lokeren,373,Sint-Truidense VV,1,2
 2009,3,2009/08/15,20:00:00,958281,25,KV Mechelen,3,Club Brugge,2,1
 2009,3,2009/08/15,20:00:00,958282,134,KSV Roeselare,16,Standard Luik,1,5
-2009,3,2009/08/16,18:00:00,958283,19,KV Kortrijk,224,Excelsior Mouscron,,
 2009,3,2009/08/16,20:30:00,958284,22,R Charleroi SC,3530,Germinal,1,0
 2009,4,2009/08/21,20:30:00,958296,16,Standard Luik,22,R Charleroi SC,1,1
 2009,4,2009/08/22,20:00:00,958298,373,Sint-Truidense VV,134,KSV Roeselare,2,1
 2009,4,2009/08/22,20:00:00,958299,5381,SV Zulte Waregem,35,RSC Anderlecht,0,2
 2009,4,2009/08/22,20:00:00,958300,7,KAA Gent,282,KSC Lokeren,4,1
-2009,4,2009/08/22,20:00:00,958301,224,Excelsior Mouscron,12,Cercle Brugge,,
 2009,4,2009/08/22,20:00:00,958302,3530,Germinal,25,KV Mechelen,1,3
 2009,4,2009/08/23,18:00:00,958297,3,Club Brugge,19,KV Kortrijk,2,2
 2009,4,2009/08/23,20:30:00,958303,2024,KVC Westerlo,322,KRC Genk,0,1
 2009,5,2009/08/28,20:30:00,970886,2024,KVC Westerlo,5381,SV Zulte Waregem,1,2
-2009,5,2009/08/29,20:00:00,970887,282,KSC Lokeren,224,Excelsior Mouscron,,
 2009,5,2009/08/29,20:00:00,970888,19,KV Kortrijk,7,KAA Gent,1,0
 2009,5,2009/08/29,20:00:00,970889,25,KV Mechelen,373,Sint-Truidense VV,0,2
 2009,5,2009/08/29,20:00:00,970890,134,KSV Roeselare,22,R Charleroi SC,1,3
@@ -3586,11 +3581,9 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,6,2009/09/12,20:00:00,970896,5381,SV Zulte Waregem,19,KV Kortrijk,0,2
 2009,6,2009/09/12,20:00:00,970897,22,R Charleroi SC,12,Cercle Brugge,0,4
 2009,6,2009/09/12,20:00:00,970898,7,KAA Gent,134,KSV Roeselare,5,1
-2009,6,2009/09/12,20:00:00,970899,224,Excelsior Mouscron,2024,KVC Westerlo,0,1
 2009,6,2009/09/13,18:00:00,970900,3530,Germinal,282,KSC Lokeren,2,1
 2009,6,2009/09/13,20:30:00,970901,3,Club Brugge,322,KRC Genk,1,1
 2009,7,2009/09/18,20:30:00,973459,322,KRC Genk,22,R Charleroi SC,1,2
-2009,7,2009/09/19,20:00:00,973460,5381,SV Zulte Waregem,224,Excelsior Mouscron,,
 2009,7,2009/09/19,20:00:00,973461,12,Cercle Brugge,3530,Germinal,1,2
 2009,7,2009/09/19,20:00:00,973462,282,KSC Lokeren,16,Standard Luik,1,3
 2009,7,2009/09/19,20:00:00,973463,19,KV Kortrijk,373,Sint-Truidense VV,0,1
@@ -3604,16 +3597,13 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,8,2009/09/23,20:30:00,973659,134,KSV Roeselare,282,KSC Lokeren,1,2
 2009,8,2009/09/23,20:30:00,973660,3530,Germinal,19,KV Kortrijk,1,0
 2009,8,2009/09/23,20:30:00,973661,3,Club Brugge,5381,SV Zulte Waregem,3,1
-2009,8,2009/09/24,20:30:00,973662,224,Excelsior Mouscron,35,RSC Anderlecht,,
 2009,9,2009/09/26,20:00:00,973787,19,KV Kortrijk,16,Standard Luik,0,2
 2009,9,2009/09/26,20:00:00,973788,2024,KVC Westerlo,373,Sint-Truidense VV,2,0
 2009,9,2009/09/26,20:00:00,973789,282,KSC Lokeren,22,R Charleroi SC,4,1
 2009,9,2009/09/26,20:00:00,973790,5381,SV Zulte Waregem,7,KAA Gent,3,1
 2009,9,2009/09/26,20:00:00,973791,322,KRC Genk,134,KSV Roeselare,1,1
 2009,9,2009/09/27,18:00:00,973792,35,RSC Anderlecht,3530,Germinal,1,0
-2009,9,2009/09/27,20:30:00,973793,224,Excelsior Mouscron,3,Club Brugge,,
 2009,9,2009/09/28,20:30:00,973794,12,Cercle Brugge,25,KV Mechelen,1,0
-2009,10,2009/10/02,20:30:00,975022,7,KAA Gent,224,Excelsior Mouscron,,
 2009,10,2009/10/03,20:00:00,975023,3530,Germinal,2024,KVC Westerlo,3,1
 2009,10,2009/10/03,20:00:00,975024,134,KSV Roeselare,12,Cercle Brugge,3,2
 2009,10,2009/10/03,20:00:00,975025,25,KV Mechelen,282,KSC Lokeren,2,0
@@ -3625,19 +3615,16 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,11,2009/10/17,20:00:00,978226,282,KSC Lokeren,12,Cercle Brugge,1,1
 2009,11,2009/10/17,20:00:00,978227,35,RSC Anderlecht,22,R Charleroi SC,2,0
 2009,11,2009/10/17,20:00:00,978228,2024,KVC Westerlo,16,Standard Luik,2,0
-2009,11,2009/10/17,20:00:00,978229,224,Excelsior Mouscron,373,Sint-Truidense VV,,
 2009,11,2009/10/17,20:00:00,978230,19,KV Kortrijk,134,KSV Roeselare,2,0
 2009,11,2009/10/18,18:00:00,978231,322,KRC Genk,25,KV Mechelen,1,2
 2009,11,2009/10/18,20:30:00,978232,3,Club Brugge,7,KAA Gent,1,0
 2009,12,2009/10/23,20:30:00,978242,282,KSC Lokeren,322,KRC Genk,0,2
-2009,12,2009/10/24,20:00:00,978243,3530,Germinal,224,Excelsior Mouscron,,
 2009,12,2009/10/24,20:00:00,978244,16,Standard Luik,5381,SV Zulte Waregem,1,1
 2009,12,2009/10/24,20:00:00,978245,373,Sint-Truidense VV,7,KAA Gent,1,2
 2009,12,2009/10/24,20:00:00,978246,22,R Charleroi SC,2024,KVC Westerlo,1,1
 2009,12,2009/10/24,20:00:00,978247,12,Cercle Brugge,19,KV Kortrijk,1,1
 2009,12,2009/10/25,18:00:00,978248,134,KSV Roeselare,3,Club Brugge,2,3
 2009,12,2009/10/25,20:30:00,978249,25,KV Mechelen,35,RSC Anderlecht,0,2
-2009,13,2009/10/30,20:30:00,978250,224,Excelsior Mouscron,16,Standard Luik,,
 2009,13,2009/10/31,20:00:00,978251,3,Club Brugge,373,Sint-Truidense VV,1,0
 2009,13,2009/10/31,20:00:00,978252,35,RSC Anderlecht,282,KSC Lokeren,2,0
 2009,13,2009/10/31,20:00:00,978253,5381,SV Zulte Waregem,22,R Charleroi SC,2,2
@@ -3648,7 +3635,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,14,2009/11/06,20:30:00,978258,22,R Charleroi SC,7,KAA Gent,0,2
 2009,14,2009/11/07,20:00:00,978259,12,Cercle Brugge,2024,KVC Westerlo,2,1
 2009,14,2009/11/07,20:00:00,978260,282,KSC Lokeren,19,KV Kortrijk,0,0
-2009,14,2009/11/07,20:00:00,978261,25,KV Mechelen,224,Excelsior Mouscron,,
 2009,14,2009/11/07,20:00:00,978262,134,KSV Roeselare,5381,SV Zulte Waregem,2,0
 2009,14,2009/11/07,20:00:00,978263,3530,Germinal,373,Sint-Truidense VV,4,1
 2009,14,2009/11/08,18:00:00,978264,322,KRC Genk,35,RSC Anderlecht,0,2
@@ -3658,13 +3644,11 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,15,2009/11/21,20:00:00,978268,35,RSC Anderlecht,134,KSV Roeselare,3,1
 2009,15,2009/11/21,20:00:00,978269,373,Sint-Truidense VV,12,Cercle Brugge,1,1
 2009,15,2009/11/21,20:00:00,978271,2024,KVC Westerlo,282,KSC Lokeren,1,0
-2009,15,2009/11/21,20:00:00,978272,224,Excelsior Mouscron,22,R Charleroi SC,,
 2009,15,2009/11/22,18:00:00,978270,5381,SV Zulte Waregem,25,KV Mechelen,4,1
 2009,15,2009/11/22,20:30:00,978273,19,KV Kortrijk,322,KRC Genk,2,1
 2009,16,2009/11/27,20:30:00,978274,35,RSC Anderlecht,19,KV Kortrijk,1,0
 2009,16,2009/11/28,20:00:00,978275,3,Club Brugge,22,R Charleroi SC,1,0
 2009,16,2009/11/28,20:00:00,978276,7,KAA Gent,12,Cercle Brugge,3,1
-2009,16,2009/11/28,20:00:00,978277,224,Excelsior Mouscron,322,KRC Genk,,
 2009,16,2009/11/28,20:00:00,978278,2024,KVC Westerlo,25,KV Mechelen,2,0
 2009,16,2009/11/28,20:00:00,978279,3530,Germinal,134,KSV Roeselare,3,0
 2009,16,2009/11/29,18:00:00,978280,5381,SV Zulte Waregem,282,KSC Lokeren,1,0
@@ -3674,19 +3658,16 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,17,2009/12/05,20:00:00,986769,322,KRC Genk,2024,KVC Westerlo,0,0
 2009,17,2009/12/05,20:00:00,986770,22,R Charleroi SC,373,Sint-Truidense VV,0,0
 2009,17,2009/12/05,20:00:00,986771,19,KV Kortrijk,5381,SV Zulte Waregem,1,0
-2009,17,2009/12/05,20:00:00,986772,134,KSV Roeselare,224,Excelsior Mouscron,,
 2009,17,2009/12/06,18:00:00,986773,282,KSC Lokeren,3,Club Brugge,0,1
 2009,17,2009/12/06,20:30:00,986774,12,Cercle Brugge,35,RSC Anderlecht,1,3
 2009,18,2009/12/11,20:30:00,988177,2024,KVC Westerlo,35,RSC Anderlecht,0,2
 2009,18,2009/12/12,20:00:00,988178,3,Club Brugge,25,KV Mechelen,1,1
 2009,18,2009/12/12,20:00:00,988179,16,Standard Luik,134,KSV Roeselare,0,1
 2009,18,2009/12/12,20:00:00,988180,373,Sint-Truidense VV,19,KV Kortrijk,0,2
-2009,18,2009/12/12,20:00:00,988181,224,Excelsior Mouscron,282,KSC Lokeren,,
 2009,18,2009/12/12,20:00:00,988182,3530,Germinal,22,R Charleroi SC,0,0
 2009,18,2009/12/13,18:00:00,988183,5381,SV Zulte Waregem,12,Cercle Brugge,1,0
 2009,18,2009/12/13,20:30:00,988184,7,KAA Gent,322,KRC Genk,2,1
 2009,19,2009/12/19,20:00:00,988193,322,KRC Genk,5381,SV Zulte Waregem,2,2
-2009,19,2009/12/19,20:00:00,988194,12,Cercle Brugge,224,Excelsior Mouscron,,
 2009,19,2009/12/19,20:00:00,988195,282,KSC Lokeren,7,KAA Gent,0,1
 2009,19,2009/12/19,20:00:00,988196,19,KV Kortrijk,2024,KVC Westerlo,1,1
 2009,19,2009/12/19,20:00:00,988197,134,KSV Roeselare,373,Sint-Truidense VV,1,2
@@ -3697,7 +3678,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,20,2009/12/26,20:00:00,988243,3,Club Brugge,12,Cercle Brugge,2,1
 2009,20,2009/12/26,20:00:00,988244,373,Sint-Truidense VV,25,KV Mechelen,5,2
 2009,20,2009/12/26,20:00:00,988245,22,R Charleroi SC,134,KSV Roeselare,3,0
-2009,20,2009/12/26,20:00:00,988246,224,Excelsior Mouscron,19,KV Kortrijk,,
 2009,20,2009/12/26,20:00:00,988247,3530,Germinal,322,KRC Genk,1,0
 2009,20,2009/12/27,18:00:00,988248,7,KAA Gent,35,RSC Anderlecht,2,2
 2009,20,2009/12/27,20:30:00,988249,5381,SV Zulte Waregem,2024,KVC Westerlo,1,0
@@ -3708,11 +3688,9 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2009,21,2009/12/30,20:30:00,988254,282,KSC Lokeren,3530,Germinal,2,0
 2009,21,2009/12/30,20:30:00,988255,25,KV Mechelen,22,R Charleroi SC,1,0
 2009,21,2009/12/30,20:30:00,988256,134,KSV Roeselare,7,KAA Gent,0,4
-2009,21,2009/12/30,20:30:00,988257,2024,KVC Westerlo,224,Excelsior Mouscron,,
 2009,22,2010/01/15,20:30:00,988258,7,KAA Gent,19,KV Kortrijk,2,2
 2009,22,2010/01/16,20:00:00,988260,373,Sint-Truidense VV,282,KSC Lokeren,2,1
 2009,22,2010/01/16,20:00:00,988261,22,R Charleroi SC,322,KRC Genk,1,3
-2009,22,2010/01/16,20:00:00,988262,224,Excelsior Mouscron,5381,SV Zulte Waregem,,
 2009,22,2010/01/16,20:00:00,988263,134,KSV Roeselare,25,KV Mechelen,1,2
 2009,22,2010/01/17,14:30:00,988265,16,Standard Luik,35,RSC Anderlecht,0,4
 2009,22,2010/01/17,18:00:00,988264,3530,Germinal,12,Cercle Brugge,1,4
@@ -5318,7 +5296,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2003,2,2003/08/16,20:00:00,633,94,La Louviere,2614,Heusden-Zolder,2,0
 2003,2,2003/08/17,15:00:00,651,44,RAEC Mons,224,Excelsior Mouscron,3,3
 2003,2,2003/08/17,15:00:00,652,12,Cercle Brugge,3,Club Brugge,0,2
-2003,2,2003/08/17,20:00:00,653,16,Standard Luik,282,KSC Lokeren,0,0
+2003,2,2003/08/17,20:00:00,653,16,Standard Luik,282,KSC Lokeren,1,0
 2003,2,2003/08/18,20:00:00,654,30,Lierse SK,3530,Germinal,0,0
 2003,2,2004/01/24,20:00:00,4007,373,Sint-Truidense VV,2300,KSK Beveren,1,1
 2003,3,2003/08/22,20:30:00,829,2614,Heusden-Zolder,1,Royal Antwerp FC,0,0
@@ -5349,7 +5327,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2003,5,2003/09/14,15:00:00,1285,224,Excelsior Mouscron,12,Cercle Brugge,4,0
 2003,5,2003/09/14,15:00:00,1286,44,RAEC Mons,30,Lierse SK,1,3
 2003,6,2003/09/20,20:00:00,1449,2300,KSK Beveren,2614,Heusden-Zolder,2,0
-2003,6,2003/09/20,20:00:00,1450,35,RSC Anderlecht,2024,KVC Westerlo,3,0
+2003,6,2003/09/20,20:00:00,1450,35,RSC Anderlecht,2024,KVC Westerlo,5,1
 2003,6,2003/09/20,20:00:00,1451,322,KRC Genk,44,RAEC Mons,0,0
 2003,6,2003/09/20,20:00:00,1452,12,Cercle Brugge,16,Standard Luik,2,0
 2003,6,2003/09/20,20:00:00,1453,94,La Louviere,224,Excelsior Mouscron,1,2
@@ -5375,12 +5353,12 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2003,8,2003/10/05,15:00:00,1881,1,Royal Antwerp FC,16,Standard Luik,0,4
 2003,8,2003/10/05,15:00:00,1882,373,Sint-Truidense VV,3530,Germinal,0,0
 2003,8,2003/10/05,20:00:00,1883,35,RSC Anderlecht,3,Club Brugge,1,1
-2003,9,2003/10/17,20:30:00,2043,22,R Charleroi SC,35,RSC Anderlecht,0,0
+2003,9,2003/10/17,20:30:00,2043,22,R Charleroi SC,35,RSC Anderlecht,0,1
 2003,9,2003/10/18,20:00:00,2060,282,KSC Lokeren,2614,Heusden-Zolder,3,0
 2003,9,2003/10/18,20:00:00,2061,3530,Germinal,2300,KSK Beveren,2,1
 2003,9,2003/10/18,20:00:00,2062,44,RAEC Mons,1,Royal Antwerp FC,1,0
 2003,9,2003/10/18,20:00:00,2063,16,Standard Luik,7,KAA Gent,2,0
-2003,9,2003/10/18,20:00:00,2064,3,Club Brugge,2024,KVC Westerlo,0,0
+2003,9,2003/10/18,20:00:00,2064,3,Club Brugge,2024,KVC Westerlo,4,0
 2003,9,2003/10/18,20:00:00,2065,224,Excelsior Mouscron,373,Sint-Truidense VV,2,1
 2003,9,2003/10/19,15:00:00,2081,322,KRC Genk,12,Cercle Brugge,3,1
 2003,9,2003/10/19,19:30:00,2082,30,Lierse SK,94,La Louviere,1,1
@@ -5613,7 +5591,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,1,2002/08/09,20:30:00,977636,16,Standard Luik,224,Excelsior Mouscron,0,3
 2002,1,2002/08/10,20:00:00,977637,7,KAA Gent,1,Royal Antwerp FC,0,0
 2002,1,2002/08/10,20:00:00,977638,3530,Germinal,373,Sint-Truidense VV,3,2
-2002,1,2002/08/10,20:00:00,977639,1986,KFC Lommelse SK,30,Lierse SK,,
 2002,1,2002/08/10,20:00:00,977640,2300,KSK Beveren,44,RAEC Mons,3,0
 2002,1,2002/08/10,20:00:00,977641,2024,KVC Westerlo,35,RSC Anderlecht,0,2
 2002,1,2002/08/10,20:00:00,977642,25,KV Mechelen,22,R Charleroi SC,1,0
@@ -5624,7 +5601,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,2,2002/08/17,20:00:00,980398,44,RAEC Mons,2024,KVC Westerlo,2,1
 2002,2,2002/08/17,20:00:00,980399,3,Club Brugge,2300,KSK Beveren,3,0
 2002,2,2002/08/17,20:00:00,980400,30,Lierse SK,94,La Louviere,1,1
-2002,2,2002/08/17,20:00:00,980401,373,Sint-Truidense VV,1986,KFC Lommelse SK,,
 2002,2,2002/08/18,15:00:00,980402,224,Excelsior Mouscron,7,KAA Gent,2,1
 2002,2,2002/08/18,20:00:00,980403,22,R Charleroi SC,16,Standard Luik,3,3
 2002,3,2002/08/24,18:00:00,980404,16,Standard Luik,35,RSC Anderlecht,0,2
@@ -5633,7 +5609,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,3,2002/08/24,20:00:00,980407,1,Royal Antwerp FC,224,Excelsior Mouscron,3,1
 2002,3,2002/08/24,20:00:00,980408,7,KAA Gent,22,R Charleroi SC,2,1
 2002,3,2002/08/24,20:00:00,980409,25,KV Mechelen,44,RAEC Mons,0,0
-2002,3,2002/08/24,20:00:00,980410,1986,KFC Lommelse SK,282,KSC Lokeren,,
 2002,3,2002/08/25,15:00:00,980411,94,La Louviere,373,Sint-Truidense VV,1,2
 2002,3,2002/09/11,20:30:00,980412,322,KRC Genk,3530,Germinal,5,2
 2002,4,2002/08/31,18:00:00,981589,35,RSC Anderlecht,7,KAA Gent,2,2
@@ -5641,7 +5616,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,4,2002/08/31,20:00:00,981591,373,Sint-Truidense VV,2300,KSK Beveren,6,1
 2002,4,2002/08/31,20:00:00,981592,30,Lierse SK,2024,KVC Westerlo,0,1
 2002,4,2002/08/31,20:00:00,981593,3,Club Brugge,25,KV Mechelen,4,0
-2002,4,2002/08/31,20:00:00,981594,3530,Germinal,1986,KFC Lommelse SK,,
 2002,4,2002/08/31,20:00:00,981595,282,KSC Lokeren,94,La Louviere,1,1
 2002,4,2002/08/31,20:00:00,981596,22,R Charleroi SC,1,Royal Antwerp FC,1,1
 2002,4,2002/09/01,20:00:00,981597,224,Excelsior Mouscron,322,KRC Genk,3,3
@@ -5651,7 +5625,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,5,2002/09/14,20:00:00,982105,2300,KSK Beveren,282,KSC Lokeren,0,1
 2002,5,2002/09/14,20:00:00,982106,25,KV Mechelen,30,Lierse SK,0,2
 2002,5,2002/09/14,20:00:00,982107,224,Excelsior Mouscron,22,R Charleroi SC,6,0
-2002,5,2002/09/14,20:00:00,982108,322,KRC Genk,1986,KFC Lommelse SK,,
 2002,5,2002/09/15,15:00:00,982109,94,La Louviere,3530,Germinal,1,1
 2002,5,2002/09/15,15:00:00,982110,1,Royal Antwerp FC,35,RSC Anderlecht,2,1
 2002,6,2002/09/21,18:00:00,982284,3,Club Brugge,7,KAA Gent,1,0
@@ -5661,13 +5634,11 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,6,2002/09/21,20:00:00,982288,22,R Charleroi SC,322,KRC Genk,0,0
 2002,6,2002/09/21,20:00:00,982289,3530,Germinal,2300,KSK Beveren,2,1
 2002,6,2002/09/22,15:00:00,982290,282,KSC Lokeren,2024,KVC Westerlo,4,0
-2002,6,2002/09/22,15:00:00,982291,1986,KFC Lommelse SK,94,La Louviere,,
 2002,6,2002/09/23,20:00:00,982292,35,RSC Anderlecht,224,Excelsior Mouscron,6,3
 2002,7,2002/09/27,20:00:00,982848,22,R Charleroi SC,35,RSC Anderlecht,1,3
 2002,7,2002/09/28,20:00:00,982849,224,Excelsior Mouscron,44,RAEC Mons,0,5
 2002,7,2002/09/28,20:00:00,982850,7,KAA Gent,30,Lierse SK,1,3
 2002,7,2002/09/28,20:00:00,982851,1,Royal Antwerp FC,3,Club Brugge,2,2
-2002,7,2002/09/28,20:00:00,982852,2300,KSK Beveren,1986,KFC Lommelse SK,,
 2002,7,2002/09/28,20:00:00,982853,322,KRC Genk,94,La Louviere,1,0
 2002,7,2002/09/28,20:00:00,982854,16,Standard Luik,373,Sint-Truidense VV,2,2
 2002,7,2002/09/28,20:00:00,982855,2024,KVC Westerlo,3530,Germinal,2,1
@@ -5677,13 +5648,11 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,8,2002/10/05,20:00:00,982859,44,RAEC Mons,22,R Charleroi SC,4,1
 2002,8,2002/10/05,20:00:00,982860,373,Sint-Truidense VV,7,KAA Gent,6,4
 2002,8,2002/10/05,20:00:00,982861,30,Lierse SK,1,Royal Antwerp FC,3,1
-2002,8,2002/10/05,20:00:00,982862,1986,KFC Lommelse SK,2024,KVC Westerlo,,
 2002,8,2002/10/05,20:00:00,982863,3530,Germinal,25,KV Mechelen,2,2
-2002,8,2002/10/06,15:00:00,982864,3,Club Brugge,224,Excelsior Mouscron,5,0
+2002,8,2002/10/06,15:00:00,982864,3,Club Brugge,224,Excelsior Mouscron,5,1
 2002,8,2002/10/06,20:00:00,982865,35,RSC Anderlecht,322,KRC Genk,1,1
 2002,9,2002/10/19,20:00:00,982946,322,KRC Genk,2300,KSK Beveren,4,0
 2002,9,2002/10/19,20:00:00,982947,16,Standard Luik,3530,Germinal,2,1
-2002,9,2002/10/19,20:00:00,982948,25,KV Mechelen,1986,KFC Lommelse SK,,
 2002,9,2002/10/19,20:00:00,982949,35,RSC Anderlecht,44,RAEC Mons,2,1
 2002,9,2002/10/19,20:00:00,982950,22,R Charleroi SC,3,Club Brugge,2,3
 2002,9,2002/10/19,20:00:00,982951,1,Royal Antwerp FC,373,Sint-Truidense VV,1,3
@@ -5693,7 +5662,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,10,2002/10/26,18:00:00,984926,44,RAEC Mons,322,KRC Genk,1,2
 2002,10,2002/10/26,20:00:00,984927,2300,KSK Beveren,2024,KVC Westerlo,2,1
 2002,10,2002/10/26,20:00:00,984928,30,Lierse SK,22,R Charleroi SC,2,1
-2002,10,2002/10/26,20:00:00,984929,1986,KFC Lommelse SK,16,Standard Luik,,
 2002,10,2002/10/26,20:00:00,984930,3530,Germinal,7,KAA Gent,2,1
 2002,10,2002/10/28,20:00:00,984931,94,La Louviere,25,KV Mechelen,1,1
 2002,10,2002/10/28,20:00:00,984932,282,KSC Lokeren,1,Royal Antwerp FC,2,1
@@ -5703,7 +5671,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,11,2002/11/02,20:00:00,984960,16,Standard Luik,94,La Louviere,1,0
 2002,11,2002/11/02,20:00:00,984961,22,R Charleroi SC,373,Sint-Truidense VV,2,2
 2002,11,2002/11/02,20:00:00,984962,224,Excelsior Mouscron,282,KSC Lokeren,1,1
-2002,11,2002/11/02,20:00:00,984963,7,KAA Gent,1986,KFC Lommelse SK,,
 2002,11,2002/11/03,13:15:00,984964,1,Royal Antwerp FC,3530,Germinal,5,3
 2002,11,2002/11/03,15:00:00,984965,322,KRC Genk,2024,KVC Westerlo,1,1
 2002,11,2002/11/03,15:00:00,984966,25,KV Mechelen,2300,KSK Beveren,0,2
@@ -5712,7 +5679,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,12,2002/11/09,15:00:00,987492,3,Club Brugge,322,KRC Genk,4,0
 2002,12,2002/11/09,20:00:00,987493,94,La Louviere,7,KAA Gent,0,1
 2002,12,2002/11/09,20:00:00,987494,2024,KVC Westerlo,25,KV Mechelen,2,0
-2002,12,2002/11/09,20:00:00,987495,1986,KFC Lommelse SK,1,Royal Antwerp FC,,
 2002,12,2002/11/09,20:00:00,987496,3530,Germinal,224,Excelsior Mouscron,0,2
 2002,12,2002/11/09,20:00:00,987497,282,KSC Lokeren,22,R Charleroi SC,4,1
 2002,12,2002/11/10,15:00:00,987498,2300,KSK Beveren,16,Standard Luik,1,3
@@ -5724,7 +5690,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,13,2002/11/23,20:00:00,988096,3,Club Brugge,30,Lierse SK,3,0
 2002,13,2002/11/23,20:00:00,988097,22,R Charleroi SC,3530,Germinal,1,6
 2002,13,2002/11/23,20:00:00,988098,1,Royal Antwerp FC,94,La Louviere,2,1
-2002,13,2002/11/24,15:00:00,988099,224,Excelsior Mouscron,1986,KFC Lommelse SK,,
 2002,13,2002/11/24,15:00:00,988100,7,KAA Gent,2300,KSK Beveren,2,1
 2002,14,2002/11/30,20:00:00,988102,2300,KSK Beveren,1,Royal Antwerp FC,3,1
 2002,14,2002/11/30,20:00:00,988103,25,KV Mechelen,16,Standard Luik,1,1
@@ -5732,11 +5697,9 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,14,2002/11/30,20:00:00,988105,282,KSC Lokeren,44,RAEC Mons,4,0
 2002,14,2002/11/30,20:00:00,2862427,94,La Louviere,224,Excelsior Mouscron,2,0
 2002,14,2002/12/01,14:00:00,988106,3530,Germinal,35,RSC Anderlecht,1,2
-2002,14,2002/12/01,15:00:00,988107,1986,KFC Lommelse SK,22,R Charleroi SC,,
 2002,14,2002/12/01,20:00:00,988108,373,Sint-Truidense VV,3,Club Brugge,5,2
 2002,14,2002/12/01,20:00:00,988109,30,Lierse SK,322,KRC Genk,1,1
 2002,15,2002/12/04,20:30:00,988266,3,Club Brugge,282,KSC Lokeren,5,0
-2002,15,2002/12/04,20:30:00,988267,35,RSC Anderlecht,1986,KFC Lommelse SK,,
 2002,15,2002/12/07,20:00:00,988268,22,R Charleroi SC,94,La Louviere,1,1
 2002,15,2002/12/07,20:00:00,988269,224,Excelsior Mouscron,2300,KSK Beveren,0,0
 2002,15,2002/12/07,20:00:00,988270,1,Royal Antwerp FC,2024,KVC Westerlo,1,2
@@ -5745,7 +5708,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,15,2002/12/08,15:00:00,988273,7,KAA Gent,25,KV Mechelen,2,0
 2002,15,2002/12/08,20:00:00,988274,322,KRC Genk,16,Standard Luik,1,5
 2002,16,2002/12/13,20:00:00,991304,373,Sint-Truidense VV,322,KRC Genk,0,1
-2002,16,2002/12/13,20:00:00,991305,1986,KFC Lommelse SK,44,RAEC Mons,,
 2002,16,2002/12/14,20:00:00,991306,25,KV Mechelen,1,Royal Antwerp FC,0,2
 2002,16,2002/12/14,20:00:00,991307,282,KSC Lokeren,30,Lierse SK,1,1
 2002,16,2002/12/15,14:00:00,991308,3530,Germinal,3,Club Brugge,1,3
@@ -5756,7 +5718,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,17,2002/12/21,20:00:00,991418,44,RAEC Mons,94,La Louviere,1,3
 2002,17,2002/12/21,20:00:00,991419,373,Sint-Truidense VV,282,KSC Lokeren,2,0
 2002,17,2002/12/21,20:00:00,991420,30,Lierse SK,3530,Germinal,2,1
-2002,17,2002/12/21,20:00:00,991421,3,Club Brugge,1986,KFC Lommelse SK,,
 2002,17,2002/12/21,20:00:00,991422,35,RSC Anderlecht,2300,KSK Beveren,7,1
 2002,17,2002/12/21,20:00:00,991423,22,R Charleroi SC,2024,KVC Westerlo,1,0
 2002,17,2002/12/21,20:00:00,991424,224,Excelsior Mouscron,25,KV Mechelen,3,1
@@ -5767,13 +5728,11 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,18,2003/01/18,20:00:00,995614,1,Royal Antwerp FC,7,KAA Gent,1,4
 2002,18,2003/01/18,20:00:00,995615,3,Club Brugge,94,La Louviere,3,0
 2002,18,2003/01/19,15:00:00,995616,22,R Charleroi SC,25,KV Mechelen,3,0
-2002,18,2003/01/19,15:00:00,995617,30,Lierse SK,1986,KFC Lommelse SK,,
 2002,18,2003/01/19,15:00:00,995618,44,RAEC Mons,2300,KSK Beveren,4,1
 2002,18,2003/01/19,15:00:00,995619,35,RSC Anderlecht,2024,KVC Westerlo,0,2
 2002,18,2003/01/19,20:00:00,995620,282,KSC Lokeren,322,KRC Genk,4,1
 2002,19,2003/01/25,20:00:00,995621,94,La Louviere,30,Lierse SK,0,3
 2002,19,2003/01/25,20:00:00,995622,2024,KVC Westerlo,44,RAEC Mons,2,0
-2002,19,2003/01/25,20:00:00,995623,1986,KFC Lommelse SK,373,Sint-Truidense VV,,
 2002,19,2003/01/25,20:00:00,995624,2300,KSK Beveren,3,Club Brugge,2,7
 2002,19,2003/01/25,20:00:00,995625,25,KV Mechelen,35,RSC Anderlecht,0,2
 2002,19,2003/01/25,20:00:00,995626,7,KAA Gent,224,Excelsior Mouscron,2,0
@@ -5784,7 +5743,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,20,2003/04/11,20:30:00,995635,3530,Germinal,322,KRC Genk,2,1
 2002,20,2003/04/11,20:30:00,995638,373,Sint-Truidense VV,94,La Louviere,2,1
 2002,20,2003/04/12,20:00:00,995632,2300,KSK Beveren,30,Lierse SK,7,1
-2002,20,2003/04/12,20:00:00,995636,282,KSC Lokeren,1986,KFC Lommelse SK,,
 2002,20,2003/04/13,15:00:00,995631,44,RAEC Mons,25,KV Mechelen,2,0
 2002,20,2003/04/13,15:00:00,995634,22,R Charleroi SC,7,KAA Gent,1,2
 2002,20,2003/04/13,15:00:00,995637,224,Excelsior Mouscron,1,Royal Antwerp FC,1,0
@@ -5796,7 +5754,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,21,2003/02/08,20:00:00,995645,1,Royal Antwerp FC,22,R Charleroi SC,3,1
 2002,21,2003/02/09,13:00:00,995646,7,KAA Gent,35,RSC Anderlecht,0,2
 2002,21,2003/02/09,15:00:00,995647,16,Standard Luik,44,RAEC Mons,0,0
-2002,21,2003/02/09,15:00:00,995648,1986,KFC Lommelse SK,3530,Germinal,,
 2002,21,2003/02/09,15:00:00,995649,2300,KSK Beveren,373,Sint-Truidense VV,2,1
 2002,22,2003/02/15,15:00:00,998895,3,Club Brugge,16,Standard Luik,4,2
 2002,22,2003/02/15,20:00:00,998896,30,Lierse SK,25,KV Mechelen,3,0
@@ -5804,7 +5761,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,22,2003/02/15,20:00:00,998898,44,RAEC Mons,7,KAA Gent,0,1
 2002,22,2003/02/15,20:00:00,998899,3530,Germinal,94,La Louviere,2,0
 2002,22,2003/02/15,20:00:00,998900,282,KSC Lokeren,2300,KSK Beveren,1,2
-2002,22,2003/02/15,20:00:00,998901,1986,KFC Lommelse SK,322,KRC Genk,,
 2002,22,2003/02/16,15:00:00,998902,22,R Charleroi SC,224,Excelsior Mouscron,5,0
 2002,22,2003/02/16,15:00:00,998903,35,RSC Anderlecht,1,Royal Antwerp FC,4,1
 2002,23,2003/02/22,20:00:00,996217,16,Standard Luik,30,Lierse SK,1,1
@@ -5814,11 +5770,9 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,23,2003/02/22,20:00:00,996221,2300,KSK Beveren,3530,Germinal,3,1
 2002,23,2003/02/22,20:00:00,996222,2024,KVC Westerlo,282,KSC Lokeren,1,3
 2002,23,2003/02/23,13:00:00,996223,7,KAA Gent,3,Club Brugge,1,4
-2002,23,2003/02/23,15:00:00,996224,94,La Louviere,1986,KFC Lommelse SK,,
 2002,23,2003/02/23,20:00:00,996225,224,Excelsior Mouscron,35,RSC Anderlecht,1,0
 2002,24,2003/02/28,20:30:00,996226,373,Sint-Truidense VV,16,Standard Luik,0,1
 2002,24,2003/02/28,20:30:00,996227,94,La Louviere,322,KRC Genk,2,2
-2002,24,2003/03/01,20:00:00,996228,1986,KFC Lommelse SK,2300,KSK Beveren,,
 2002,24,2003/03/01,20:00:00,996229,3530,Germinal,2024,KVC Westerlo,1,1
 2002,24,2003/03/01,20:00:00,996230,44,RAEC Mons,224,Excelsior Mouscron,2,0
 2002,24,2003/03/01,20:00:00,996231,30,Lierse SK,7,KAA Gent,2,1
@@ -5826,7 +5780,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,24,2003/03/02,15:00:00,996233,282,KSC Lokeren,25,KV Mechelen,5,0
 2002,24,2003/03/02,20:00:00,996234,35,RSC Anderlecht,22,R Charleroi SC,2,0
 2002,25,2003/03/07,20:30:00,996235,16,Standard Luik,282,KSC Lokeren,1,2
-2002,25,2003/03/08,20:00:00,996236,2024,KVC Westerlo,1986,KFC Lommelse SK,,
 2002,25,2003/03/08,20:00:00,996237,25,KV Mechelen,3530,Germinal,2,0
 2002,25,2003/03/08,20:00:00,996238,22,R Charleroi SC,44,RAEC Mons,2,1
 2002,25,2003/03/08,20:00:00,996239,7,KAA Gent,373,Sint-Truidense VV,3,0
@@ -5835,7 +5788,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,25,2003/03/09,15:00:00,996242,2300,KSK Beveren,94,La Louviere,0,3
 2002,25,2003/03/09,20:00:00,996243,322,KRC Genk,35,RSC Anderlecht,0,1
 2002,26,2003/03/15,20:00:00,999054,2300,KSK Beveren,322,KRC Genk,1,4
-2002,26,2003/03/15,20:00:00,999055,1986,KFC Lommelse SK,25,KV Mechelen,,
 2002,26,2003/03/15,20:00:00,999056,3,Club Brugge,22,R Charleroi SC,1,2
 2002,26,2003/03/15,20:00:00,999057,373,Sint-Truidense VV,1,Royal Antwerp FC,1,0
 2002,26,2003/03/15,20:00:00,999058,282,KSC Lokeren,7,KAA Gent,5,1
@@ -5846,7 +5798,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,27,2003/03/22,20:00:00,1000214,322,KRC Genk,44,RAEC Mons,2,0
 2002,27,2003/03/22,20:00:00,1000215,224,Excelsior Mouscron,373,Sint-Truidense VV,1,2
 2002,27,2003/03/22,20:00:00,1000216,22,R Charleroi SC,30,Lierse SK,0,1
-2002,27,2003/03/22,20:00:00,1000217,16,Standard Luik,1986,KFC Lommelse SK,,
 2002,27,2003/03/22,20:00:00,1000218,7,KAA Gent,3530,Germinal,1,0
 2002,27,2003/03/22,20:00:00,1000219,1,Royal Antwerp FC,282,KSC Lokeren,1,2
 2002,27,2003/03/23,15:00:00,1000220,25,KV Mechelen,94,La Louviere,0,1
@@ -5857,7 +5808,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,28,2003/04/05,20:00:00,1000225,2024,KVC Westerlo,322,KRC Genk,3,1
 2002,28,2003/04/05,20:00:00,1000226,2300,KSK Beveren,25,KV Mechelen,6,0
 2002,28,2003/04/05,20:00:00,1000227,282,KSC Lokeren,224,Excelsior Mouscron,3,2
-2002,28,2003/04/05,20:00:00,1000228,1986,KFC Lommelse SK,7,KAA Gent,,
 2002,28,2003/04/06,15:00:00,1000229,3530,Germinal,1,Royal Antwerp FC,1,1
 2002,28,2003/04/06,15:00:00,1000230,373,Sint-Truidense VV,22,R Charleroi SC,2,1
 2002,28,2003/04/06,20:00:00,1000231,30,Lierse SK,35,RSC Anderlecht,0,1
@@ -5865,7 +5815,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,29,2003/04/19,20:00:00,1000233,35,RSC Anderlecht,373,Sint-Truidense VV,2,0
 2002,29,2003/04/19,20:00:00,1000234,44,RAEC Mons,30,Lierse SK,2,1
 2002,29,2003/04/19,20:00:00,1000235,25,KV Mechelen,2024,KVC Westerlo,0,4
-2002,29,2003/04/19,20:00:00,1000236,1,Royal Antwerp FC,1986,KFC Lommelse SK,,
 2002,29,2003/04/19,20:00:00,1000237,7,KAA Gent,94,La Louviere,3,2
 2002,29,2003/04/20,15:00:00,1000238,16,Standard Luik,2300,KSK Beveren,2,0
 2002,29,2003/04/20,15:00:00,1000239,224,Excelsior Mouscron,3530,Germinal,1,6
@@ -5874,7 +5823,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,30,2003/04/26,20:00:00,1000737,25,KV Mechelen,322,KRC Genk,2,6
 2002,30,2003/04/26,20:00:00,1001770,2024,KVC Westerlo,16,Standard Luik,2,3
 2002,30,2003/04/26,20:00:00,1001771,3530,Germinal,22,R Charleroi SC,1,1
-2002,30,2003/04/26,20:00:00,1003324,1986,KFC Lommelse SK,224,Excelsior Mouscron,,
 2002,30,2003/04/26,20:00:00,1003326,94,La Louviere,1,Royal Antwerp FC,1,1
 2002,30,2003/04/27,15:00:00,1000765,373,Sint-Truidense VV,44,RAEC Mons,3,4
 2002,30,2003/04/27,15:00:00,1000766,2300,KSK Beveren,7,KAA Gent,0,3
@@ -5885,13 +5833,11 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,31,2003/05/03,20:00:00,1003317,7,KAA Gent,2024,KVC Westerlo,3,2
 2002,31,2003/05/03,20:00:00,1003318,16,Standard Luik,25,KV Mechelen,0,0
 2002,31,2003/05/03,20:00:00,1003319,322,KRC Genk,30,Lierse SK,5,2
-2002,31,2003/05/04,15:00:00,1003320,22,R Charleroi SC,1986,KFC Lommelse SK,,
 2002,31,2003/05/04,15:00:00,1003321,35,RSC Anderlecht,3530,Germinal,4,0
 2002,31,2003/05/04,20:00:00,1003322,44,RAEC Mons,282,KSC Lokeren,0,0
 2002,32,2003/05/10,20:00:00,1003327,94,La Louviere,22,R Charleroi SC,2,2
 2002,32,2003/05/10,20:00:00,1003328,25,KV Mechelen,7,KAA Gent,1,0
 2002,32,2003/05/10,20:00:00,1003329,2024,KVC Westerlo,1,Royal Antwerp FC,2,1
-2002,32,2003/05/10,20:00:00,1003330,1986,KFC Lommelse SK,35,RSC Anderlecht,,
 2002,32,2003/05/10,20:00:00,1003331,373,Sint-Truidense VV,30,Lierse SK,2,1
 2002,32,2003/05/10,20:00:00,1003332,16,Standard Luik,322,KRC Genk,0,1
 2002,32,2003/05/11,15:00:00,1003333,2300,KSK Beveren,224,Excelsior Mouscron,3,0
@@ -5904,7 +5850,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,33,2003/05/17,20:00:00,1003340,35,RSC Anderlecht,94,La Louviere,1,0
 2002,33,2003/05/17,20:00:00,1003341,224,Excelsior Mouscron,2024,KVC Westerlo,0,4
 2002,33,2003/05/18,15:00:00,1003342,3,Club Brugge,3530,Germinal,1,1
-2002,33,2003/05/18,15:00:00,1003343,44,RAEC Mons,1986,KFC Lommelse SK,,
 2002,33,2003/05/18,15:00:00,1003344,7,KAA Gent,16,Standard Luik,0,5
 2002,34,2003/05/24,20:00:00,1003345,25,KV Mechelen,224,Excelsior Mouscron,3,2
 2002,34,2003/05/24,20:00:00,1003346,2024,KVC Westerlo,22,R Charleroi SC,1,1
@@ -5912,7 +5857,6 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2002,34,2003/05/24,20:00:00,1003348,322,KRC Genk,7,KAA Gent,3,1
 2002,34,2003/05/25,15:00:00,1003349,16,Standard Luik,1,Royal Antwerp FC,1,3
 2002,34,2003/05/25,15:00:00,1003350,2300,KSK Beveren,35,RSC Anderlecht,5,0
-2002,34,2003/05/25,15:00:00,1003351,1986,KFC Lommelse SK,3,Club Brugge,,
 2002,34,2003/05/25,15:00:00,1003352,3530,Germinal,30,Lierse SK,1,2
 2002,34,2003/05/25,20:00:00,1003353,282,KSC Lokeren,373,Sint-Truidense VV,0,0
 2001,1,2001/08/11,20:00:00,991407,35,RSC Anderlecht,1,Royal Antwerp FC,3,0
@@ -5984,7 +5928,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2001,8,2001/10/10,20:00:00,997964,30,Lierse SK,3,Club Brugge,0,2
 2001,8,2001/10/10,20:00:00,997965,224,Excelsior Mouscron,3530,Germinal,3,1
 2001,8,2001/10/10,20:00:00,997966,2024,KVC Westerlo,373,Sint-Truidense VV,0,0
-2001,8,2001/10/10,20:00:00,997967,282,KSC Lokeren,47,RWD Molenbeek,4,0
+2001,8,2001/10/10,20:00:00,997967,282,KSC Lokeren,47,RWD Molenbeek,2,0
 2001,8,2001/10/10,20:00:00,997968,2300,KSK Beveren,16,Standard Luik,1,1
 2001,8,2001/10/10,20:00:00,997969,1,Royal Antwerp FC,22,R Charleroi SC,2,0
 2001,9,2001/10/13,20:00:00,1000464,22,R Charleroi SC,94,La Louviere,2,1
@@ -6175,7 +6119,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 2001,29,2002/03/30,20:00:00,1057370,2024,KVC Westerlo,2300,KSK Beveren,1,0
 2001,29,2002/03/30,20:00:00,1057372,1986,KFC Lommelse SK,3,Club Brugge,0,2
 2001,29,2002/03/30,20:00:00,1057373,373,Sint-Truidense VV,94,La Louviere,1,0
-2001,29,2002/04/01,20:00:00,1057374,47,RWD Molenbeek,35,RSC Anderlecht,2,3
+2001,29,2002/04/01,20:00:00,1057374,47,RWD Molenbeek,35,RSC Anderlecht,1,3
 2001,30,2002/04/05,20:30:00,1057375,3,Club Brugge,22,R Charleroi SC,1,0
 2001,30,2002/04/06,20:00:00,1057376,30,Lierse SK,16,Standard Luik,1,1
 2001,30,2002/04/06,20:00:00,1057377,322,KRC Genk,47,RWD Molenbeek,2,0
@@ -8230,7 +8174,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 1994,19,1995/01/22,15:00:00,3666758,31,KV Oostende,3,Club Brugge,1,6
 1994,20,1995/01/28,20:00:00,3666759,373,Sint-Truidense VV,16,Standard Luik,1,1
 1994,20,1995/01/28,20:00:00,3666760,25,KV Mechelen,47,RWD Molenbeek,1,0
-1994,20,1995/01/28,20:00:00,3666761,1,Royal Antwerp FC,31,KV Oostende,2,1
+1994,20,1995/01/28,20:00:00,3666761,1,Royal Antwerp FC,31,KV Oostende,2,0
 1994,20,1995/01/28,20:00:00,3666762,2300,KSK Beveren,3530,Germinal,1,1
 1994,20,1995/01/28,20:00:00,3666763,22,R Charleroi SC,4,RFC Luik,4,1
 1994,20,1995/01/29,15:00:00,3666764,17,RFC Seraing,12,Cercle Brugge,4,1
@@ -9318,7 +9262,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 1990,4,1990/09/02,15:00:00,3568733,47,RWD Molenbeek,13,Beerschot,4,1
 1990,4,1990/09/02,15:00:00,3568734,12,Cercle Brugge,3,Club Brugge,0,1
 1990,5,1990/09/15,20:00:00,3568740,16,Standard Luik,282,KSC Lokeren,3,1
-1990,5,1990/09/15,20:00:00,3568741,13,Beerschot,25,KV Mechelen,0,2
+1990,5,1990/09/15,20:00:00,3568741,13,Beerschot,25,KV Mechelen,2,2
 1990,5,1990/09/15,20:00:00,3568742,35,RSC Anderlecht,7,KAA Gent,1,1
 1990,5,1990/09/15,20:00:00,3568743,30,Lierse SK,373,Sint-Truidense VV,0,0
 1990,5,1990/09/15,20:00:00,3568744,3,Club Brugge,1,Royal Antwerp FC,2,0
@@ -12509,7 +12453,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 1980,19,1981/01/25,15:00:00,3986891,19,KV Kortrijk,47,RWD Molenbeek,0,3
 1980,19,1981/01/25,15:00:00,3986892,4,RFC Luik,322,KRC Genk,5,0
 1980,19,1981/01/25,15:00:00,3986893,522,Beringen FC,12,Cercle Brugge,2,1
-1980,19,1981/01/25,15:00:00,3986894,282,KSC Lokeren,28,Berchem Sport,10,:1
+1980,19,1981/01/25,15:00:00,3986894,282,KSC Lokeren,28,Berchem Sport,10,1
 1980,19,1981/01/25,15:00:00,3986895,3,Club Brugge,2300,KSK Beveren,3,0
 1980,19,1981/01/25,15:00:00,3986896,1,Royal Antwerp FC,4451,KSV Waregem,0,0
 1980,20,1981/01/31,20:00:00,3986897,322,KRC Genk,522,Beringen FC,2,1
@@ -12664,7 +12608,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 1979,2,1979/09/02,15:00:00,4013217,12,Cercle Brugge,35,RSC Anderlecht,2,1
 1979,2,1979/09/02,15:00:00,4013218,282,KSC Lokeren,2300,KSK Beveren,2,0
 1979,2,1979/09/02,15:00:00,4013219,16,Standard Luik,4451,KSV Waregem,1,0
-1979,2,1979/09/02,15:00:00,4013220,30,Lierse SK,553,Waterschei SV Thor,0,0
+1979,2,1979/09/02,15:00:00,4013220,30,Lierse SK,553,Waterschei SV Thor,3,1
 1979,3,1979/09/05,19:30:00,4013222,22,R Charleroi SC,1,Royal Antwerp FC,0,0
 1979,3,1979/09/05,20:00:00,4013221,3,Club Brugge,522,Beringen FC,1,0
 1979,3,1979/09/05,20:00:00,4013223,47,RWD Molenbeek,4,RFC Luik,2,1
@@ -12769,7 +12713,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 1979,14,1979/11/17,20:00:00,4013321,3,Club Brugge,35,RSC Anderlecht,3,0
 1979,14,1979/11/17,20:00:00,4013323,47,RWD Molenbeek,12,Cercle Brugge,3,1
 1979,14,1979/11/17,20:00:00,4013324,13,Beerschot,16,Standard Luik,1,1
-1979,14,1979/11/17,20:00:00,4013325,282,KSC Lokeren,37,KSC Hasselt,10,:1
+1979,14,1979/11/17,20:00:00,4013325,282,KSC Lokeren,37,KSC Hasselt,10,1
 1979,14,1979/11/17,20:00:00,4013326,4,RFC Luik,2300,KSK Beveren,0,0
 1979,14,1979/11/17,20:00:00,4013327,1,Royal Antwerp FC,4451,KSV Waregem,1,0
 1979,14,1979/11/17,20:00:00,4013328,522,Beringen FC,553,Waterschei SV Thor,1,2
@@ -13174,7 +13118,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 1978,25,1979/03/31,20:00:00,4013114,13,Beerschot,28,Berchem Sport,3,0
 1978,25,1979/03/31,20:00:00,4013116,4451,KSV Waregem,553,Waterschei SV Thor,2,1
 1978,25,1979/03/31,20:00:00,4013117,522,Beringen FC,30,Lierse SK,0,0
-1978,25,1979/04/01,15:00:00,4013118,282,KSC Lokeren,47,RWD Molenbeek,3,1
+1978,25,1979/04/01,15:00:00,4013118,282,KSC Lokeren,47,RWD Molenbeek,3,0
 1978,25,1979/04/01,15:00:00,4013119,322,KRC Genk,16,Standard Luik,1,3
 1978,25,1979/04/01,15:00:00,4013120,1,Royal Antwerp FC,94,La Louviere,2,3
 1978,25,1979/04/01,15:00:00,4013121,4,RFC Luik,3,Club Brugge,5,2
@@ -16841,7 +16785,7 @@ seizoen,speeldag,datum,tijd,id_match,thuisploeg_stamnummer,thuisploeg,uitploeg_s
 1964,11,1964/11/29,15:00:00,4009247,3,Club Brugge,373,Sint-Truidense VV,3,3
 1964,11,1964/11/29,15:00:00,4009248,2,Daring Club Brussel,21,RFC Tilleur,0,0
 1964,11,1964/11/29,15:00:00,4009249,30,Lierse SK,41,KFC Diest,0,1
-1964,12,1964/12/06,14:00:00,4009252,21,RFC Tilleur,1,Royal Antwerp FC,10,:1
+1964,12,1964/12/06,14:00:00,4009252,21,RFC Tilleur,1,Royal Antwerp FC,10,1
 1964,12,1964/12/06,14:30:00,4009251,35,RSC Anderlecht,3,Club Brugge,3,1
 1964,12,1964/12/06,14:30:00,4009253,13,Beerschot,2,Daring Club Brussel,4,0
 1964,12,1964/12/06,14:30:00,4009254,28,Berchem Sport,4,RFC Luik,0,1

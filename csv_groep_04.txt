@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/RobbeVDK/DEP1-2023-2024-groep04/main/csv/wedstrijden.csv
+https://raw.githubusercontent.com/RobbeVDK/DEP1-2023-2024-groep04/main/csv/klassement.csv
+https://raw.githubusercontent.com/RobbeVDK/DEP1-2023-2024-groep04/main/csv/doelpunten.csv

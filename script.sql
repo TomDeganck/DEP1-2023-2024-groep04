@@ -71,6 +71,5 @@ CREATE TABLE DimDate (
     Year INT,
     Quarter INT,
     Month INT,
-    Day INT,
-    IsHoliday BOOLEAN
+    Day INT
 );

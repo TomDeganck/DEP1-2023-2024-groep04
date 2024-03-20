@@ -1,3 +1,4 @@
+use Groep4_DEP1;
 CREATE TABLE DimensionTeam (
     teamId INT PRIMARY KEY,
     TeamName VARCHAR(255),
@@ -58,8 +59,8 @@ CREATE TABLE DimensionGoal (
     MatchId INT,
     GoalTimeRelative INT,
     TeamScored INT,
-    ScoreAtGoal INT,
-    NewScore INT,
+    HomeScore INT,
+    AwayScore INT,
     AbsoluteTime TIME,
     FOREIGN KEY (MatchId) REFERENCES FactTableMatch(MatchId),
     FOREIGN KEY (TeamScored) REFERENCES DimensionTeam(teamId)
